@@ -8,7 +8,7 @@ import { CrazyCard } from '../src/components/crazy-card'
 
 const Home: NextPage = () => {
   return (
-    <main className='flex items-center justify-center h-screen overflow-hidden bg-gray-100 '>
+    <main className='flex items-center justify-center min-h-screen bg-gray-100 lg:overflow-hidden lg:h-screen '>
       <div className='container flex justify-center px-2 py-8 mx-auto align-middle md:py-64 xl:px-48'>
         <CrazyCard >
           <div className='flex flex-col justify-center gap-6 lg:basis-3/4'>
