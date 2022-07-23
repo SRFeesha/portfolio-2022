@@ -5,7 +5,18 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      lineHeight: {
+        tight: "1.2",
+      },
+      scale: {
+        90: 0.9,
+      },
+      colors: {
+        "tory-blue": "#0f5099",
+        "chrome-white": "#dcf0cf",
+      },
+    },
   },
   plugins: [],
-};
+}
