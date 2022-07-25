@@ -1,6 +1,12 @@
 import clsx from "clsx"
 
-export const Button = ({ kind = "primary", icon, className, children }) => {
+export const Button = ({
+  kind = "primary",
+  icon,
+  href,
+  className,
+  children,
+}) => {
   const hierarchy = {
     primary:
       "text-white bg-blue-500 border-blue-600 active:bg-blue-600 hover:border-blue-700 hover:drop-shadow-lg ",
@@ -10,17 +16,20 @@ export const Button = ({ kind = "primary", icon, className, children }) => {
   }
 
   return (
-    <button
+    <a
       className={clsx(
         "px-4 py-2 text-lg border-2 rounded-xl w-fit drop-shadow-sm  ease-in-out duration-300 active:drop-shadow-none",
         hierarchy[kind],
         className
       )}
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
     >
       <span className="flex items-center gap-2 ">
         {icon && icon}
         {children}
       </span>
-    </button>
+    </a>
   )
 }
