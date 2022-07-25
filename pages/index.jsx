@@ -1,13 +1,14 @@
 import Image from 'next/image'
-import { Button } from '../src/components/button'
-import { Linkedin, PDF } from "../src/components/icons"
-import BenCircle from '../public/assets/img/Beniamino-Marini--Squared--400x400.png'
-import { CrazyCard } from '../src/components/crazy-card'
-import { Footer } from '../src/components/footer'
+import { Button } from '@/components/button'
+import { Linkedin, PDF } from "@/components/icons"
+import { CrazyCard } from '@/components/crazy-card'
+import { Footer } from '@/components/footer'
+import BenCircle from '@/assets/img/Beniamino-Marini--Squared--400x400.png'
 
 const Home = () => {
   const PDFLink = '/assets/pdf/Beniamino-Marini--Product-Designer-resume.pdf'
   const LinkedinLink = "https://www.linkedin.com/in/youcancallmeben/"
+
   return (
     <main className='px-2 bg-gray-100 text-zinc-600'>
       <div className='container px-2 py-8 mx-auto md:pt-64 xl:px-48'>
@@ -71,11 +72,17 @@ const Home = () => {
         </div>
 
         <div className='flex flex-col items-center max-w-xl gap-4 mx-auto -mt-8 xl:mx-20 md:items-start lg:flex-row'>
-          <Button kind='secondary' href={PDFLink} icon={<PDF className='w-4 h-4' />}>
+          {/* <Button kind='secondary' href={PDFLink} icon={<PDF className='w-4 h-4' />}>
             Download my Resume / CV
           </Button>
           <Button kind='flat' href={LinkedinLink}>
             Linkedin
+          </Button> */}
+          <Button icon={<PDF className='w-4 h-4' />} className="self-center mt-4 md:self-start" kind='secondary' href={PDFLink} >
+            Download my Resume / CV
+          </Button>
+          <Button className="" kind='flat' href={LinkedinLink} >
+            Download my Resume / CV
           </Button>
         </div>
 
