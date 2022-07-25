@@ -3,20 +3,20 @@ import { Button } from '../src/components/button'
 import { Linkedin, PDF } from "../src/components/icons"
 import BenCircle from '../public/assets/img/Beniamino-Marini--Squared--400x400.png'
 import { CrazyCard } from '../src/components/crazy-card'
-import Resume from '../public/assets/pdf/Beniamino-Marini--Product-Designer-resume.pdf'
+import { Footer } from '../src/components/footer'
 
 const Home = () => {
+  const PDFLink = '/assets/pdf/Beniamino-Marini--Product-Designer-resume.pdf'
+  const LinkedinLink = "https://www.linkedin.com/in/youcancallmeben/"
   return (
     <main className='px-2 bg-gray-100 text-zinc-600'>
-      <div className='container px-2 py-8 mx-auto md:py-64 xl:px-48'>
+      <div className='container px-2 py-8 mx-auto md:pt-64 xl:px-48'>
         <CrazyCard >
           <div className='flex flex-col justify-center gap-4 lg:basis-3/4'>
             <h1 className='text-4xl text-center oldstyle-nums lg:leading-tight lg:text-5xl text-zinc-800 md:text-start xl:pr-10'>Beniamino Marini, Product Designer with 3+ years of experience. </h1>
             <p className='text-lg text-center md:text-xl md:text-start text-zinc-500'>Open to new opportunities · Currently designing at Wonderflow</p>
-            <Button icon={<Linkedin className="w-4 h-4 fill-white" />} className="self-center mt-4 md:self-start" >
-              <a href="https://www.linkedin.com/in/youcancallmeben/" target="_blank" rel='noopener noreferrer'>
-                Connect on Linkedin
-              </a>
+            <Button icon={<Linkedin className="w-4 h-4 fill-white" />} className="self-center mt-4 md:self-start" href={LinkedinLink} >
+              Connect on Linkedin
             </Button>
           </div>
           <Image src={BenCircle} alt='Beniamino Marini Product Designer' className='rounded-full sm:basis-1/4' />
@@ -70,14 +70,18 @@ const Home = () => {
           </aside>
         </div>
 
-        <div className='flex gap-4'>
-          <Button kind='secondary' icon={<PDF className='w-4 h-4' />}>Download my Resume / CV</Button>
-          <Button kind='flat'> <a href={PDF} target="_blank" rel='noopener noreferrer'> Linkedin</a></Button>
-          {PDF}
+        <div className='flex flex-col items-center max-w-xl gap-4 mx-auto -mt-8 xl:mx-20 md:items-start lg:flex-row'>
+          <Button kind='secondary' href={PDFLink} icon={<PDF className='w-4 h-4' />}>
+            Download my Resume / CV
+          </Button>
+          <Button kind='flat' href={LinkedinLink}>
+            Linkedin
+          </Button>
         </div>
 
-      </div>
-    </main>
+      </div >
+      <Footer />
+    </main >
   )
 }
 
