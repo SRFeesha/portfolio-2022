@@ -10,7 +10,7 @@ const Home = () => {
   const LinkedinLink = "https://www.linkedin.com/in/youcancallmeben/"
 
   return (
-    <main className="px-2 bg-gray-100 text-zinc-600">
+    <main className="px-2 text-zinc-600">
       <div className="container px-2 py-8 mx-auto md:pt-64 xl:px-48">
         <CrazyCard>
           <div className="flex flex-col justify-center gap-4 lg:basis-3/4">
@@ -121,7 +121,6 @@ const Home = () => {
           </Button>
         </div>
       </div>
-      <Footer />
     </main>
   )
 }
