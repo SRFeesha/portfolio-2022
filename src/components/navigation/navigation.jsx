@@ -14,7 +14,7 @@ export const Navigation = () => (
         <a className="hover:text-stone-600">Quick intro</a>
       </Link>
       <Link href="/case-studies">
-        <a className=" hover:text-stone-600">Case study</a>
+        <a className=" hover:text-stone-600">Case studies</a>
       </Link>
       <a
         href="mailto:mail@beniaminomarini.design"
