@@ -1,5 +1,7 @@
 import clsx from "clsx"
 import Image from "next/image"
+import Zoom from "react-medium-image-zoom"
+import "react-medium-image-zoom/dist/styles.css"
 
 export const ExplicativePicture = ({ src, caption, className }) => {
   return (
@@ -10,7 +12,9 @@ export const ExplicativePicture = ({ src, caption, className }) => {
           className
         )}
       >
-        <Image src={src} style={{ borderRadius: "4px" }} />
+        <Zoom>
+          <Image src={src} style={{ borderRadius: "4px" }} />
+        </Zoom>
       </div>
       <figcaption className="text-base italic font-light leading-snug text-stone-500">
         {caption}
