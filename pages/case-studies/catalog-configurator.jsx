@@ -12,80 +12,81 @@ import i4a from "@/assets/img/case-studies/catalog-configurator/4-a.png"
 const CatalogConfigurator = () => {
   return (
     <main className="container px-4 py-20 mx-auto max-w-[800px]">
-      <h1 className="text-4xl font-semibold">Catalog Configurator</h1>
-      <section className="py-12">
-        <h2 className="py-4 text-3xl font-medium text-stone-800">
-          About this project
+      <h1 className="text-3xl font-semibold text-stone-800">
+        Automating WonderBoard data ingestion
+      </h1>
+      <section className="pt-12">
+        <h2 className="py-2 text-xl font-semibold text-stone-800">
+          Business Problem
         </h2>
-        <p className="max-w-3xl text-lg text-stone-600">
-          To support the company financial ambition for 2022 we needed to
-          redesign the analysis part of our product. Project was mostly
-          involving internal refactor to automate process and scale capability
-          of n of client served.
+        <p className="mt-2 font-serif text-3xl italic leading-snug font-base text-stone-800">
+          As is, when a new client joins Wonderflow, it takes lot of resource
+          and manual work to setup the environment, tweak the linguistic
+          analysis and do customer service. To support company growth plan and
+          reduce manual input we had to invest in automation.
         </p>
-        <ul className="grid gap-8 py-8 my-8 text-lg md:grid-flow-col text-stone-600">
-          <li>
-            <strong className="text-stone-700">Goal</strong>
-            <p>
-              Automate project setup, Enhance user self service experience,
-              scale linguistic analysis
-            </p>
+
+        <h3 className="py-2 mt-12 mb-1 text-xl font-semibold text-stone-800">
+          Business Objectives
+        </h3>
+        <ul className="space-y-2 list-disc list-outside">
+          <li className="ml-4">
+            Support company growth plan by scaling number of clients we are able
+            to serve
+            <span className="block text-stone-500">
+              KR: scale 10x n of clients
+            </span>
           </li>
+          <li className="ml-4">
+            Enable users to tweak their data sources, shortening their feedback
+            loop while monitoring products.
+            <span className="block pt-1 text-stone-500">
+              KR: deliveries 2x more frequently
+            </span>
+          </li>
+          <li className="ml-4">
+            Reduce Operation specialist and Customer care effort by adding an
+            automation layer in the setup phase of a project.
+            <span className="block pt-1 text-stone-500">
+              KR: reducing 3x worker-days for setup
+            </span>
+          </li>
+        </ul>
+
+        <ul className="grid gap-8 py-8 mt-12 mb-8 text-lg md:gap-20 md:grid-flow-col text-stone-600">
           <li>
             <strong className="text-stone-700">Stakeholder</strong>
             <p>
               <em>Internal</em>: operation specialist, linguists, pre-sale
               engineer.
             </p>
-            <p>
+            <p className="pt-2">
               <em>External</em>: power users
+            </p>
+          </li>
+          <li>
+            <strong className="text-stone-700">Team</strong>
+            <p>
+              This initiative was a cross-department effort. Based on the phase
+              of the project we interfaced with different people, including PMs,
+              team lead, developers..
             </p>
           </li>
           <li>
             <strong className="text-stone-700">When</strong>
             <p>2022</p>
-            <p>The project is still ongoing</p>
-          </li>
-          <li>
-            <strong className="text-stone-700">Team</strong>
-            <p>
-              This initiative was a cross-department effort in Wonderflow. Based
-              on the phase of the project we interfaced with different people,
-              including PMs, team lead, CTO
-            </p>
-          </li>
-        </ul>
-        <h3 className="my-3 text-2xl font-semibold text-stone-800">
-          Business Requirements
-        </h3>
-        <ul className="space-y-4 list-disc list-outside">
-          <li className="ml-4">
-            Support company financial ambition by scaling number of clients we
-            are able to serve
-            <em className="block text-stone-500">KR: scale 10x n of clients</em>
-          </li>
-          <li className="ml-4">
-            Enable users to tweak their data sources, shortening their feedback
-            loop while monitoring products.{" "}
-            <em className="block pt-1 text-stone-500">
-              KR: deliveries 2x more frequently
-            </em>
-          </li>
-          <li className="ml-4">
-            Reduce Operation specialist and Customer care effort by adding an
-            automation layer in the setup phase of a project.{" "}
-            <em className="block pt-1 text-stone-500">
-              KR: reducing 3x worker-days for setup
-            </em>
+            <p className="mt-2">Project is still ongoing</p>
           </li>
         </ul>
       </section>
 
-      <section className="py-8 my-48 text-xl italic text-center border-dashed border-y text-stone-500 border-stone-300">
-        Since you’re here, here’s something that you could find interesting
+      <section className="py-4 italic text-center border-dashed mb-28 text-md border-y text-stone-500 border-stone-300">
+        disclaimer: materials shown here represent iterations, a lot of context
+        is intentionally missing to prevent sharing company sensible
+        information.
       </section>
 
-      <section className="my-48">
+      <section className="my-20">
         <h2 className="py-4 text-3xl font-medium text-stone-800">
           Collecting information
         </h2>
@@ -106,11 +107,11 @@ const CatalogConfigurator = () => {
         <ExplicativePicture
           caption="We wanted to organise collected knowledge in a visual way: we developed a Service blueprint ant described system properties with Object Oriented UX methodology"
           src={i1b}
-          className="from-indigo-500 to-indigo-400 via-indigo-700"
+          className=" from-indigo-500 to-indigo-400 via-indigo-700"
         />
       </section>
 
-      <section className="my-48">
+      <section className="my-20">
         <h2 className="py-4 text-3xl font-medium text-stone-800">
           Feasibility testing
         </h2>
@@ -130,7 +131,7 @@ const CatalogConfigurator = () => {
         />
       </section>
 
-      <section className="my-48">
+      <section className="my-20">
         <h2 className="py-4 text-3xl font-medium text-stone-800">
           Idea validation
         </h2>
@@ -152,7 +153,7 @@ const CatalogConfigurator = () => {
         />
       </section>
 
-      <section className="my-48">
+      <section className="my-20">
         <h2 className="py-4 text-3xl font-medium text-stone-800">Iterations</h2>
         <p>
           Iterations happened in many different way: alignment meeting, QC with
