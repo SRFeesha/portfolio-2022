@@ -85,7 +85,7 @@ const CatalogConfigurator = () => {
         Since you’re here, here’s something that you could find interesting
       </section>
 
-      <section className="my-60">
+      <section className="my-48">
         <h2 className="py-4 text-3xl font-medium text-stone-800">
           Collecting information
         </h2>
@@ -98,11 +98,10 @@ const CatalogConfigurator = () => {
           The project was involving department from all over the company: from
           development to operations, from linguists to design.
         </p>
-
         <ExplicativePicture
           caption="We had a couple of co-design workshops to understand how different stakeholder participated to the system’s success"
           src={i1a}
-          className="from-indigo-500 to-indigo-400 via-indigo-700 bg-blend-multiply"
+          className="from-indigo-500 to-indigo-400 via-indigo-700 "
         />
         <ExplicativePicture
           caption="We wanted to organise collected knowledge in a visual way: we developed a Service blueprint ant described system properties with Object Oriented UX methodology"
@@ -111,13 +110,17 @@ const CatalogConfigurator = () => {
         />
       </section>
 
-      <section className="my-60">
+      <section className="my-48">
         <h2 className="py-4 text-3xl font-medium text-stone-800">
           Feasibility testing
         </h2>
         <p>
           During the journey we came across technical and business conundrum
           about scalability, linguistic analysis and computational time.
+        </p>
+        <p>
+          A critical aspect in our plan definition was to cluster features into
+          minimum usable releases
         </p>
 
         <ExplicativePicture
@@ -127,7 +130,7 @@ const CatalogConfigurator = () => {
         />
       </section>
 
-      <section className="my-60">
+      <section className="my-48">
         <h2 className="py-4 text-3xl font-medium text-stone-800">
           Idea validation
         </h2>
@@ -149,7 +152,7 @@ const CatalogConfigurator = () => {
         />
       </section>
 
-      <section className="my-60">
+      <section className="my-48">
         <h2 className="py-4 text-3xl font-medium text-stone-800">Iterations</h2>
         <p>
           Iterations happened in many different way: alignment meeting, QC with
