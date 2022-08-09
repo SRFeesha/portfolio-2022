@@ -4,7 +4,7 @@ export const Footer = () => {
   )
 
   return (
-    <footer className="flex flex-col gap-4 py-4 pb-12 mt-64 text-lg text-center text-slate-400">
+    <footer className="flex flex-col gap-4 pt-64 pb-12 text-lg text-center text-stone-400">
       <hr aria-hidden />
       Have a nice {weekDay} :)
     </footer>

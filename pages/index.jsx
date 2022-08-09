@@ -2,7 +2,6 @@ import Image from "next/image"
 import { Button } from "@/components/button"
 import { Linkedin, PDF } from "@/components/icons"
 import { CrazyCard } from "@/components/crazy-card"
-import { Footer } from "@/components/footer"
 import BenCircle from "@/assets/img/Beniamino-Marini--Squared--400x400.png"
 
 const Home = () => {
@@ -10,8 +9,8 @@ const Home = () => {
   const LinkedinLink = "https://www.linkedin.com/in/youcancallmeben/"
 
   return (
-    <main className="px-2 bg-gray-100 text-zinc-600">
-      <div className="container px-2 py-8 mx-auto md:pt-64 xl:px-48">
+    <main className="px-2 text-zinc-600">
+      <div className="container px-2 py-6 mx-auto md:pt-32 xl:px-48">
         <CrazyCard>
           <div className="flex flex-col justify-center gap-4 lg:basis-3/4">
             <h1 className="text-4xl text-center oldstyle-nums lg:leading-tight lg:text-5xl text-zinc-800 md:text-start xl:pr-10">
@@ -121,7 +120,6 @@ const Home = () => {
           </Button>
         </div>
       </div>
-      <Footer />
     </main>
   )
 }

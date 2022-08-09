@@ -11,8 +11,8 @@ export const Button = ({
     primary:
       "text-white bg-blue-500 border-blue-600 active:bg-blue-600 hover:border-blue-700 hover:drop-shadow-lg ",
     secondary:
-      "bg-white hover:border-slate-300 hover:drop-shadow active:bg-slate-200 ",
-    flat: "drop-shadow-none border-none hover:bg-slate-200 active:bg-slate-300 ease-in",
+      "bg-white hover:border-stone-300 hover:drop-shadow active:bg-stone-200 ",
+    flat: "drop-shadow-none border-none hover:bg-stone-200 active:bg-stone-300 ease-in",
   }
 
   return (
