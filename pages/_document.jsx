@@ -1,5 +1,4 @@
 import { Html, Head, Main, NextScript } from "next/document"
-import ogImage from "@/assets/img/og-image.png"
 
 export default function Document() {
   return (
@@ -12,7 +11,10 @@ export default function Document() {
           </text></svg>"
         />
         <title>Beniamino Marini — Product Designer</title>
-        <meta property="og:image" content={ogImage} />
+        <meta
+          property="og:image"
+          content="https://beniaminomarini.design/assets/img/og-image.png"
+        />
       </Head>
       <body className="text-lg bg-stone-50">
         <Main />
