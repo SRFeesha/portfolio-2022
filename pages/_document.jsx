@@ -11,6 +11,7 @@ export default function Document() {
           </text></svg>"
         />
         <title>Beniamino Marini — Product Designer</title>
+        <meta property="og:image" content="/assets/img/og-image" />
       </Head>
       <body className="text-lg bg-stone-50">
         <Main />
