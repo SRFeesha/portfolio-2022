@@ -13,7 +13,7 @@ export default function Document() {
         <title>Beniamino Marini — Product Designer</title>
         <meta
           property="og:image"
-          content="https://beniaminomarini.design/assets/img/og-image.png"
+          content="https://youcancallmeben.design/assets/img/og-image.png"
         />
       </Head>
       <body className="text-lg bg-stone-50">
