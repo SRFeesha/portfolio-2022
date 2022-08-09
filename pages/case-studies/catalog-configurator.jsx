@@ -11,12 +11,12 @@ import i4a from "@/assets/img/case-studies/catalog-configurator/4-a.png"
 
 const CatalogConfigurator = () => {
   return (
-    <main className="container px-4 py-20 mx-auto max-w-[800px]">
-      <h1 className="text-3xl font-semibold text-stone-800">
+    <main className="container px-4 pb-20 mx-auto max-w-[800px]">
+      <h1 className="invisible text-2xl font-semibold text-stone-800">
         Automating WonderBoard data ingestion
       </h1>
-      <section className="pt-12">
-        <h2 className="py-2 text-xl font-semibold text-stone-800">
+      <section className="pt-16">
+        <h2 className="py-2 text-xl font-semibold text-stone-500">
           Business Problem
         </h2>
         <p className="mt-2 font-serif text-3xl italic leading-snug font-base text-stone-800">
@@ -26,7 +26,7 @@ const CatalogConfigurator = () => {
           reduce manual input we had to invest in automation.
         </p>
 
-        <h3 className="py-2 mt-12 mb-1 text-xl font-semibold text-stone-800">
+        <h3 className="py-2 mt-20 mb-1 text-xl font-semibold text-stone-800">
           Business Objectives
         </h3>
         <ul className="space-y-2 list-disc list-outside">
