@@ -17,7 +17,7 @@ const Home = () => {
               Beniamino Marini, Product Designer with 3+ years of experience.{" "}
             </h1>
             <p className="text-lg text-center md:text-xl md:text-start text-zinc-500">
-              Open to new opportunities · Currently designing at Wonderflow
+              Open to new opportunities
             </p>
             <Button
               icon={<Linkedin className="w-4 h-4 fill-white" />}
@@ -34,11 +34,13 @@ const Home = () => {
           />
         </CrazyCard>
 
-        <p className="mt-48 text-2xl text-center lg:text-left lg:leading-snug lg:mt-64 lg:text-3xl lg:mx-20">
-          Currently designing at Wonderflow: a VC funded{" "}
-          <strong>SaaS company</strong> which recently raised 20m in a series B
-          round.
-        </p>
+        <div className="mt-48 text-2xl text-center lg:text-left lg:leading-snug lg:mt-64 lg:text-3xl lg:mx-20">
+          <p>
+            I’m a Product designer with 3+ years of experience working in
+            cross-functional teams and collaborating with devs, designers,
+            product managers, marketers.
+          </p>
+        </div>
 
         <div className="flex flex-col justify-center gap-40 mx-auto my-40 lg:gap-48 lg:flex-row w-fit">
           <div className="flex flex-col max-w-xl gap-24 lg:gap-40 basis-2/3">
@@ -107,7 +109,28 @@ const Home = () => {
           </aside>
         </div>
 
-        <div className="flex flex-col items-center max-w-xl gap-4 mx-auto -mt-8 xl:mx-20 md:items-start lg:flex-row">
+        <div className="mt-16 space-y-4 text-2xl text-center lg:text-left lg:leading-snug lg:mt-32 lg:text-2xl lg:mx-20">
+          <p>
+            My work is focused on human relationship: with users, stakeholders,
+            and team members.
+          </p>
+          <p>
+            I’m comfortable navigating the whole design process, from user
+            research to testing, but I shine in UI, Interaction design and
+            developer relationship
+          </p>
+          <p>
+            I am a research-driven product designer with a BS degree in
+            Psychology and a background in tech.
+          </p>
+          <p>
+            Before being a designer, I worked as a developer in the industrial
+            automation and web development field hence it’s easier to meet
+            developers where they are when understanding technical challenges.
+          </p>
+        </div>
+
+        <div className="flex flex-col items-center max-w-xl gap-4 mx-auto mt-12 xl:mx-20 md:items-start lg:flex-row">
           <Button
             kind="secondary"
             href={PDFLink}
