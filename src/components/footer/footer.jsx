@@ -6,7 +6,21 @@ export const Footer = () => {
   return (
     <footer className="flex flex-col gap-4 pt-64 pb-12 text-lg text-center text-stone-400">
       <hr aria-hidden />
-      Have a nice {weekDay} :)
+      <div className="flex flex-wrap justify-center mx-4 gap-x-6 ">
+        <span>Copyleft 2022 Beniamino Marini</span>
+        <span>
+          Source code on{" "}
+          <a
+            className="underline"
+            href="https://github.com/SRFeesha/portfolio-2022"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Github
+          </a>{" "}
+        </span>
+        <span>Have a nice {weekDay} :) </span>
+      </div>
     </footer>
   )
 }
