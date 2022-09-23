@@ -18,7 +18,7 @@ export const Button = ({
   return (
     <a
       className={clsx(
-        "px-4 py-2 text-lg border-2 rounded-xl w-fit drop-shadow-sm  ease-in-out duration-300 active:drop-shadow-none",
+        "px-4 py-2 text-lg border-2 rounded-lg w-fit drop-shadow-sm  ease-in-out duration-300 active:drop-shadow-none",
         hierarchy[kind],
         className
       )}

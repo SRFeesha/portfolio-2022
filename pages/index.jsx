@@ -14,10 +14,10 @@ const Home = () => {
         <CrazyCard>
           <div className="flex flex-col justify-center gap-4 lg:basis-3/4">
             <h1 className="text-4xl text-center oldstyle-nums lg:leading-tight lg:text-5xl text-zinc-800 md:text-start xl:pr-10">
-              Beniamino Marini, Product Designer with 3+ years of experience.{" "}
+              Beniamino Marini, Product Designer with 3+ years of experience.
             </h1>
             <p className="text-lg text-center md:text-xl md:text-start text-zinc-500">
-              Open to new opportunities · Currently designing at Wonderflow
+              Open to new opportunities
             </p>
             <Button
               icon={<Linkedin className="w-4 h-4 fill-white" />}
@@ -34,46 +34,65 @@ const Home = () => {
           />
         </CrazyCard>
 
-        <p className="mt-48 text-2xl text-center lg:text-left lg:leading-snug lg:mt-64 lg:text-3xl lg:mx-20">
-          Currently designing at Wonderflow: a VC funded{" "}
-          <strong>SaaS company</strong> which recently raised 20m in a series B
-          round.
-        </p>
+        <div className="mt-40 space-y-4 text-2xl text-center lg:text-left lg:leading-snug lg:mt-60 lg:text-3xl lg:mx-20">
+          <p>
+            I’m comfortable navigating through the end-to-end design process:
+            from strategy to execution, from user research to testing
+            iterations.
+          </p>
+          <p>I’m a value-driven, business-focused product designer.</p>
+        </div>
 
         <div className="flex flex-col justify-center gap-40 mx-auto my-40 lg:gap-48 lg:flex-row w-fit">
-          <div className="flex flex-col max-w-xl gap-24 lg:gap-40 basis-2/3">
+          <div className="flex flex-col max-w-xl gap-24 lg:gap-32 basis-2/3">
             <div>
               <h2 className="mb-6 text-3xl font-bold text-zinc-700">
-                In current role
+                Some results
               </h2>
-              <ul className="space-y-4 text-xl list-disc list-inside list-disc-zinc-100">
+
+              <ul className="space-y-4 text-xl list-disc list-inside list-disc-zinc-100 md:list-outside">
                 <li>
-                  Helped company moving from startup to scale-up: from 40 to
-                  120+ employees in 2 yrs
+                  <strong>Automation</strong>: Reduced company costs by 10x on
+                  new project setup human effort
                 </li>
                 <li>
-                  Helped grow 2x the design team with people with a diverse
-                  skillset: going from 3 to 6 designers
+                  <strong>Team</strong>: helped gracefully scale the design team
+                  by going from 3 to 6 people
                 </li>
                 <li>
-                  Helped in the automation process of a new project: reducing 3x
-                  setup costs
-                </li>
-                <li>
-                  Working with different teams and stakeholders: PMs,
-                  Developers, Analysts, Marketers, PO...
+                  <strong>Company</strong>: helped company to grow from startup
+                  to scale-up: from 40 to 110+ employees in 2 yrs
                 </li>
               </ul>
+              <p className="mt-8 text-xl text-zinc-500">
+                Currently designing at <em>Wonderflow</em>: a data analytics
+                SaaS company working with NLP in the Customer Experience
+                industry.
+              </p>
             </div>
 
             <div>
-              <h2 className="mb-6 text-3xl font-bold text-zinc-700">
-                About next role
+              <h2 className="mb-3 text-2xl font-semibold text-zinc-700">
+                You may find interesting
               </h2>
-              <p className="text-xl">
-                I'm looking for a Product Designer role in a remote digital
-                product company
-              </p>
+              <ul className="space-y-4 text-lg list-disc list-inside list-disc-zinc-100 md:list-outside">
+                <li>
+                  Experience working in <strong>cross-functional teams</strong>{" "}
+                  and collaborating with devs, designers, product
+                  managers,marketers…
+                </li>
+                <li>
+                  My skillset mixes a tech background with a BS in Psychology
+                  and HCI. I’m naturally fascinated by human behavior and{" "}
+                  <strong>complex systems</strong>.
+                </li>
+                <li>
+                  Before being a designer, I{" "}
+                  <strong>worked as a developer</strong> (web developer and
+                  industrial automation) — this helps me understand technical
+                  challenges and meet developers where they are.
+                </li>
+              </ul>
             </div>
           </div>
 
@@ -83,9 +102,9 @@ const Home = () => {
                 Expertise
               </h3>
               <ul className="space-y-4">
-                <li>UI Design</li>
-                <li>Interaction Design</li>
-                <li>Design System</li>
+                <li>UI design</li>
+                <li>Interaction design</li>
+                <li>Design systems</li>
               </ul>
             </div>
 
@@ -94,20 +113,34 @@ const Home = () => {
                 Skills
               </h3>
               <ul className="space-y-4">
-                <li>Collecting requirements</li>
-                <li>Wireframing</li>
-                <li>High fidelity prototyping</li>
                 <li>A/B Testing</li>
+                <li>Hi-fi prototyping</li>
+                <li>Quantitative data analysis</li>
+                <li>Behavioural analysis</li>
+                <li>User testing</li>
+                <li>Discovery workshops</li>
+                <li>Wireframing</li>
                 <li>Writing Documentation</li>
+                <li>Shaping success metrics</li>
+                <li>Design quality assurance</li>
                 <li>Developer handoff</li>
-                <li>Design Quality Assurance</li>
-                <li>Quantitative Data analysis</li>
               </ul>
             </div>
           </aside>
         </div>
 
-        <div className="flex flex-col items-center max-w-xl gap-4 mx-auto -mt-8 xl:mx-20 md:items-start lg:flex-row">
+        <div className="mt-16 space-y-4 text-2xl text-center lg:text-left lg:leading-snug lg:mt-32 lg:text-2xl lg:mx-20">
+          <p>
+            My work is focused on human relationships: with users, stakeholders,
+            and team members.
+          </p>
+          <p>
+            I believe a huge part of being a designer is about navigating
+            through ambiguity, negotiating trade-off and communicating visions.
+          </p>
+        </div>
+
+        <div className="flex flex-col items-center max-w-xl gap-4 mx-auto mt-12 xl:mx-20 md:items-start lg:flex-row">
           <Button
             kind="secondary"
             href={PDFLink}
