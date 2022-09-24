@@ -40,7 +40,10 @@ const Home = () => {
             from strategy to execution, from user research to testing
             iterations.
           </p>
-          <p>I’m a value-driven, business-focused product designer.</p>
+          <p>
+            My work is focused on human relationships: with users, stakeholders,
+            and team members.
+          </p>
         </div>
 
         <div className="flex flex-col justify-center gap-40 mx-auto my-40 lg:gap-48 lg:flex-row w-fit">
@@ -113,16 +116,16 @@ const Home = () => {
                 Skills
               </h3>
               <ul className="space-y-4">
-                <li>A/B Testing</li>
                 <li>Hi-fi prototyping</li>
+                <li>A/B Testing</li>
                 <li>Quantitative data analysis</li>
                 <li>Behavioural analysis</li>
+                <li>HTML, CSS, JS</li>
+                <li>React</li>
+                <li>A11y</li>
                 <li>User testing</li>
-                <li>Discovery workshops</li>
-                <li>Wireframing</li>
-                <li>Writing Documentation</li>
                 <li>Shaping success metrics</li>
-                <li>Design quality assurance</li>
+                <li>Facilitating workshops</li>
                 <li>Developer handoff</li>
               </ul>
             </div>
@@ -130,10 +133,7 @@ const Home = () => {
         </div>
 
         <div className="mt-16 space-y-4 text-2xl text-center lg:text-left lg:leading-snug lg:mt-32 lg:text-2xl lg:mx-20">
-          <p>
-            My work is focused on human relationships: with users, stakeholders,
-            and team members.
-          </p>
+          <p>I’m a value-driven, business-focused product designer.</p>
           <p>
             I believe a huge part of being a designer is about navigating
             through ambiguity, negotiating trade-off and communicating visions.
