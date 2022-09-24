@@ -36,14 +36,10 @@ const Home = () => {
 
         <div className="mt-40 space-y-4 text-2xl text-center lg:text-left lg:leading-snug lg:mt-60 lg:text-3xl lg:mx-20">
           <p>
-            I'm comfortable covering the full end-to-end product design life
-            cycle: from early problem exploration and definition, over detailed
-            UX and visual design, to collaboration with developers during
-            implementation.
-          </p>
-          <p>
-            My work is focused on human relationships: with users, stakeholders,
-            and team members.
+            I'm comfortable covering the full <strong>end-to-end</strong>{" "}
+            product design life cycle: from early problem exploration and
+            definition, over detailed UX and visual design, to collaboration
+            with developers during implementation.
           </p>
         </div>
 
@@ -136,7 +132,11 @@ const Home = () => {
         <div className="mt-16 space-y-4 text-2xl text-center lg:text-left lg:leading-snug lg:mt-32 lg:text-2xl lg:mx-20">
           {/* <p>I’m a value-driven, business-focused product designer.</p> */}
           <p>
-            To me Being a designer is about navigating through ambiguity,
+            My work is focused on human relationships: with users, stakeholders,
+            and team members.
+          </p>
+          <p>
+            To me being a designer is about navigating through ambiguity,
             negotiating trade-off and communicating visions.
           </p>
         </div>
@@ -147,7 +147,7 @@ const Home = () => {
             href={PDFLink}
             icon={<PDF className="w-4 h-4" />}
           >
-            Download my Resume / CV
+            Download my Resume
           </Button>
           <Button kind="flat" href={LinkedinLink}>
             Linkedin

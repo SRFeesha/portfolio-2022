@@ -8,7 +8,7 @@ const CaseStudies = () => (
       </h1>
       <Link href="/case-studies/catalog-configurator">
         <a href="./catalog-configurator">
-          <article className="p-16 duration-300 ease-in-out border-4 shadow-sm opacity-75 border-tory-blue sm:border sm:-mx-10 radius-lg hover:bg-white hover:border-stone-100 sm:border-stone-200 rounded-xl hover:opacity-100 hover:shadow">
+          <article className="p-16 duration-300 ease-in-out bg-white border-4 shadow-sm opacity-75 border-tory-blue sm:border sm:-mx-10 radius-lg hover:border-stone-300 sm:border-stone-200 rounded-xl hover:opacity-100 hover:shadow ">
             <h2 className="text-2xl font-semibold">SaaS Scaling</h2>
             <span className="block mt-3 text-xl text-stone-700">
               Automating WonderBoard data ingestion and serve 10x more clients
