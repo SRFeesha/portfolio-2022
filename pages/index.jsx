@@ -36,9 +36,10 @@ const Home = () => {
 
         <div className="mt-40 space-y-4 text-2xl text-center lg:text-left lg:leading-snug lg:mt-60 lg:text-3xl lg:mx-20">
           <p>
-            I’m comfortable navigating through the end-to-end design process:
-            from strategy to execution, from user research to testing
-            iterations.
+            I'm comfortable covering the full end-to-end product design life
+            cycle: from early problem exploration and definition, over detailed
+            UX and visual design, to collaboration with developers during
+            implementation.
           </p>
           <p>
             My work is focused on human relationships: with users, stakeholders,
@@ -102,7 +103,7 @@ const Home = () => {
           <aside className="flex flex-col gap-20 lg:gap-24 lg:mt-2 basis-1/3">
             <div className="flex flex-col gap-8 text-xl">
               <h3 className="font-semibold tracking-wider uppercase text-zinc-400">
-                Expertise
+                Where I shine
               </h3>
               <ul className="space-y-4">
                 <li>UI design</li>
@@ -133,10 +134,10 @@ const Home = () => {
         </div>
 
         <div className="mt-16 space-y-4 text-2xl text-center lg:text-left lg:leading-snug lg:mt-32 lg:text-2xl lg:mx-20">
-          <p>I’m a value-driven, business-focused product designer.</p>
+          {/* <p>I’m a value-driven, business-focused product designer.</p> */}
           <p>
-            I believe a huge part of being a designer is about navigating
-            through ambiguity, negotiating trade-off and communicating visions.
+            To me Being a designer is about navigating through ambiguity,
+            negotiating trade-off and communicating visions.
           </p>
         </div>
 
