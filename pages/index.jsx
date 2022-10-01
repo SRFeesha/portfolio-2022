@@ -34,63 +34,62 @@ const Home = () => {
           />
         </CrazyCard>
 
-        <div className="mt-40 space-y-4 text-2xl text-center lg:text-left lg:leading-snug lg:mt-60 lg:text-3xl lg:mx-20">
+        <div className="mt-40 space-y-4 font-mono text-xl text-center lg:leading-snug lg:mt-60 lg:text-2xl lg:mx-20 ">
           <p>
-            I'm comfortable covering the full <strong>end-to-end</strong>{" "}
-            product design life cycle: from early problem exploration and
-            definition, over detailed UX and visual design, to collaboration
-            with developers during implementation.
+            <strong class>Fluent in the full design cycle</strong> — from early
+            problem exploration and definition, over detailed UX and visual
+            design, to implementation and collaboration with developers.
           </p>
         </div>
 
         <div className="flex flex-col justify-center gap-40 mx-auto my-40 lg:gap-48 lg:flex-row w-fit">
           <div className="flex flex-col max-w-xl gap-24 lg:gap-32 basis-2/3">
             <div>
-              <h2 className="mb-6 text-3xl font-bold text-zinc-700">
-                Some results
+              <h2 className="mb-5 text-3xl font-bold text-zinc-700">
+                What makes me stand out
               </h2>
-
-              <ul className="space-y-4 text-xl list-disc list-inside list-disc-zinc-100 md:list-outside">
+              <ul className="space-y-4 text-xl leading-normal list-disc list-inside list-disc-zinc-100 md:list-outside">
                 <li>
-                  <strong>Automation</strong>: Reduced company costs by 10x on
-                  new project setup human effort
+                  In the past I <strong>worked as a web dev</strong> and
+                  industrial automation dev. Turns out it really helps
+                  understand technical challenges and meet developers where they
+                  are.
                 </li>
                 <li>
-                  <strong>Team</strong>: helped gracefully scale the design team
-                  by going from 3 to 6 people
+                  My skillset mixes a{" "}
+                  <strong>tech background and a BS in Psychology</strong> / HCI.
+                  I’m fascinated by human behavior and complex systems.
                 </li>
                 <li>
-                  <strong>Company</strong>: helped company to grow from startup
-                  to scale-up: from 40 to 110+ employees in 2 yrs
+                  Experience collaborating in{" "}
+                  <strong>cross-functional teams</strong> with devs, designers,
+                  PMs, marketers...
                 </li>
               </ul>
-              <p className="mt-8 text-xl text-zinc-500">
+            </div>
+
+            <div>
+              <h2 className="mb-4 text-3xl font-bold text-zinc-700">Impact</h2>
+              <p className="mb-4 text-xl text-zinc-500">
                 Currently designing at <em>Wonderflow</em>: a data analytics
                 SaaS company working with NLP in the Customer Experience
                 industry.
               </p>
-            </div>
-
-            <div>
-              <h2 className="mb-3 text-2xl font-semibold text-zinc-700">
-                You may find interesting
-              </h2>
-              <ul className="space-y-4 text-lg list-disc list-inside list-disc-zinc-100 md:list-outside">
+              <p className="mb-6 text-xl text-zinc-500">
+                Following, some note-worthy results:
+              </p>
+              <ul className="space-y-4 text-xl list-disc list-inside list-disc-zinc-100 md:list-outside ">
                 <li>
-                  Experience working in <strong>cross-functional teams</strong>{" "}
-                  and collaborating with devs, designers, product
-                  managers,marketers…
+                  Constributed <strong>reducing costs by 10x</strong> on new
+                  project setup through automation
                 </li>
                 <li>
-                  My skillset mixes a tech background with a BS in Psychology
-                  and HCI. I’m naturally fascinated by human behavior and{" "}
-                  <strong>complex systems</strong>.
+                  Helped <strong>double the design team</strong>, going from 3
+                  to 6 people
                 </li>
                 <li>
-                  Before being a designer, I{" "}
-                  <strong>worked as a developer</strong> (web developer and
-                  industrial automation) — this helps me understand technical
-                  challenges and meet developers where they are.
+                  Helped shape and evangelize company{" "}
+                  <strong>design system</strong>
                 </li>
               </ul>
             </div>
@@ -129,30 +128,35 @@ const Home = () => {
           </aside>
         </div>
 
-        <div className="mt-16 space-y-4 text-2xl text-center lg:text-left lg:leading-snug lg:mt-32 lg:text-2xl lg:mx-20">
-          {/* <p>I’m a value-driven, business-focused product designer.</p> */}
-          <p>
-            My work is focused on human relationships: with users, stakeholders,
-            and team members.
-          </p>
-          <p>
-            To me being a designer is about navigating through ambiguity,
-            negotiating trade-off and communicating visions.
-          </p>
-        </div>
+        <section className="mt-16 text-center lg:leading-snug lg:mt-32 lg:mx-20">
+          <div className="space-y-4 text-2xl lg:text-2xl ">
+            {/* <p>I’m a value-driven, business-focused product designer.</p> */}
+            <p>
+              My work is focused on human relationships: with users,
+              stakeholders, and team members.
+            </p>
+            {/* <blockquote className="italic">
+            Design is about navigating through ambiguity, negotiating trade-off
+            and communicating visions.
+          </blockquote> */}
+          </div>
 
-        <div className="flex flex-col items-center max-w-xl gap-4 mx-auto mt-12 xl:mx-20 md:items-start lg:flex-row">
-          <Button
-            kind="secondary"
-            href={PDFLink}
-            icon={<PDF className="w-4 h-4" />}
-          >
-            Download my Resume
-          </Button>
-          <Button kind="flat" href={LinkedinLink}>
-            Linkedin
-          </Button>
-        </div>
+          <div className="flex flex-col items-center justify-center gap-4 mt-12 lg:flex-row">
+            <Button
+              href={PDFLink}
+              icon={<PDF className="w-4 h-4 bg-white fill-white" />}
+            >
+              Download my Resume
+            </Button>
+            <Button
+              kind="secondary"
+              openInNewTab={false}
+              href={"/case-studies"}
+            >
+              Go to case studies
+            </Button>
+          </div>
+        </section>
       </div>
     </main>
   )

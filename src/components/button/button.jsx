@@ -4,6 +4,7 @@ export const Button = ({
   kind = "primary",
   icon,
   href,
+  openInNewTab = true,
   className,
   children,
 }) => {
@@ -17,8 +18,8 @@ export const Button = ({
     <a
       className={clsx("btn", hierarchy[kind], className)}
       href={href}
-      target="_blank"
-      rel="noopener noreferrer"
+      target={openInNewTab && "_blank"}
+      rel={openInNewTab && "noopener noreferrer"}
     >
       <span className="flex items-center gap-2 ">
         {icon && icon}
