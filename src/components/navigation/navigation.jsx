@@ -4,7 +4,7 @@ export const Navigation = () => (
   <header className="container flex px-4 mx-auto mt-6 mb-12 md:mt-8">
     <div>
       <Link href="/">
-        <a className="text-3xl ease-in-out text-stone-400 hover:text-stone-600">
+        <a className="text-3xl duration-500 ease-in-out text-stone-400 hover:text-tory-blue ">
           Ben
         </a>
       </Link>

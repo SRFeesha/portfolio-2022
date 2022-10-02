@@ -8,7 +8,7 @@ strong {
 
 @layer components {
   .btn {
-    @apply px-4 py-2 text-lg border-2 rounded-lg w-fit drop-shadow-sm  ease-in-out duration-100 active:drop-shadow-none hover:scale-[1.02];
+    @apply px-4 py-2 text-lg border-2 rounded-lg w-fit drop-shadow-sm  ease-in-out duration-100 active:drop-shadow-none hover:scale-[1.02] block;
   }
 
   .btn-primary {

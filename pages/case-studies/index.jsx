@@ -16,56 +16,35 @@ const CaseStudies = () => (
           </article>
         </a>
       </Link>
+      <Link href="/case-studies/design-system">
+        <a>
+          <article className="p-16 mt-4 duration-300 ease-in-out bg-white border shadow-sm opacity-75 sm:-mx-10 radius-lg hover:border-stone-300 border-stone-200 rounded-xl hover:opacity-100 hover:shadow ">
+            <h2 className="text-2xl font-semibold">Design System</h2>
+            <span className="block mt-3 text-xl text-stone-700">
+              Full-featured design system; including components, symbol and
+              themes.
+            </span>
+          </article>
+        </a>
+      </Link>
     </section>
 
     <section>
       <header className="mt-16 mb-12 text-center">
         <h2 className="text-2xl font-semibopld text-stone-800">Projects</h2>
-        <p className="text-stone-500">
-          These are some artifacts of project i worked on. No case studies here,
-          yet.
-        </p>
+        <p className="text-stone-500">Some websites of projects I worked on</p>
       </header>
       {/* <Link href="/case-studies/catalog-configurator"> */}
-      <div className="grid gap-8 mb-16 sm:grid-cols-2 sm:flex-row">
-        <a
-          href="https://wanda.wonderflow.ai/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <article className="p-8 duration-300 ease-in-out border shadow-sm opacity-75 radius-lg hover:bg-white hover:border-stone-100 border-stone-200 rounded-xl hover:opacity-100 hover:shadow">
-            <h2 className="text-xl font-semibold">Design System</h2>
-            <span className="block mt-3 text-lg text-stone-700">
-              Open-Source Design system internally developed
-            </span>
-          </article>
-        </a>
-        {/* </Link> */}
-
-        {/* <Link href="/case-studies/catalog-configurator"> */}
+      <div className="grid gap-8 mb-16 sm:grid-cols-3 sm:flex-row">
         <a
           href="https://www.wonderflow.ai/"
           target="_blank"
           rel="noopener noreferrer"
         >
           <article className="p-8 duration-300 ease-in-out border shadow-sm opacity-75 radius-lg hover:bg-white hover:border-stone-100 border-stone-200 rounded-xl hover:opacity-100 hover:shadow">
-            <h2 className="text-xl font-semibold">Company Website</h2>
+            <h2 className="text-xl font-semibold">B2B Website</h2>
             <span className="block mt-3 text-lg text-stone-700">
-              Explaining product positionment and igniting the lead nurturing
-              cycle
-            </span>
-          </article>
-        </a>
-
-        <a
-          href="https://associazionemiso.netlify.app/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <article className="p-8 duration-300 ease-in-out border shadow-sm opacity-75 radius-lg hover:bg-white hover:border-stone-100 border-stone-200 rounded-xl hover:opacity-100 hover:shadow">
-            <h2 className="text-xl font-semibold">Non-profit</h2>
-            <span className="block mt-3 text-lg text-stone-700">
-              Side project for a collective of young cinema makers
+              Wonderflow company website, contains tons of free resources
             </span>
           </article>
         </a>
@@ -80,6 +59,20 @@ const CaseStudies = () => (
             <span className="block mt-3 text-lg text-stone-700">
               Sharing insights for people working in the consumer electronic
               industry
+            </span>
+          </article>
+        </a>
+
+        <a
+          href="https://associazionemiso.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <article className="p-8 duration-300 ease-in-out border shadow-sm opacity-75 radius-lg hover:bg-white hover:border-stone-100 border-stone-200 rounded-xl hover:opacity-100 hover:shadow">
+            <h2 className="text-xl font-semibold">Non-profit</h2>
+            <span className="block mt-3 text-lg text-stone-700">
+              Side project for a collective of cinema makers. Blog with Headless
+              CMS
             </span>
           </article>
         </a>
