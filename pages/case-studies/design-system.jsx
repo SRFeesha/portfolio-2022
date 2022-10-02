@@ -1,21 +1,32 @@
 import Image from "next/image"
 import { ExplicativePicture } from "@/components/explicative-picture"
 import { Button } from "@/components/button"
-import { Linkedin } from "@/components/icons"
+
+import component from "@/assets/img/case-studies/design-system/component.png"
+import symbols from "@/assets/img/case-studies/design-system/symbols.png"
+import preview from "@/assets/img/case-studies/design-system/preview.png"
+
+import figma from "@/assets/img/case-studies/design-system/figma.png"
+import timing from "@/assets/img/case-studies/design-system/timing.png"
+import statues from "@/assets/img/case-studies/design-system/statues.png"
+
+import guidelines from "@/assets/img/case-studies/design-system/guidelines.png"
+import receipe from "@/assets/img/case-studies/design-system/receipe.png"
+import docs from "@/assets/img/case-studies/design-system/docs.png"
 
 const DesignSystem = () => {
   const DocLink = "https://wanda.wonderflow.ai/"
   return (
     <main className="container px-4 pb-20 mx-auto max-w-[800px]">
       <heading>
-        <h1 className="mt-20 mb-4 text-5xl font-bold sm:text-6xl md:mt-32 text-stone-800">
+        <h1 className="mt-20 mb-6 text-5xl font-bold sm:text-6xl md:mt-32 text-stone-800">
           Wanda Design System
         </h1>
-        <p className="my-2 text-xl italic leading-normal text-stone-500">
+        <p className="my-2 text-xl leading-normal text-stone-700">
           Wanda is a open-source design system focused on accessibility.
           Featured on Sidebar, Backlight.dev and TheyMakeDesign among others.
         </p>
-        <Button kind="secondary" className="block mt-4 -ml-2" href={DocLink}>
+        <Button kind="secondary" className="block mt-6 -ml-2" href={DocLink}>
           Live website
         </Button>
       </heading>
@@ -58,31 +69,25 @@ const DesignSystem = () => {
           </li>
         </ul>
 
-        {/* <ExplicativePicture
-          caption="We had a couple of co-design workshops to understand how different stakeholder participated to the system’s success"
-          src={i1a}
-          className="from-indigo-500 to-indigo-400 via-indigo-700 "
-        />
-        <ExplicativePicture
-          caption="We wanted to organise collected knowledge in a visual way: we developed a Service blueprint ant described system properties with Object Oriented UX methodology"
-          src={i1b}
-          className=" from-indigo-500 to-indigo-400 via-indigo-700"
-        /> */}
+        <div>
+          <ExplicativePicture
+            caption="The archetype of a component page: the button"
+            src={component}
+            className="from-indigo-500 to-indigo-400 via-indigo-700 "
+          />
+          <ExplicativePicture
+            caption="Interactive playground to test components in the browser."
+            src={preview}
+            className=" from-indigo-500 to-indigo-400 via-indigo-700"
+          />
+          <ExplicativePicture
+            caption="Icons in 3 styles: solid, outline and duotone"
+            src={symbols}
+            className=" from-indigo-500 to-indigo-400 via-indigo-700"
+          />
+        </div>
       </section>
 
-      <section className="my-20">
-        <h2 className="pb-5 text-3xl font-semibold text-stone-800">
-          My contribution
-        </h2>
-
-        <ul className="space-y-4 text-xl list-disc list-inside md:list-outside list-disc-stone-100 ">
-          <li>Driving and advocating adoption</li>
-          <li>Shaping design guidelines & writing documentation</li>
-          <li>Shaping in the early phase</li>
-          <li>Enabled search across website</li>
-          <li>Storybook & components check</li>
-        </ul>
-      </section>
       <section className="my-20">
         <h2 className="pb-5 text-3xl font-semibold text-stone-800">
           Wanda artefacts
@@ -98,7 +103,58 @@ const DesignSystem = () => {
           <li>github open source repo</li>
           <li>Storybook </li>
         </ul>
+
+        <div>
+          <ExplicativePicture
+            caption="Multiple component instances of the Button component in Figma"
+            src={figma}
+            className="from-teal-500 to-teal-400 via-teal-700 "
+          />
+          <ExplicativePicture
+            caption="Interactive motion guidelines on the website"
+            src={timing}
+            className=" from-teal-500 to-teal-400 via-teal-700"
+          />
+          <ExplicativePicture
+            caption="low-key flex of brand identity on empty states"
+            src={statues}
+            className=" from-teal-500 to-teal-400 via-teal-700"
+          />
+        </div>
       </section>
+
+      <section className="my-20">
+        <h2 className="pb-5 text-3xl font-semibold text-stone-800">
+          My contribution
+        </h2>
+
+        <ul className="space-y-4 text-xl list-disc list-inside md:list-outside list-disc-stone-100 ">
+          <li>Driving and advocating adoption</li>
+          <li>Shaping design guidelines & writing documentation</li>
+          <li>Shaping in the early phase</li>
+          <li>Enabled search across website</li>
+          <li>Storybook & components check</li>
+        </ul>
+
+        <div>
+          <ExplicativePicture
+            caption="In depth guidelines about specific use cases"
+            src={receipe}
+            className="from-sky-500 to-sky-400 via-sky-700 "
+          />
+          <ExplicativePicture
+            caption="Guidelines about layout and composition"
+            src={guidelines}
+            className=" from-sky-500 to-sky-400 via-sky-700"
+          />
+          <ExplicativePicture
+            caption="Visual examples to include in the guidelines"
+            src={docs}
+            className=" from-sky-500 to-sky-400 via-sky-700"
+          />
+        </div>
+      </section>
+
       <section className="my-20">
         <h2 className="pb-5 text-3xl font-semibold text-stone-800">
           What I learned
