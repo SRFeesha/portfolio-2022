@@ -36,64 +36,61 @@ const DesignSystem = () => {
           What covers
         </h2>
 
-        <ul className="space-y-4 text-xl list-disc list-inside md:list-outside list-disc-stone-100 ">
+        <ul className="space-y-4 text-xl list-disc list-inside list-disc-stone-100 ">
           <li>
             Foundations
-            <span className="block ml-7 md:m-0 text-stone-500">
+            <span className="block ml-7 text-stone-500">
               Colors, typography, design tokens, themes, motion
             </span>
           </li>
           <li>
             Components
-            <span className="block ml-7 md:m-0 text-stone-500">
+            <span className="block ml-7 text-stone-500">
               Interactive playground included
             </span>
           </li>
           <li>
             Brand assets
-            <span className="block ml-7 md:m-0 text-stone-500">
+            <span className="block ml-7 text-stone-500">
               Logos, colors, Palette
             </span>
           </li>
           <li>
             Symbols
-            <span className="block ml-7 md:m-0 text-stone-500">
+            <span className="block ml-7 text-stone-500">
               3 styles of icons: solid, outlined and duotone
             </span>
           </li>
           <li>
             Design guidelines
-            <span className="block ml-7 md:m-0 text-stone-500">
+            <span className="block ml-7 text-stone-500">
               Layout, composition, motion
             </span>
           </li>
         </ul>
 
-        <div>
+        <div className="">
           <ExplicativePicture
             caption="The archetype of a component page: the button"
             src={component}
-            className="from-indigo-500 to-indigo-400 via-indigo-700 "
           />
           <ExplicativePicture
             caption="Interactive playground to test components in the browser."
             src={preview}
-            className=" from-indigo-500 to-indigo-400 via-indigo-700"
           />
           <ExplicativePicture
             caption="Icons in 3 styles: solid, outline and duotone"
             src={symbols}
-            className=" from-indigo-500 to-indigo-400 via-indigo-700"
           />
         </div>
       </section>
 
-      <section className="my-20">
+      <section className="my-32">
         <h2 className="pb-5 text-3xl font-semibold text-stone-800">
           Wanda artefacts
         </h2>
 
-        <ul className="space-y-4 text-xl list-disc list-inside md:list-outside list-disc-stone-100 ">
+        <ul className="space-y-4 text-xl list-disc list-inside list-disc-stone-100 ">
           <li>Component library in React symbol, themes, config</li>
           <li>Symbol package</li>
           <li>Design tokens & themes</li>
@@ -108,27 +105,24 @@ const DesignSystem = () => {
           <ExplicativePicture
             caption="Multiple component instances of the Button component in Figma"
             src={figma}
-            className="from-teal-500 to-teal-400 via-teal-700 "
           />
           <ExplicativePicture
             caption="Interactive motion guidelines on the website"
             src={timing}
-            className=" from-teal-500 to-teal-400 via-teal-700"
           />
           <ExplicativePicture
             caption="low-key flex of brand identity on empty states"
             src={statues}
-            className=" from-teal-500 to-teal-400 via-teal-700"
           />
         </div>
       </section>
 
-      <section className="my-20">
+      <section className="my-32">
         <h2 className="pb-5 text-3xl font-semibold text-stone-800">
           My contribution
         </h2>
 
-        <ul className="space-y-4 text-xl list-disc list-inside md:list-outside list-disc-stone-100 ">
+        <ul className="space-y-4 text-xl list-disc list-inside list-disc-stone-100 ">
           <li>Driving and advocating adoption</li>
           <li>Shaping design guidelines & writing documentation</li>
           <li>Shaping in the early phase</li>
@@ -140,27 +134,24 @@ const DesignSystem = () => {
           <ExplicativePicture
             caption="In depth guidelines about specific use cases"
             src={receipe}
-            className="from-sky-500 to-sky-400 via-sky-700 "
           />
           <ExplicativePicture
             caption="Guidelines about layout and composition"
             src={guidelines}
-            className=" from-sky-500 to-sky-400 via-sky-700"
           />
           <ExplicativePicture
             caption="Visual examples to include in the guidelines"
             src={docs}
-            className=" from-sky-500 to-sky-400 via-sky-700"
           />
         </div>
       </section>
 
-      <section className="my-20">
+      <section className="my-32">
         <h2 className="pb-5 text-3xl font-semibold text-stone-800">
           What I learned
         </h2>
 
-        <ul className="space-y-4 text-xl list-disc list-inside md:list-outside list-disc-stone-100 ">
+        <ul className="space-y-4 text-xl list-disc list-inside list-disc-stone-100 ">
           <li>Adoptions is key component </li>
           <li>Maintaining is a huge effort </li>
           <li>Scale the project based on available resources </li>

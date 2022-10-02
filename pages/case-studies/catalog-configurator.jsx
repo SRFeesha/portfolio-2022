@@ -100,12 +100,10 @@ const CatalogConfigurator = () => {
         <ExplicativePicture
           caption="We had a couple of co-design workshops to understand how different stakeholder participated to the system’s success"
           src={i1a}
-          className="from-indigo-500 to-indigo-400 via-indigo-700 "
         />
         <ExplicativePicture
           caption="We wanted to organise collected knowledge in a visual way: we developed a Service blueprint ant described system properties with Object Oriented UX methodology"
           src={i1b}
-          className=" from-indigo-500 to-indigo-400 via-indigo-700"
         />
       </section>
 
@@ -125,7 +123,6 @@ const CatalogConfigurator = () => {
         <ExplicativePicture
           caption="Loom was my best friend—very effective in communicating ideas with stakeholders, all having different schedules"
           src={i2a}
-          className="from-sky-500 to-sky-400 via-sky-700"
         />
       </section>
 
@@ -142,12 +139,10 @@ const CatalogConfigurator = () => {
         <ExplicativePicture
           caption="Validating with hi-fi prototype give us a change to highlight some technical aspects about feasibility which got overseen during the more abstract flow iteration"
           src={i3a}
-          className="from-teal-500 to-teal-400 via-teal-700"
         />
         <ExplicativePicture
           caption="Designing a maintainable and scalable hi-fidelity table in Figma was a challenge all by its own"
           src={i3b}
-          className="from-teal-500 to-teal-400 via-teal-700"
         />
       </section>
 
@@ -160,7 +155,6 @@ const CatalogConfigurator = () => {
         <ExplicativePicture
           caption="We wanted to keep track of every step of iteration. We did record not just design decisions, but also the context related to that choice"
           src={i4a}
-          className="from-pink-500 to-pink-400 via-pink-700"
         />
       </section>
     </main>

@@ -21,7 +21,7 @@ const CaseStudies = () => (
           <article className="p-16 mt-4 duration-300 ease-in-out bg-white border shadow-sm opacity-75 sm:-mx-10 radius-lg hover:border-stone-300 border-stone-200 rounded-xl hover:opacity-100 hover:shadow ">
             <h2 className="text-2xl font-semibold">Design System</h2>
             <span className="block mt-3 text-xl text-stone-700">
-              Full-featured design system — including components, symbol and
+              Full-featured design system; including components, symbol and
               themes.
             </span>
           </article>
