@@ -27,6 +27,16 @@ const CaseStudies = () => (
           </article>
         </a>
       </Link>
+      <Link href="/case-studies/research">
+        <a>
+          <article className="p-16 mt-4 duration-300 ease-in-out bg-white border shadow-sm opacity-75 sm:-mx-10 radius-lg hover:border-stone-300 border-stone-200 rounded-xl hover:opacity-100 hover:shadow ">
+            <h2 className="text-2xl font-semibold">Research</h2>
+            <span className="block mt-3 text-xl text-stone-700">
+              Bringing value through automation
+            </span>
+          </article>
+        </a>
+      </Link>
     </section>
 
     <section>

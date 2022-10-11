@@ -20,7 +20,7 @@ import loom from "@/assets/img/case-studies/research/loom.png"
 const Research = () => {
   return (
     <main className="container px-4 pb-20 mx-auto max-w-[800px]">
-      <h1 className="mt-20 mb-6 text-5xl font-bold sm:text-6xl md:mt-32 text-stone-800">
+      <h1 className="mt-20 mb-10 text-5xl font-bold sm:text-6xl md:mt-32 text-stone-800">
         Product strategy, research
       </h1>
 
