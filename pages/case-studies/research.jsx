@@ -97,7 +97,7 @@ const Research = () => {
         <details className="mt-10 text-xl">
           <summary>What actually happened</summary>
 
-          <ul className="mt-4 space-y-2 text-xl list-disc list-outside ml-7 list-disc-stone-100 ">
+          <ul className="mt-4 space-y-2 text-xl list-outside ml-7 list-disc-stone-100 ">
             <li>Business requirement </li>
             <li>Goal </li>
             <li>OKR </li>
