@@ -35,7 +35,10 @@ const Home = () => {
         </CrazyCard>
 
         <section className="mt-40 space-y-4 text-center lg:mt-60 lg:mx-20 ">
-          <h2 className="font-[Sligoil] text-xl lg:text-4xl flex items-center justify-center gap-1 text-zinc-700 font-base">
+          <h2
+            className="font-[Sligoil] text-xl sm:text-2xl lg:text-4xl flex items-center justify-center gap-1 text-zinc-700 font-base"
+            style={{ fontFeatureSettings: '"ss01" on, "calt" off' }}
+          >
             <span>✨</span> Fluent in the full design cycle <span>✨</span>
           </h2>
           <p className="lg:mt-2 text-md lg:text-2xl text-zinc-500">
