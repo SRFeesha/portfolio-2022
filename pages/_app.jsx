@@ -1,4 +1,5 @@
 import "../styles/globals.css"
+import "@/assets/font/sligoil-micro/style.css"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { hotjar } from "react-hotjar"

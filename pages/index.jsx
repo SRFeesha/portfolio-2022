@@ -34,13 +34,15 @@ const Home = () => {
           />
         </CrazyCard>
 
-        <div className="mt-40 space-y-4 font-mono text-xl text-center lg:leading-snug lg:mt-60 lg:text-2xl lg:mx-20 ">
-          <p>
-            <strong class>Fluent in the full design cycle</strong> — from early
-            problem exploration and definition, over detailed UX and visual
-            design, to implementation and collaboration with developers.
+        <section className="mt-40 space-y-4 text-center lg:mt-60 lg:mx-20 ">
+          <h2 className="font-[Sligoil] text-xl lg:text-4xl flex items-center justify-center gap-1 text-zinc-700 font-base">
+            <span>✨</span> Fluent in the full design cycle <span>✨</span>
+          </h2>
+          <p className="lg:mt-2 text-md lg:text-2xl text-zinc-500">
+            From early problem exploration, over detailed UX, Visual design,
+            implementation and iteration.
           </p>
-        </div>
+        </section>
 
         <div className="flex flex-col justify-center gap-40 mx-auto my-40 lg:gap-48 lg:flex-row w-fit">
           <div className="flex flex-col max-w-xl gap-24 lg:gap-32 basis-2/3">
