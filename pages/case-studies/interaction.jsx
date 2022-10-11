@@ -1,4 +1,15 @@
 import Link from "next/link"
+import { ExplicativePicture } from "@/components/explicative-picture"
+
+import flows from "@/assets/img/case-studies/research/flows.png"
+import critique from "@/assets/img/case-studies/interaction/critique.png"
+import modal from "@/assets/img/case-studies/interaction/modal.png"
+import qa from "@/assets/img/case-studies/interaction/qa.png"
+import roadmap from "@/assets/img/case-studies/interaction/roadmap.png"
+import scraping from "@/assets/img/case-studies/interaction/scraping.png"
+import states from "@/assets/img/case-studies/interaction/states.png"
+import stepper from "@/assets/img/case-studies/interaction/stepper.png"
+import table from "@/assets/img/case-studies/interaction/table.png"
 
 const Research = () => {
   return (
@@ -96,6 +107,41 @@ const Research = () => {
           <li>Behavioural analytics (Hotjar)</li>
           <li>Quantitative analytics (Mixpanel)</li>
         </ul>
+
+        <div className="my-12">
+          <ExplicativePicture
+            caption="User flow where starting point. Interaction still TBD"
+            src={flows}
+          />
+          <ExplicativePicture
+            caption="URL Management Panel — here the focus is on different scraping statuses the system can have."
+            src={scraping}
+          />
+          <ExplicativePicture
+            caption="State design: documenting Loading UI, loading Data, Empty states, few items state, with all the fields, with hidden fields…"
+            src={states}
+          />
+          <ExplicativePicture
+            caption="Some info messages when trying to add a new item."
+            src={modal}
+          />
+          <ExplicativePicture
+            caption="The creation of a new product is a linear multi-steps cycle. User feedback session pushed us toward a more comprehensive recap and review final steps"
+            src={stepper}
+          />
+          <ExplicativePicture
+            caption="Iterating on different table views with also out of the box design"
+            src={table}
+          />
+          <ExplicativePicture
+            caption="A sneak peek of the roadmap organised by epics"
+            src={roadmap}
+          />
+          <ExplicativePicture
+            caption="Internal design Critique — a systematic time where to share challenges and contaminate with fellows designers (also not involved into the project)"
+            src={critique}
+          />
+        </div>
       </section>
 
       <section className="my-32">
