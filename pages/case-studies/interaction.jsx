@@ -18,7 +18,7 @@ import informative from "@/assets/img/case-studies/interaction/informative.png"
 
 import iterations from "@/assets/img/case-studies/interaction/iterations.png"
 
-const Research = () => {
+const Interaction = () => {
   return (
     <main className="container px-4 pb-20 mx-auto max-w-[800px]">
       <h1 className="mt-20 mb-10 text-5xl font-bold sm:text-6xl md:mt-32 text-stone-800">
@@ -79,7 +79,9 @@ const Research = () => {
           research material which drove our decision making process, have a look
           at my{" "}
           <Link href="/case-studies/research">
-            <a className="border-b-2 text-tory-blue">research case study</a>
+            <a className="border-b-2 text-tory-blue hover:border-tory-blue/50">
+              research case study
+            </a>
           </Link>
           .
         </p>
@@ -227,7 +229,7 @@ const Research = () => {
         reconsider and negotiate the final designs. Instead of a top-down
         designer-developer approach, we focused on collaboration and sought dev
         feedback early in the process"
-            src={iteration}
+            src={iterations}
           />
         </div>
       </section>
@@ -235,4 +237,4 @@ const Research = () => {
   )
 }
 
-export default Research
+export default Interaction

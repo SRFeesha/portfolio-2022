@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { ExplicativePicture } from "@/components/explicative-picture"
 
 import actors from "@/assets/img/case-studies/research/actors.png"
@@ -182,8 +183,13 @@ const Research = () => {
           <li>Creation of a product review data lake </li>
           <li>Reduced 3x worker-days for setup </li>
           <li>
-            Envisioned the self service experience (other case study — which has
-            enabled to deliver 2x more frequently)
+            Envisioned the self service experience (
+            <Link href="/case-studies/research">
+              <a className="border-b-2 text-tory-blue hover:border-tory-blue/50">
+                interaction/UI case study
+              </a>
+            </Link>
+            — which has enabled to deliver 2x more frequently)
           </li>
         </ul>
 

@@ -6,12 +6,15 @@ const CaseStudies = () => (
       <h1 className="mb-8 text-2xl text-center font-semibopld text-stone-800">
         Case studies
       </h1>
-      <Link href="/case-studies/catalog-configurator">
-        <a href="./catalog-configurator">
-          <article className="p-16 duration-300 ease-in-out bg-white border-4 shadow-sm opacity-75 border-tory-blue sm:border sm:-mx-10 radius-lg hover:border-stone-300 sm:border-stone-200 rounded-xl hover:opacity-100 hover:shadow ">
-            <h2 className="text-2xl font-semibold">SaaS Scaling</h2>
+      <Link href="/case-studies/interaction">
+        <a>
+          <article className="p-16 mt-4 duration-300 ease-in-out bg-white border shadow-sm opacity-75 sm:-mx-10 radius-lg hover:border-stone-300 border-stone-200 rounded-xl hover:opacity-100 hover:shadow ">
+            <h2 className="text-2xl font-semibold">
+              Interaction design, UI Design
+            </h2>
             <span className="block mt-3 text-xl text-stone-700">
-              Automating WonderBoard data ingestion and serve 10x more clients
+              Save internal resources by building a self-service experience for
+              clients
             </span>
           </article>
         </a>
@@ -30,7 +33,9 @@ const CaseStudies = () => (
       <Link href="/case-studies/research">
         <a>
           <article className="p-16 mt-4 duration-300 ease-in-out bg-white border shadow-sm opacity-75 sm:-mx-10 radius-lg hover:border-stone-300 border-stone-200 rounded-xl hover:opacity-100 hover:shadow ">
-            <h2 className="text-2xl font-semibold">Research</h2>
+            <h2 className="text-2xl font-semibold">
+              Product strategy, research
+            </h2>
             <span className="block mt-3 text-xl text-stone-700">
               Bringing value through automation
             </span>
