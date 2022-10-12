@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { ExplicativePicture } from "@/components/explicative-picture"
 
 import actors from "@/assets/img/case-studies/research/actors.png"
@@ -182,8 +183,13 @@ const Research = () => {
           <li>Creation of a product review data lake </li>
           <li>Reduced 3x worker-days for setup </li>
           <li>
-            Envisioned the self service experience (other case study — which has
-            enabled to deliver 2x more frequently)
+            Envisioned the self service experience (
+            <Link href="/case-studies/research">
+              <a className="border-b-2 text-tory-blue hover:border-tory-blue/50">
+                interaction/UI case study
+              </a>
+            </Link>
+            — which has enabled to deliver 2x more frequently)
           </li>
         </ul>
 
@@ -220,6 +226,28 @@ const Research = () => {
 
         <div className="my-12">
           <ExplicativePicture caption="Loom over loom over loom" src={loom} />
+        </div>
+      </section>
+
+      <section className="pt-12 mt-64 duration-300 ease-in-out border-t -mb-60">
+        <h2 className="mt-4 mb-8 text-xl font-medium text-center text-zinc-700">
+          Want more case studies?!
+        </h2>
+        <div className="flex justify-between gap-2 lg:gap-8 ">
+          <Link href="/case-studies/design-system">
+            <a>
+              <div className="p-6 bg-white border shadow-sm opacity-75 hover:border-zinc-300 border-zinc-200 rounded-xl hover:opacity-100 hover:shadow">
+                ← Design system
+              </div>
+            </a>
+          </Link>
+          <Link href="/case-studies/interaction">
+            <a>
+              <div className="p-6 bg-white border shadow-sm opacity-75 hover:border-zinc-300 border-zinc-200 rounded-xl hover:opacity-100 hover:shadow">
+                Interaction, UI →
+              </div>
+            </a>
+          </Link>
         </div>
       </section>
     </main>
