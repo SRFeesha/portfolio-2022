@@ -233,6 +233,28 @@ const Interaction = () => {
           />
         </div>
       </section>
+
+      <section className="pt-12 mt-64 duration-300 ease-in-out border-t -mb-60">
+        <h2 className="mt-4 mb-8 text-xl font-medium text-center text-zinc-700">
+          Want more case studies?!
+        </h2>
+        <div className="flex justify-between gap-2 lg:gap-8 ">
+          <Link href="/case-studies/research">
+            <a>
+              <div className="p-6 bg-white border shadow-sm opacity-75 hover:border-zinc-300 border-zinc-200 rounded-xl hover:opacity-100 hover:shadow">
+                ← Research
+              </div>
+            </a>
+          </Link>
+          <Link href="/case-studies/design-system">
+            <a>
+              <div className="p-6 bg-white border shadow-sm opacity-75 hover:border-zinc-300 border-zinc-200 rounded-xl hover:opacity-100 hover:shadow">
+                Design system →
+              </div>
+            </a>
+          </Link>
+        </div>
+      </section>
     </main>
   )
 }
