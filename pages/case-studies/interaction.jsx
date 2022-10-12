@@ -4,12 +4,19 @@ import { ExplicativePicture } from "@/components/explicative-picture"
 import flows from "@/assets/img/case-studies/research/flows.png"
 import critique from "@/assets/img/case-studies/interaction/critique.png"
 import modal from "@/assets/img/case-studies/interaction/modal.png"
-import qa from "@/assets/img/case-studies/interaction/qa.png"
 import roadmap from "@/assets/img/case-studies/interaction/roadmap.png"
 import scraping from "@/assets/img/case-studies/interaction/scraping.png"
 import states from "@/assets/img/case-studies/interaction/states.png"
 import stepper from "@/assets/img/case-studies/interaction/stepper.png"
 import table from "@/assets/img/case-studies/interaction/table.png"
+
+import loom from "@/assets/img/case-studies/interaction/loom.png"
+import loomx100 from "@/assets/img/case-studies/interaction/loomx100.png"
+
+import loading from "@/assets/img/case-studies/interaction/loading.png"
+import informative from "@/assets/img/case-studies/interaction/informative.png"
+
+import iterations from "@/assets/img/case-studies/interaction/iterations.png"
 
 const Research = () => {
   return (
@@ -155,6 +162,17 @@ const Research = () => {
           <li>User testing</li>
           <li>A/B Testing</li>
         </ul>
+
+        <div className="my-12">
+          <ExplicativePicture
+            caption="I’m a big fan of recording async video to explain design is a useful technique to get a snapshot of your current design vision and give context to people without making them feel dumb for asking same question multiple times :)"
+            src={loom}
+          />
+          <ExplicativePicture
+            caption="My heart-felt loom advocacy made me basically become a meme inside the team 😂"
+            src={loomx100}
+          />
+        </div>
       </section>
 
       <section className="my-32">
@@ -173,13 +191,23 @@ const Research = () => {
             deliveries concept, deliver changes in real time){" "}
           </li>
         </ul>
+
+        <div className="my-12">
+          <ExplicativePicture
+            caption="Fields still loading: we distinguish between UI loading (using skeleton components) and data loading (using placeholder text)"
+            src={loading}
+          />
+          <ExplicativePicture
+            caption="Iterations on making clear what’s actionable and what’s just informative."
+            src={informative}
+          />
+        </div>
       </section>
 
       <section className="my-32">
         <h2 className="pb-5 text-3xl font-semibold text-stone-800">
           What I learned
         </h2>
-
         <ul className="space-y-4 text-xl list-disc list-inside list-disc-stone-100 ">
           <li>
             Bringing developer early into the process is an invaluable resource
@@ -193,6 +221,15 @@ const Research = () => {
             term
           </li>
         </ul>
+        <div className="my-12">
+          <ExplicativePicture
+            caption="Iteration iteration iteration — real life constraints makes us
+        reconsider and negotiate the final designs. Instead of a top-down
+        designer-developer approach, we focused on collaboration and sought dev
+        feedback early in the process"
+            src={iteration}
+          />
+        </div>
       </section>
     </main>
   )
