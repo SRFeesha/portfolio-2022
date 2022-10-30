@@ -11,7 +11,7 @@ const MyApp = ({ Component, pageProps }) => {
       <Navigation />
       <Component {...pageProps} />
       <Footer />
-      <Script src="https://cdn.splitbee.io/sb.js" />
+      <Script data-no-cookie async src="https://cdn.splitbee.io/sb.js" />
     </>
   )
 }
