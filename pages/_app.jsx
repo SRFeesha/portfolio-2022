@@ -1,17 +1,17 @@
 import "../styles/globals.css"
 import "@/assets/font/sligoil-micro/style.css"
-import Script from "next/script"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
-import { useEffect } from "react"
+import splitbee from "@splitbee/web"
 
 const MyApp = ({ Component, pageProps }) => {
+  splitbee.init({ disableCookie: true })
+
   return (
     <>
       <Navigation />
       <Component {...pageProps} />
       <Footer />
-      <Script data-no-cookie async src="https://cdn.splitbee.io/sb.js" />
     </>
   )
 }
