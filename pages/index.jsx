@@ -14,10 +14,10 @@ const Home = () => {
         <CrazyCard>
           <div className="flex flex-col justify-center gap-4 lg:basis-3/4">
             <h1 className="text-4xl text-center oldstyle-nums lg:leading-tight lg:text-5xl text-zinc-800 md:text-start xl:pr-10">
-              Beniamino Marini, Product Designer with 3+ years of experience.
+              Beniamino Marini, Product Designer with 4+ years of experience.
             </h1>
             <p className="text-lg text-center md:text-xl md:text-start text-zinc-500">
-              Open to new opportunities
+              Currently working full time on <a href="https://www.phrase.com/">Phrase</a> Design System
             </p>
             <Button
               icon={<Linkedin className="w-4 h-4 fill-white" />}
@@ -42,7 +42,7 @@ const Home = () => {
             <span>✨</span> Fluent in the full design cycle <span>✨</span>
           </h2>
           <p className="lg:mt-2 text-md lg:text-2xl text-zinc-500">
-            From early problem exploration, over detailed UX, Visual design,
+            From early problem validation, over detailed UX, Visual design,
             implementation and iteration.
           </p>
         </section>
@@ -76,16 +76,15 @@ const Home = () => {
             <div>
               <h2 className="mb-4 text-3xl font-bold text-zinc-700">Impact</h2>
               <p className="mb-4 text-xl text-zinc-500">
-                Currently designing at <em>Wonderflow</em>: a data analytics
-                SaaS company working with NLP in the Customer Experience
-                industry.
+                Currently designing at <em>Phrase</em>: Localization leader
+                company
               </p>
               <p className="mb-6 text-xl text-zinc-500">
-                Following, some note-worthy results:
+                Following, are some note-worthy results:
               </p>
               <ul className="space-y-4 text-xl list-disc list-inside list-disc-zinc-100 md:list-outside ">
                 <li>
-                  Constributed <strong>reducing costs by 10x</strong> on new
+                  Contributed <strong>reducing costs by 10x</strong> on new
                   project setup through automation
                 </li>
                 <li>
@@ -94,7 +93,7 @@ const Home = () => {
                 </li>
                 <li>
                   Helped shape and evangelize company{" "}
-                  <strong>design system</strong>
+                  <strong>design system</strong> and Visual Language
                 </li>
               </ul>
             </div>
@@ -106,9 +105,9 @@ const Home = () => {
                 Where I shine
               </h3>
               <ul className="space-y-4">
-                <li>UI design</li>
+                <li>System design</li>
                 <li>Interaction design</li>
-                <li>Design systems</li>
+                <li>Stakeholder management</li>
               </ul>
             </div>
 
@@ -118,16 +117,17 @@ const Home = () => {
               </h3>
               <ul className="space-y-4">
                 <li>Hi-fi prototyping</li>
+                <li>A11y</li>
+                <li>Developer handoff</li>
+                <li>Design QA</li>
                 <li>A/B Testing</li>
                 <li>Quantitative data analysis</li>
                 <li>Behavioural analysis</li>
                 <li>HTML, CSS, JS</li>
                 <li>React</li>
-                <li>A11y</li>
                 <li>User testing</li>
                 <li>Shaping success metrics</li>
                 <li>Facilitating workshops</li>
-                <li>Developer handoff</li>
               </ul>
             </div>
           </aside>
