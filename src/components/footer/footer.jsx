@@ -7,7 +7,7 @@ export const Footer = () => {
     <footer className="flex flex-col gap-4 pt-64 pb-12 text-lg text-center text-stone-400">
       <hr aria-hidden />
       <div className="flex flex-wrap justify-center mx-4 gap-x-6 ">
-        <span>Copyleft 2022 Beniamino Marini</span>
+        <span>Copyleft 2024 Beniamino Marini</span>
         <span>
           Source code on{" "}
           <a

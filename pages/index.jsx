@@ -14,10 +14,11 @@ const Home = () => {
         <CrazyCard>
           <div className="flex flex-col justify-center gap-4 lg:basis-3/4">
             <h1 className="text-4xl text-center oldstyle-nums lg:leading-tight lg:text-5xl text-zinc-800 md:text-start xl:pr-10">
-              Beniamino Marini, Product Designer with 4+ years of experience.
+              Beniamino Marini, Product Designer with 5 years of experience.
             </h1>
             <p className="text-lg text-center md:text-xl md:text-start text-zinc-500">
-              Currently working full time on <a href="https://www.phrase.com/">Phrase</a> Design System
+              Currently working on the{" "}
+              <a href="https://www.phrase.com/">Phrase</a> Design System
             </p>
             <Button
               icon={<Linkedin className="w-4 h-4 fill-white" />}
@@ -56,14 +57,15 @@ const Home = () => {
               <ul className="space-y-4 text-xl leading-normal list-disc list-inside list-disc-zinc-100 md:list-outside">
                 <li>
                   In the past I <strong>worked as a web dev</strong> and
-                  industrial automation dev. Turns out it really helps
-                  understand technical challenges and meet developers where they
-                  are.
+                  industrial automation dev. This experience has improved my
+                  understanding of tech challenges and ability to communicate
+                  with developers.
                 </li>
                 <li>
                   My skillset mixes a{" "}
-                  <strong>tech background and a BS in Psychology</strong> / HCI.
-                  I’m fascinated by human behavior and complex systems.
+                  <strong>tech background with a BS in Psychology</strong> /
+                  Human Computer Interaction. I’m fascinated by human behavior
+                  and complex systems.
                 </li>
                 <li>
                   Experience collaborating in{" "}
@@ -74,26 +76,20 @@ const Home = () => {
             </div>
 
             <div>
-              <h2 className="mb-4 text-3xl font-bold text-zinc-700">Impact</h2>
-              <p className="mb-4 text-xl text-zinc-500">
-                Currently designing at <em>Phrase</em>: Localization leader
-                company
-              </p>
-              <p className="mb-6 text-xl text-zinc-500">
-                Following, are some note-worthy results:
-              </p>
+              <h2 className="mb-5 text-3xl font-bold text-zinc-700">Impact</h2>
               <ul className="space-y-4 text-xl list-disc list-inside list-disc-zinc-100 md:list-outside ">
                 <li>
-                  Contributed <strong>reducing costs by 10x</strong> on new
-                  project setup through automation
+                  Spearheading the direction of Phrase{" "}
+                  <strong>design system</strong>, serving ~120+ engineers, 10
+                  designers, and 5 products.
                 </li>
                 <li>
                   Helped <strong>double the design team</strong>, going from 3
                   to 6 people
                 </li>
                 <li>
-                  Helped shape and evangelize company{" "}
-                  <strong>design system</strong> and Visual Language
+                  Contributed <strong>reducing costs by 10x</strong> on new
+                  project setup through automation initiative
                 </li>
               </ul>
             </div>
@@ -105,8 +101,8 @@ const Home = () => {
                 Where I shine
               </h3>
               <ul className="space-y-4">
-                <li>System design</li>
-                <li>Interaction design</li>
+                <li>Design System</li>
+                <li>Visual design</li>
                 <li>Stakeholder management</li>
               </ul>
             </div>
@@ -116,17 +112,16 @@ const Home = () => {
                 Skills
               </h3>
               <ul className="space-y-4">
+                <li>Product vision</li>
                 <li>Hi-fi prototyping</li>
                 <li>A11y</li>
                 <li>Developer handoff</li>
                 <li>Design QA</li>
                 <li>A/B Testing</li>
                 <li>Quantitative data analysis</li>
-                <li>Behavioural analysis</li>
                 <li>HTML, CSS, JS</li>
                 <li>React</li>
                 <li>User testing</li>
-                <li>Shaping success metrics</li>
                 <li>Facilitating workshops</li>
               </ul>
             </div>
@@ -151,7 +146,7 @@ const Home = () => {
               href={PDFLink}
               icon={<PDF className="w-4 h-4 bg-white fill-white" />}
             >
-              Download my Resume
+              View my Resume
             </Button>
             <Button
               kind="secondary"
