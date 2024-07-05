@@ -61,42 +61,40 @@ const Home = () => {
               <h2 className="mb-5 text-3xl font-bold text-zinc-700">
                 What makes me stand out
               </h2>
-              <ul className="space-y-4 text-xl leading-normal list-disc list-inside list-disc-zinc-100 md:list-outside">
+              <ul className="space-y-4 text-xl leading-normal list-disc list-otside ms-8 list-disc-zinc-100">
                 <li>
-                  In the past I <strong>worked as a web dev</strong> and
-                  industrial automation dev. This experience has improved my
-                  understanding of tech challenges and ability to communicate
-                  with developers.
+                  Experience as a <strong>web developer</strong> and industrial
+                  automation developer, enhancing my understanding of technical
+                  challenges and communication with engineers.
                 </li>
                 <li>
-                  My skillset mixes a{" "}
-                  <strong>tech background with a BS in Psychology</strong> /
-                  Human Computer Interaction. I’m fascinated by human behavior
-                  and complex systems.
+                  Unique skillset combining technical expertise with a{" "}
+                  <strong>degree in Psychology</strong> and Human-Computer
+                  Interaction.
                 </li>
                 <li>
-                  Experience collaborating in{" "}
-                  <strong>cross-functional teams</strong> with devs, designers,
-                  PMs, marketers...
+                  Proven ability to collaborate in
+                  <strong> cross-functional teams</strong> with engineers,
+                  analysts, designers, PMs, marketers...
                 </li>
               </ul>
             </div>
 
             <div>
               <h2 className="mb-5 text-3xl font-bold text-zinc-700">Impact</h2>
-              <ul className="space-y-4 text-xl list-disc list-inside list-disc-zinc-100 md:list-outside ">
+              <ul className="space-y-3 text-xl leading-normal list-disc list-otside ms-8 list-disc-zinc-100">
                 <li>
                   Spearheading the direction of Phrase{" "}
-                  <strong>design system</strong>, serving ~120+ engineers, 10
-                  designers, and 5 products.
+                  <strong>design system</strong>, serving 11 designers, 20+ team
+                  and over 5 products.
                 </li>
                 <li>
-                  Helped <strong>double the design team</strong>, going from 3
-                  to 6 people
+                  Experience <strong>growing a design team</strong>, going from
+                  3 to 6 people
                 </li>
                 <li>
-                  Contributed <strong>reducing costs by 10x</strong> on new
-                  project setup through automation initiative
+                  Contributed to a <strong>10x cost reduction</strong> on new
+                  project setup through an automation initiative.
                 </li>
               </ul>
             </div>
@@ -119,16 +117,16 @@ const Home = () => {
                 Skills
               </h3>
               <ul className="space-y-4">
-                <li>Product vision</li>
                 <li>Hi-fi prototyping</li>
+                <li>Product vision</li>
                 <li>A11y</li>
+                <li>User testing</li>
                 <li>Developer handoff</li>
                 <li>Design QA</li>
                 <li>A/B Testing</li>
                 <li>Quantitative data analysis</li>
                 <li>HTML, CSS, JS</li>
                 <li>React</li>
-                <li>User testing</li>
                 <li>Facilitating workshops</li>
               </ul>
             </div>

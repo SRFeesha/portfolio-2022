@@ -1,7 +1,7 @@
 export const CrazyCard = ({ children }) => {
   return (
     <div className="relative h-fit">
-      <div className="absolute inset-0 scale-90 lg:left-12 top-10 lg:top-4 bg-gradient-to-br from-10% via-80% blur-2xl lg:blur-[80px] rounded-3xl from-sky-500/30  via-blue-700/40 to-violet-700/90 " />
+      <div className="absolute inset-0 scale-90 lg:left-12 top-10 lg:top-4 bg-gradient-to-br from-10% via-80% blur-2xl lg:blur-[96px] rounded-3xl from-sky-500/30  via-blue-700/40 to-violet-700/80 " />
 
       <div className="absolute inset-0 opacity-70 bg-gradient-to-br from-teal-500  via-blue-700 to-violet-800 via-30% rounded-3xl" />
 
