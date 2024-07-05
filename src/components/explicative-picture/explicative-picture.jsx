@@ -15,7 +15,7 @@ export const ExplicativePicture = ({ src, caption, className, alt }) => {
         <Zoom>
           <Image src={src} style={{ borderRadius: "4px" }} alt={alt} />
         </Zoom>
-        <figcaption className="mx-2 font-serif leading-snug md:ml-1 text-stone-500">
+        <figcaption className="mx-4 mt-2 italic leading-snug md:ml-1 text-stone-500">
           {caption}
         </figcaption>
       </div>

@@ -10,15 +10,23 @@ const Home = () => {
 
   return (
     <main className="px-2 text-zinc-600">
-      <div className="container px-2 py-6 mx-auto md:pt-32 xl:px-48">
+      <div className="container px-2 py-6 mx-auto md:pt-32 xl:px-24">
         <CrazyCard>
           <div className="flex flex-col justify-center gap-4 lg:basis-3/4">
             <h1 className="text-4xl text-center oldstyle-nums lg:leading-tight lg:text-5xl text-zinc-800 md:text-start xl:pr-10">
-              Beniamino Marini, Product Designer with 5 years of experience.
+              Beniamino Marini, Product Designer with 5 years of experience
             </h1>
             <p className="text-lg text-center md:text-xl md:text-start text-zinc-500">
               Currently working on the{" "}
-              <a href="https://www.phrase.com/">Phrase</a> Design System
+              <a
+                href="https://www.phrase.com/"
+                className="hover:underline underline-offset-4"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                Phrase
+              </a>{" "}
+              Design System
             </p>
             <Button
               icon={<Linkedin className="w-4 h-4 fill-white" />}
@@ -40,11 +48,10 @@ const Home = () => {
             className="font-[Sligoil] text-xl sm:text-2xl lg:text-4xl flex items-center justify-center gap-1 text-zinc-700 font-base"
             style={{ fontFeatureSettings: '"ss01" on, "calt" off' }}
           >
-            <span>✨</span> Fluent in the full design cycle <span>✨</span>
+            <span>✨</span> Fluent in the full product cycle <span>✨</span>
           </h2>
           <p className="lg:mt-2 text-md lg:text-2xl text-zinc-500">
-            From early problem validation, over detailed UX, Visual design,
-            implementation and iteration.
+            From early problem validation, to delivery and iteration
           </p>
         </section>
 

@@ -38,18 +38,18 @@ const DesignSystem = () => {
         <dl className="mt-8 text-xl text-stone-600 lg:text-xl">
           <dt className="mt-8 font-semibold text-stone-800 lg:mt-12">Goal</dt>
           <dd className="text-xl text-zinc-600">
-            Rebrand 2 companies into a single 1 (Memsource acquired Phrase in
-            mid-2022). <br />
-            Unify 5+ different product into a single platform (Selling strategy
-            shifted from product focused to platform focused)
+            Initially: Rebrand 2 companies into a single one (Memsource acquired
+            Phrase in mid-2022). Later: unify 5+ different products into a
+            single platform — pricing strategy shifted from product-access to
+            volume-based monetization.
           </dd>
 
           <dt className="mt-6 font-semibold text-stone-800 lg:mt-12">
             Opportunity
           </dt>
           <dd className="text-xl text-zinc-600">
-            Serve customer a consistent product language and reduce design +
-            tech debt
+            Serve customers a consistent product language and reduce design and
+            tech debt.
           </dd>
 
           <dt className="mt-6 font-semibold text-stone-800 lg:mt-12">
@@ -57,7 +57,7 @@ const DesignSystem = () => {
           </dt>
           <dd className="text-xl text-zinc-600">
             Team coming from historically different companies have different
-            tech stack and ways of working
+            ways of working and tech stack.
           </dd>
 
           <dt className="mt-6 font-semibold text-stone-800 lg:mt-12">
@@ -65,7 +65,7 @@ const DesignSystem = () => {
           </dt>
           <dd className="text-xl text-zinc-600">
             LLM and MT are disrupting the slow-moving, decades-old localization
-            industry
+            industry.
           </dd>
         </dl>
       </section>
@@ -75,7 +75,7 @@ const DesignSystem = () => {
         src={components}
       />
 
-      <section className="mb-48 mt-16">
+      <section className="mt-16 mb-48">
         <h2 className="pb-5 text-3xl font-semibold text-stone-800">
           Key Highlights
         </h2>
@@ -111,32 +111,31 @@ const DesignSystem = () => {
         </h2>
 
         <p className="text-xl">
-          The design system adopts the atomic design metaphor and ships atomic
-          elements like button and text input, but also bigger organisms like
-          table and dropdowns
+          The design system embraces the atomic design metaphor and leverages
+          <em> composability</em>. Syntax ships atomic elements like button and
+          text input, but also bigger organisms like table and dropdowns.
         </p>
 
         <div>
           <ExplicativePicture
-            caption="A Figma instance of the alert component"
+            caption="A Figma instance of the Alert component. The Alert's visual appearance can morph based on context and intended prominency, while maintaining its semantics"
             src={alert}
           />
           <ExplicativePicture
-            caption="Playground mode of the tooltip component in Figma"
+            caption="Playground mode of the tooltip component in Figma. Props are displayed conditionally, leveraging progressive disclosure "
             src={tooltip}
           />
           <ExplicativePicture
             caption="Openly sharing WIP explorations help starting conversations with different stakeholders"
             src={files}
           />
-          <p className="text-xl mt-24">
+          <p className="mt-24 text-xl">
             Syntax design system doesn't ship just components, but also high
             level <strong>interaction patterns</strong>. This helps ensuring a
-            consistent design languages across different products in our
-            platform
+            consistent design languages across products in our platform.
           </p>
           <ExplicativePicture
-            caption="We use different data visualization palette based the kind of data. Palettes includes categorical data, ordinal, divergent and monochrome"
+            caption="We use different data visualization palettes based on the relationship with the data: categorical, ordinal, and divergent"
             src={dataviz}
           />
           <ExplicativePicture
@@ -152,15 +151,19 @@ const DesignSystem = () => {
         </h2>
 
         <p className="text-xl">
-          As we learned on our own mistakes, unclear documentations hinder
-          design system adoptions. We have a dedicated design system
-          documentation websites (internal use only) which collect resources
-          such as Figma components, whats new, content guidelines and demo{" "}
+          From my own mistakes, I learned that unclear documentation hinders
+          design system adoption. To address this, I actively maintain a
+          dedicated design system documentation website that collects resources
+          such as Figma components, changelog, content guidelines, and demos.
+          <em className="block pt-2 text-zinc-700">
+            The documentation website is available for internal use only, can't
+            share the link, sorry :(
+          </em>
         </p>
 
         <div>
           <ExplicativePicture
-            caption="A screenshot of the dropdown component. The component is a preset displaying multiple list item. The preset help designer quickly create the most common dropdown"
+            caption="A screenshot of the dropdown component. The component is a preset grouping multiple list items and distributing UI conventions like max-height, search, sections, footer, etc. The preset help designers quickly generate dropdowns (a notoriously tedious job)"
             src={docs}
           />
           <ExplicativePicture
@@ -168,7 +171,7 @@ const DesignSystem = () => {
             src={storybook}
           />
           <ExplicativePicture
-            caption="Demonstration of the keyboard navigation in a multi-select dropdown"
+            caption="Demonstration of the keyboard navigation in a multi-select dropdown. Live demo are included in every component."
             src={keyboard}
           />
         </div>
@@ -181,32 +184,35 @@ const DesignSystem = () => {
         <p className="text-xl">
           As a design system designer, a big part of my job is helping people
           stay updated with our ever-evolving design system. This involves
-          sharing updates and meeting people where they are
+          sharing updates and meeting people where they are:
         </p>
 
-        <ul className="space-y-2 text-xl list-disc list-outside ms-8 mt-6 list-disc-stone-100 ">
+        <ul className="mt-6 space-y-2 text-xl list-disc list-outside ms-8 list-disc-stone-100 ">
           <li>
-            Regular sync updates: showoff and Q&A sessions, separate sessions
-            for designer and developers
+            <strong>regular sync updates</strong>: showoff and Q&A sessions —
+            separate sessions for designer and developers
           </li>
           <li>
-            Regular async Updates: announcements for minor releases and detailed
-            updates, with major releases every quarter
+            <strong>regular async updates</strong>: announcements for minor
+            releases once every two weeks; major releases every quarter
           </li>
-          <li>Ad-Hoc communications: Noteworthy updates shared via Slack</li>
           <li>
-            Customer Satisfaction: Bi-annual satisfaction surveys and monthly
-            adoption metrics
+            <strong>ad-hoc communications</strong>: noteworthy updates shared
+            via Slack
+          </li>
+          <li>
+            <strong>tracking customer satisfaction</strong>: bi-annual
+            satisfaction surveys and monthly adoption metrics
           </li>
         </ul>
 
         <div>
           <ExplicativePicture
-            caption="A screenshot from our design system slack channel announcing an improved tooltip component"
+            caption="A screenshot from #design-system Slack channel announcing tooltip component improvements"
             src={slack}
           />
           <ExplicativePicture
-            caption="Every 2 weeks we release a minor npm version. Every 3 months a major release (including breaking changes)"
+            caption="Every 2 weeks we release a minor npm version; every 3 months a major release (including breaking changes)"
             src={changelog}
           />
           <ExplicativePicture
@@ -214,11 +220,11 @@ const DesignSystem = () => {
             src={crit}
           />
           <ExplicativePicture
-            caption="We also have a weekly slot for announcing updates and discussing best practices. As you can see by stamps, the design team is pretty enthusiast by DS updates "
+            caption="We also have a weekly slot for announcing updates and discussing best practices. As you can see by stamps, the design team is very enthusiasticic about DS updates"
             src={updates}
           />
           <ExplicativePicture
-            caption="Results from our bi-annual internal survey about design system satisfaction"
+            caption="A FigJam screenshot about the results from our bi-annual internal survey about design system satisfaction"
             src={survey}
           />
         </div>
@@ -237,18 +243,17 @@ const DesignSystem = () => {
             shifting
           </li>
 
-          <li>Balancing compont discoverability / capabilities</li>
-          <li>Localizing components </li>
+          <li>Balancing components discoverability / capabilities</li>
+          <li>Shipping localization-proof components</li>
         </ul>
 
-        <h3 className="mt-10 pb-5 text-2xl font-semibold text-stone-800">
+        <h3 className="pb-5 mt-12 text-2xl font-semibold text-stone-800">
           What I learned
         </h3>
 
         <ul className="space-y-2 text-xl list-disc list-outside ms-8 list-disc-stone-100 ">
           <li>Share early, share often</li>
           <li>Optimize for review</li>
-          <li>Optimize components for their 80% use case</li>
           <li>Ask developers</li>
           <li>Have fun! </li>
         </ul>
