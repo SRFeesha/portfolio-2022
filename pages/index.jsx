@@ -39,7 +39,7 @@ const Home = () => {
           <Image
             src={BenCircle}
             alt="Beniamino Marini Product Designer"
-            className="rounded-full sm:basis-1/4"
+            className="rounded-tl-[58%] rounded-bl-[48%] rounded-br-[55%] rounded-tr-[44%]  sm:basis-1/4 "
           />
         </CrazyCard>
 
