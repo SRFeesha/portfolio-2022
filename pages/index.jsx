@@ -14,7 +14,8 @@ const Home = () => {
         <CrazyCard>
           <div className="flex flex-col justify-center gap-4 lg:basis-3/4">
             <h1 className="text-4xl text-center oldstyle-nums lg:leading-tight lg:text-5xl text-zinc-800 md:text-start xl:pr-10">
-              Beniamino Marini, Product Designer with 5 years of experience
+              Beniamino Marini, <br />
+              Senior Product Designer
             </h1>
             <p className="text-lg text-center md:text-xl md:text-start text-zinc-500">
               Currently working on the{" "}
