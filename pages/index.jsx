@@ -18,7 +18,7 @@ const Home = () => {
               Senior Product Designer
             </h1>
             <p className="text-lg text-center md:text-xl md:text-start text-zinc-500">
-              Currently working on the{" "}
+              Specialized in Design System — currently at{" "}
               <a
                 href="https://www.phrase.com/"
                 className="hover:underline underline-offset-4"
@@ -27,7 +27,6 @@ const Home = () => {
               >
                 Phrase
               </a>{" "}
-              Design System
             </p>
             <Button
               icon={<Linkedin className="w-4 h-4 fill-white" />}
@@ -40,7 +39,7 @@ const Home = () => {
           <Image
             src={BenCircle}
             alt="Beniamino Marini Product Designer"
-            className="rounded-tl-[58%] rounded-bl-[48%] rounded-br-[55%] rounded-tr-[44%]  sm:basis-1/4 "
+            className="sm:basis-1/4 animate-border-radius"
           />
         </CrazyCard>
 

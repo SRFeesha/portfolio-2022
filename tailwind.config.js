@@ -16,6 +16,16 @@ module.exports = {
         "tory-blue": "#0f5099",
         "chrome-white": "#dcf0cf",
       },
+      keyframes: {
+        borderRadius: {
+          "0%": { borderRadius: "58% 48% 55% 44%" },
+          "50%": { borderRadius: "51% 48% 47% 52%" },
+          "100%": { borderRadius: "48% 63% 44% 55%" },
+        },
+      },
+      animation: {
+        "border-radius": "borderRadius 6s ease-in-out infinite alternate",
+      },
     },
   },
   plugins: [],
