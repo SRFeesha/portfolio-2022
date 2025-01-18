@@ -3,6 +3,7 @@ import { Button } from "@/components/button"
 import { Linkedin, PDF } from "@/components/icons"
 import { CrazyCard } from "@/components/crazy-card"
 import BenCircle from "@/assets/img/Beniamino-Marini--Squared--400x400.png"
+import { TextEffect } from "@/components/motion-ui/text-effect"
 
 const Home = () => {
   const PDFLink = "/assets/pdf/Beniamino-Marini--Product-Designer-resume.pdf"
@@ -13,21 +14,15 @@ const Home = () => {
       <div className="container px-2 py-6 mx-auto md:pt-32 xl:px-24">
         <CrazyCard>
           <div className="flex flex-col justify-center gap-4 lg:basis-3/4">
-            <h1 className="text-4xl text-center oldstyle-nums lg:leading-tight lg:text-5xl text-zinc-800 md:text-start xl:pr-10">
-              Beniamino Marini, <br />
-              Senior Product Designer
-            </h1>
-            <p className="text-lg text-center md:text-xl md:text-start text-zinc-500">
-              Specialized in Design System — currently at{" "}
-              <a
-                href="https://www.phrase.com/"
-                className="hover:underline underline-offset-4"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                Phrase
-              </a>{" "}
-            </p>
+            <TextEffect
+              per="word"
+              preset="fade-in-blur"
+              as="h1"
+              className="text-4xl text-center oldstyle-nums lg:leading-tight lg:text-5xl text-zinc-800 md:text-start xl:pr-10"
+            >
+              Beniamino Marini — Senior Product Designer specialized in Design
+              System
+            </TextEffect>
             <Button
               icon={<Linkedin className="w-4 h-4 fill-white" />}
               className="self-center mt-4 md:self-start"
