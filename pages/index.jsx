@@ -2,8 +2,11 @@ import Image from "next/image"
 import { Button } from "@/components/button"
 import { Linkedin, PDF } from "@/components/icons"
 import { CrazyCard } from "@/components/crazy-card"
-import BenCircle from "@/assets/img/Beniamino-Marini--Squared--400x400.png"
+import { CrazyCard2 } from "@/components/crazy-card-2"
+
 import { TextEffect } from "@/components/motion-ui/text-effect"
+
+import BenCircle from "@/assets/img/Beniamino-Marini--Squared--400x400.png"
 
 const Home = () => {
   const PDFLink = "/assets/pdf/Beniamino-Marini--Product-Designer-resume.pdf"
@@ -12,7 +15,7 @@ const Home = () => {
   return (
     <main className="px-2 text-zinc-600">
       <div className="container px-2 py-6 mx-auto md:pt-32 xl:px-24">
-        <CrazyCard>
+        {/* <CrazyCard>
           <div className="flex flex-col justify-center gap-4 lg:basis-3/4">
             <TextEffect
               per="word"
@@ -36,7 +39,34 @@ const Home = () => {
             alt="Beniamino Marini Product Designer"
             className="sm:basis-1/4 animate-border-radius"
           />
-        </CrazyCard>
+        </CrazyCard> */}
+
+        <CrazyCard2>
+          <div className="flex flex-col justify-center gap-4 lg:basis-3/4">
+            <TextEffect
+              per="word"
+              preset="fade-in-blur"
+              as="h1"
+              className="text-4xl text-center oldstyle-nums lg:leading-tight lg:text-5xl text-zinc-800 md:text-start xl:pr-10"
+            >
+              Beniamino Marini — Senior Product Designer specialized in Design
+              System
+            </TextEffect>
+            <Button
+              icon={<Linkedin className="w-4 h-4 fill-white" />}
+              className="self-center mt-4 md:self-start"
+              href={LinkedinLink}
+            >
+              Connect on Linkedin
+            </Button>
+          </div>
+          <Image
+            src={BenCircle}
+            alt="Beniamino Marini Product Designer"
+            // className="sm:basis-1/4 animate-border-radius"
+            className="rounded-full "
+          />
+        </CrazyCard2>
 
         <section className="mt-40 space-y-4 text-center lg:mt-60 lg:mx-20 ">
           <h2
