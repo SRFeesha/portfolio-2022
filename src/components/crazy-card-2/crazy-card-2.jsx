@@ -12,7 +12,7 @@ export const CrazyCard2 = ({ children }) => {
           duration={15}
           scale={1}
         />
-        <article className="relative flex flex-col items-center justify-between gap-20 px-8 py-16 bg-white border-4 border-white/50 sm:px-16 sm:py-20 2xl:gap-44 md:flex-row rounded-3xl bg-clip-padding">
+        <article className="relative flex flex-col items-center justify-between gap-20 px-8 py-16 bg-white border-4 border-white/50 sm:px-16 sm:py-20 2xl:gap-44 md:flex-row rounded-[56px] bg-clip-padding">
           {children}
         </article>
       </div>

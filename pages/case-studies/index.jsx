@@ -7,8 +7,7 @@ const CaseStudies = () => (
         Case studies
       </h1>
       <p className="mb-12 text-center text-stone-500">
-        Working with agencies, product companies, startups, scaleups, and
-        enterprises since 2019
+        Currently scaling Design System in B2B SaaS
       </p>
       <Link href="/case-studies/syntax">
         <a>

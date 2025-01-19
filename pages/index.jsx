@@ -1,10 +1,11 @@
 import Image from "next/image"
 import { Button } from "@/components/button"
 import { Linkedin, PDF } from "@/components/icons"
-import { CrazyCard } from "@/components/crazy-card"
+// import { CrazyCard } from "@/components/crazy-card"
 import { CrazyCard2 } from "@/components/crazy-card-2"
 
 import { TextEffect } from "@/components/motion-ui/text-effect"
+import { SpinningText } from "@/components/motion-ui/spinning-text"
 
 import BenCircle from "@/assets/img/Beniamino-Marini--Squared--400x400.png"
 
@@ -43,29 +44,43 @@ const Home = () => {
 
         <CrazyCard2>
           <div className="flex flex-col justify-center gap-4 lg:basis-3/4">
-            <TextEffect
-              per="word"
-              preset="fade-in-blur"
-              as="h1"
-              className="text-4xl text-center oldstyle-nums lg:leading-tight lg:text-5xl text-zinc-800 md:text-start xl:pr-10"
-            >
-              Beniamino Marini — Senior Product Designer specialized in Design
-              System
-            </TextEffect>
+            <h1 className="text-4xl text-center oldstyle-nums lg:leading-none lg:text-6xl text-zinc-700 md:text-start xl:pr-10">
+              <span className="block font-semibold">Beniamino Marini</span>
+              <TextEffect
+                per="word"
+                preset="fade-in-blur"
+                delay={0.2}
+                speedReveal={0.7}
+                as="span"
+                className="text-3xl leading-none tracking-tight text-zinc-500 lg:text-4xl"
+              >
+                Senior Product Designer
+              </TextEffect>
+            </h1>
             <Button
+              magnetic={false}
               icon={<Linkedin className="w-4 h-4 fill-white" />}
-              className="self-center mt-4 md:self-start"
+              className="self-center mt-4 md:self-start hover:scale-[1.02]"
               href={LinkedinLink}
             >
               Connect on Linkedin
             </Button>
           </div>
-          <Image
-            src={BenCircle}
-            alt="Beniamino Marini Product Designer"
-            // className="sm:basis-1/4 animate-border-radius"
-            className="rounded-full "
-          />
+          <div className="relative">
+            <SpinningText
+              radius={13.8}
+              fontSize={1.3}
+              duration={100}
+              className="absolute inset-0 font-mono font-medium leading-none uppercase text-zinc-400"
+            >
+              {`Design System Specialist — Design System Specialist — Design System Specialist — `}
+            </SpinningText>
+            <Image
+              src={BenCircle}
+              alt="Beniamino Marini Product Designer"
+              className="absolute inset-0 rounded-full "
+            />
+          </div>
         </CrazyCard2>
 
         <section className="mt-40 space-y-4 text-center lg:mt-60 lg:mx-20 ">
@@ -88,19 +103,18 @@ const Home = () => {
               </h2>
               <ul className="space-y-4 text-xl leading-normal list-disc list-otside ms-8 list-disc-zinc-100">
                 <li>
-                  Experience as a <strong>web developer</strong> and industrial
-                  automation developer, enhancing my understanding of technical
-                  challenges and communication with engineers.
+                  I have a unique mix of technical and human-centered skills. My
+                  background in web development and industrial automation helps
+                  me understand technical challenges deeply.
                 </li>
                 <li>
-                  Unique skillset combining technical expertise with a{" "}
-                  <strong>degree in Psychology</strong> and Human-Computer
-                  Interaction.
+                  A degree in Psychology and Human-Computer Interaction allows
+                  me to design with both users and business goals in mind.
                 </li>
                 <li>
-                  Proven ability to collaborate in
-                  <strong> cross-functional teams</strong> with engineers,
-                  analysts, designers, PMs, marketers...
+                  Problem-solving is my strength. Whether it’s refining
+                  workflows or aligning stakeholders, I thrive in complex
+                  environments.
                 </li>
               </ul>
             </div>
@@ -132,8 +146,8 @@ const Home = () => {
               </h3>
               <ul className="space-y-4">
                 <li>Design System</li>
-                <li>Visual design</li>
                 <li>Stakeholder management</li>
+                <li>Rapid prototyping</li>
               </ul>
             </div>
 
@@ -142,14 +156,15 @@ const Home = () => {
                 Skills
               </h3>
               <ul className="space-y-4">
-                <li>Hi-fi prototyping</li>
                 <li>Product vision</li>
                 <li>A11y</li>
                 <li>User testing</li>
+                <li>User interview</li>
+                <li>Concept validation</li>
                 <li>Developer handoff</li>
                 <li>Design QA</li>
                 <li>A/B Testing</li>
-                <li>Quantitative data analysis</li>
+                <li>Data analysis</li>
                 <li>HTML, CSS, JS</li>
                 <li>React</li>
                 <li>Facilitating workshops</li>
