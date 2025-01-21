@@ -16,7 +16,7 @@ export default function Document() {
           content="https://youcancallmeben.design/assets/img/og-image.png"
         />
       </Head>
-      <body className="text-lg bg-stone-50">
+      <body className="text-lg bg-stone-100">
         <Main />
         <NextScript />
       </body>

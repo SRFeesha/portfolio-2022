@@ -1,7 +1,6 @@
 import Image from "next/image"
 import { Button } from "@/components/button"
 import { Linkedin, PDF } from "@/components/icons"
-// import { CrazyCard } from "@/components/crazy-card"
 import { CrazyCard2 } from "@/components/crazy-card-2"
 
 import { TextEffect } from "@/components/motion-ui/text-effect"
@@ -14,36 +13,10 @@ const Home = () => {
   const LinkedinLink = "https://www.linkedin.com/in/youcancallmeben/"
 
   return (
-    <main className="px-2 text-zinc-600">
+    <main className="sm:px-[3vw] text-zinc-600">
       <div className="container px-2 py-6 mx-auto md:pt-32 xl:px-24">
-        {/* <CrazyCard>
-          <div className="flex flex-col justify-center gap-4 lg:basis-3/4">
-            <TextEffect
-              per="word"
-              preset="fade-in-blur"
-              as="h1"
-              className="text-4xl text-center oldstyle-nums lg:leading-tight lg:text-5xl text-zinc-800 md:text-start xl:pr-10"
-            >
-              Beniamino Marini — Senior Product Designer specialized in Design
-              System
-            </TextEffect>
-            <Button
-              icon={<Linkedin className="w-4 h-4 fill-white" />}
-              className="self-center mt-4 md:self-start"
-              href={LinkedinLink}
-            >
-              Connect on Linkedin
-            </Button>
-          </div>
-          <Image
-            src={BenCircle}
-            alt="Beniamino Marini Product Designer"
-            className="sm:basis-1/4 animate-border-radius"
-          />
-        </CrazyCard> */}
-
         <CrazyCard2>
-          <div className="flex flex-col justify-center gap-4 lg:basis-3/4">
+          <div className="flex flex-col justify-center gap-4 md:basis-3/4">
             <h1 className="text-4xl text-center oldstyle-nums lg:leading-none lg:text-6xl text-zinc-700 md:text-start xl:pr-10">
               <span className="block font-semibold">Beniamino Marini</span>
               <TextEffect
@@ -52,7 +25,7 @@ const Home = () => {
                 delay={0.2}
                 speedReveal={0.7}
                 as="span"
-                className="text-3xl leading-none tracking-tight text-zinc-500 lg:text-4xl"
+                className="leading-none tracking-tight ext-3xl text-zinc-500 lg:text-4xl"
               >
                 Senior Product Designer
               </TextEffect>
@@ -60,18 +33,18 @@ const Home = () => {
             <Button
               magnetic={false}
               icon={<Linkedin className="w-4 h-4 fill-white" />}
-              className="self-center mt-4 md:self-start hover:scale-[1.02]"
+              className="self-center my-2 sm:mt-6 md:self-start hover:scale-[1.02]"
               href={LinkedinLink}
             >
               Connect on Linkedin
             </Button>
           </div>
-          <div className="relative">
+          <div className="relative p-4 sm:m-8">
             <SpinningText
-              radius={13.8}
+              radius={12}
               fontSize={1.3}
               duration={100}
-              className="absolute inset-0 font-mono font-medium leading-none uppercase text-zinc-400"
+              className="absolute inset-0 font-mono font-medium leading-none uppercase bottom-2 text-zinc-400"
             >
               {`Design System Specialist — Design System Specialist — Design System Specialist — `}
             </SpinningText>
