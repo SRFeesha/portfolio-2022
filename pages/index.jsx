@@ -76,9 +76,9 @@ const Home = () => {
               </h2>
               <ul className="space-y-4 text-xl leading-normal list-disc list-otside ms-8 list-disc-zinc-100">
                 <li>
-                  I have a unique mix of technical and human-centered skills. My
-                  background in web development and industrial automation helps
-                  me understand technical challenges deeply.
+                  I have a unique mix of technical and human-centered skills. My{" "}
+                  <strong>background in web development</strong> and industrial
+                  automation helps me understand technical challenges deeply.
                 </li>
                 <li>
                   A degree in Psychology and Human-Computer Interaction allows
@@ -86,8 +86,8 @@ const Home = () => {
                 </li>
                 <li>
                   Problem-solving is my strength. Whether it’s refining
-                  workflows or aligning stakeholders, I thrive in complex
-                  environments.
+                  workflows or aligning stakeholders, I thrive in{" "}
+                  <strong>complex environments.</strong>
                 </li>
               </ul>
             </div>
@@ -96,13 +96,15 @@ const Home = () => {
               <h2 className="mb-5 text-3xl font-bold text-zinc-700">Impact</h2>
               <ul className="space-y-3 text-xl leading-normal list-disc list-otside ms-8 list-disc-zinc-100">
                 <li>
-                  Spearheading the direction of Phrase{" "}
-                  <strong>design system</strong>, serving 11 designers, 20+ team
-                  and over 5 products.
+                  Led the strategic direction of Phrase{" "}
+                  <strong>design system</strong>, supporting 11 designers and
+                  20+ teams across 5 products — impacting localization teams of
+                  companies like Shopify, Uber, OpenAI, Blizzard, and Netflix
                 </li>
                 <li>
-                  Experience <strong>growing a design team</strong>, going from
-                  3 to 6 people
+                  Played a key role in scaling the design team, doubling its
+                  size from 3 to 6 members, fostering collaboration, and driving
+                  team growth.
                 </li>
                 <li>
                   Contributed to a <strong>10x cost reduction</strong> on new
@@ -119,8 +121,8 @@ const Home = () => {
               </h3>
               <ul className="space-y-4">
                 <li>Design System</li>
-                <li>Stakeholder management</li>
-                <li>Rapid prototyping</li>
+                <li>Sweating the details</li>
+                <li>System thinking</li>
               </ul>
             </div>
 
@@ -130,34 +132,27 @@ const Home = () => {
               </h3>
               <ul className="space-y-4">
                 <li>Product vision</li>
+                <li>Stakeholder management</li>
+                <li>Rapid prototyping</li>
+                <li>Navigating ambiguities</li>
                 <li>A11y</li>
-                <li>User testing</li>
-                <li>User interview</li>
-                <li>Concept validation</li>
-                <li>Developer handoff</li>
                 <li>Design QA</li>
+                <li>HTML, CSS, JS, React</li>
+                <li>Concept validation</li>
+                <li>User testing</li>
+                <li>Data informed decision</li>
                 <li>A/B Testing</li>
-                <li>Data analysis</li>
-                <li>HTML, CSS, JS</li>
-                <li>React</li>
                 <li>Facilitating workshops</li>
               </ul>
             </div>
           </aside>
         </div>
 
-        <section className="mt-16 text-center lg:leading-snug lg:mt-32 lg:mx-20">
-          <div className="space-y-4 text-2xl lg:text-2xl ">
-            {/* <p>I’m a value-driven, business-focused product designer.</p> */}
-            <p>
-              My work is focused on human relationships: with users,
-              stakeholders, and team members.
-            </p>
-            {/* <blockquote className="italic">
-            Design is about navigating through ambiguity, negotiating trade-off
-            and communicating visions.
-          </blockquote> */}
-          </div>
+        <section className="mt-16 text-center lg:mt-32 lg:mx-20">
+          <p className="space-y-4 text-2xl font-light lg:text-3xl lg:leading-snug ">
+            My work is focused on human relationships: with users, stakeholders,
+            and team members.
+          </p>
 
           <div className="flex flex-col items-center justify-center gap-4 mt-12 lg:flex-row">
             <Button
