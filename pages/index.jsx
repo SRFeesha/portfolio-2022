@@ -2,6 +2,7 @@ import Image from "next/image"
 import { Button } from "@/components/button"
 import { Linkedin, PDF } from "@/components/icons"
 import { CrazyCard2 } from "@/components/crazy-card-2"
+import { BraggingMessage } from "@/components/bragging-message"
 
 import { TextEffect } from "@/components/motion-ui/text-effect"
 import { SpinningText } from "@/components/motion-ui/spinning-text"
@@ -17,19 +18,21 @@ const Home = () => {
       <div className="container px-2 py-6 mx-auto md:pt-32 xl:px-24">
         <CrazyCard2>
           <div className="flex flex-col justify-center gap-4 md:basis-3/4">
-            <h1 className="text-4xl text-center oldstyle-nums lg:leading-none lg:text-6xl text-zinc-700 md:text-start xl:pr-10">
-              <span className="block font-semibold">Beniamino Marini</span>
-              <TextEffect
-                per="word"
-                preset="fade-in-blur"
-                delay={0.2}
-                speedReveal={0.7}
-                as="span"
-                className="leading-none tracking-tight ext-3xl text-zinc-500 lg:text-4xl"
-              >
-                Senior Product Designer
-              </TextEffect>
+            <h1 className="text-4xl text-center lg:leading-none lg:text-6xl text-zinc-400 md:text-start xl:pr-10">
+              <span className="block font-bold">
+                Marini <span className="text-zinc-700">Ben</span>iamino
+              </span>
             </h1>
+            <TextEffect
+              per="word"
+              preset="fade-in-blur"
+              delay={0.2}
+              speedReveal={0.7}
+              as="h2"
+              className="-mt-0.5 text-3xl italic leading-none tracking-tight text-zinc-500 lg:text-4xl"
+            >
+              Senior Product Designer
+            </TextEffect>
             <Button
               magnetic={false}
               icon={<Linkedin className="w-4 h-4 fill-white" />}
@@ -57,22 +60,15 @@ const Home = () => {
         </CrazyCard2>
 
         <section className="mt-40 space-y-4 text-center lg:mt-60 lg:mx-20 ">
-          <h2
-            className="font-[Sligoil] text-xl sm:text-2xl lg:text-4xl flex items-center justify-center gap-1 text-zinc-700 font-base"
-            style={{ fontFeatureSettings: '"ss01" on, "calt" off' }}
-          >
-            <span>✨</span> Fluent in the full product cycle <span>✨</span>
-          </h2>
-          <p className="lg:mt-2 text-md lg:text-2xl text-zinc-500">
-            From early problem validation, to delivery and iteration
-          </p>
+          <BraggingMessage />
         </section>
 
         <div className="flex flex-col justify-center gap-40 mx-auto my-40 lg:gap-48 lg:flex-row w-fit">
           <div className="flex flex-col max-w-xl gap-24 lg:gap-32 basis-2/3">
             <div>
               <h2 className="mb-5 text-3xl font-bold text-zinc-700">
-                What makes me stand out
+                What makes me <span aria-hidden="true">˗ˏˋ</span>stand out
+                <span aria-hidden="true">ˎˊ˗</span>
               </h2>
               <ul className="space-y-4 text-xl leading-normal list-disc list-otside ms-8 list-disc-zinc-100">
                 <li>
@@ -85,9 +81,9 @@ const Home = () => {
                   me to design with both users and business goals in mind.
                 </li>
                 <li>
-                  Problem-solving is my strength. Whether it’s refining
-                  workflows or aligning stakeholders, I thrive in{" "}
-                  <strong>complex environments.</strong>
+                  <strong>System thinking</strong> is my strength. Whether it’s
+                  refining workflows or aligning stakeholders, I thrive in
+                  complex environments.
                 </li>
               </ul>
             </div>
