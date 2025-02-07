@@ -42,7 +42,7 @@ const Home = () => {
               Connect on Linkedin
             </Button>
           </div>
-          <div className="relative p-4 sm:m-8">
+          <div className="relative p-4 sm:m-8 max-w-[19rem] ">
             <SpinningText
               radius={12}
               fontSize={1.3}
@@ -54,7 +54,7 @@ const Home = () => {
             <Image
               src={BenCircle}
               alt="Beniamino Marini Product Designer"
-              className="absolute inset-0 rounded-full "
+              className="absolute inset-0 object-cover rounded-full "
             />
           </div>
         </CrazyCard2>

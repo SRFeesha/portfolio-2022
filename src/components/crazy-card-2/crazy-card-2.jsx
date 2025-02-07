@@ -12,7 +12,7 @@ export const CrazyCard2 = ({ children }) => {
         duration={15}
         scale={1}
       />
-      <article className="ring-1 ring-white/80 relative flex flex-col items-center justify-between gap-12 px-6 py-12 bg-white/95 border-8 border-white/50 sm:px-16 sm:py-20 2xl:gap-44 md:flex-row rounded-[56px] bg-clip-padding overflow-hidden">
+      <article className="ring-1 ring-white/80 relative flex flex-col items-center justify-between gap-12 px-6 py-12 bg-white/95 border-8 border-white/50 sm:px-16 sm:py-12 2xl:gap-44 md:flex-row rounded-[56px] bg-clip-padding overflow-hidden">
         {children}
       </article>
       {/* </div> */}
