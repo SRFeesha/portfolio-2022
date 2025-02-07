@@ -1,6 +1,6 @@
 import Image from "next/image"
 // import { Button } from "@/components/button"
-import BenPolaroid from "@/assets/img/Ben-polaroid.png"
+import BenPolaroid from "@/assets/img/ben-polaroid.png"
 
 const Home = () => {
   return (
