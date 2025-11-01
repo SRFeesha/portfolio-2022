@@ -9,14 +9,20 @@ const Home = () => {
   const LinkedinLink = "https://www.linkedin.com/in/youcancallmeben/"
 
   return (
-    <main className="sm:px-[3vw] text-zinc-600">
-      <div className="container px-2 py-6 mx-auto md:pt-32 xl:px-24">
-        <div className="flex flex-col justify-center gap-4 md:basis-3/4">
-          <h1 className="text-4xl text-center lg:leading-none lg:text-6xl text-zinc-400 md:text-start xl:pr-10"></h1>
-          <h2 className="-mt-0.5 text-3xl italic leading-none tracking-tight text-zinc-500 lg:text-4xl">
-            Senior Product Designer
+    <main className="sm:px-[3vw]">
+      <div className="container px-2 py-6 mx-auto md:py-11 xl:px-24">
+        <section className="flex flex-col items-center gap-1 p-6 text-center md:gap-3 ">
+          <h1 className="font-medium tracking-wider uppercase texl-lg md:text-xl lg:leading-none text-zinc-600">
+            Marini Beniamino
+          </h1>
+          <h2 className="max-w-3xl text-3xl font-extrabold leading-tight tracking-tight md:text-5xl text-zinc-900">
+            Senior Product Designer specialized in Design system
           </h2>
-        </div>
+          <p className="max-w-4xl text-xl italic leading-snug md:text-3xl text-zinc-500">
+            I connect people, systems, and ideas—blending design and code into
+            products that ship, scale, and succeed.
+          </p>
+        </section>
 
         <section className="mt-16 text-center lg:mt-32 lg:mx-20">
           <p className="space-y-4 text-2xl font-light lg:text-3xl lg:leading-snug ">
