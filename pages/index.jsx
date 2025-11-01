@@ -10,7 +10,7 @@ const Home = () => {
 
   return (
     <main className="sm:px-[3vw]">
-      <div className="container px-2 py-6 mx-auto md:py-11 xl:px-24">
+      <div className="container px-2 py-6 mx-auto md:py-11 lg:pt-16 xl:px-24">
         <section className="flex flex-col items-center gap-1 p-6 text-center md:gap-3 ">
           <h1 className="font-medium tracking-wider uppercase texl-lg md:text-xl lg:leading-none text-zinc-600">
             Marini Beniamino
@@ -24,12 +24,7 @@ const Home = () => {
           </p>
         </section>
 
-        <section className="mt-16 text-center lg:mt-32 lg:mx-20">
-          <p className="space-y-4 text-2xl font-light lg:text-3xl lg:leading-snug ">
-            My work is focused on human relationships: with users, stakeholders,
-            and team members.
-          </p>
-
+        <section className="mt-12 text-center lg:mx-20">
           <div className="flex flex-col items-center justify-center gap-4 mt-12 lg:flex-row">
             <Button
               href={PDFLink}
