@@ -1,5 +1,4 @@
 import clsx from "clsx"
-import { Magnetic } from "@/components/motion-ui/magnetic"
 
 export const Button = ({
   kind = "primary",
@@ -17,34 +16,16 @@ export const Button = ({
   }
 
   return (
-    <>
-      {magnetic ? (
-        <Magnetic>
-          <a
-            className={clsx("btn", hierarchy[kind], className)}
-            href={href}
-            target={openInNewTab ? "_blank" : undefined}
-            rel={openInNewTab ? "noopener noreferrer" : undefined}
-          >
-            <span className="flex items-center gap-2">
-              {icon && icon}
-              {children}
-            </span>
-          </a>
-        </Magnetic>
-      ) : (
-        <a
-          className={clsx("btn", hierarchy[kind], className)}
-          href={href}
-          target={openInNewTab ? "_blank" : undefined}
-          rel={openInNewTab ? "noopener noreferrer" : undefined}
-        >
-          <span className="flex items-center gap-2">
-            {icon && icon}
-            {children}
-          </span>
-        </a>
-      )}
-    </>
+    <a
+      className={clsx("btn", hierarchy[kind], className)}
+      href={href}
+      target={openInNewTab ? "_blank" : undefined}
+      rel={openInNewTab ? "noopener noreferrer" : undefined}
+    >
+      <span className="flex items-center gap-2">
+        {icon && icon}
+        {children}
+      </span>
+    </a>
   )
 }
