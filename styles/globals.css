@@ -20,4 +20,8 @@ strong {
   .btn-flat {
     @apply drop-shadow-none hover:drop-shadow-none border-none hover:bg-stone-200 active:bg-stone-300 ease-in hover:text-stone-900;
   }
+
+  .bento-box {
+    @apply rounded-3xl border-4 p-4 md:p-12 border-white/20 overflow-hidden;
+  }
 }
