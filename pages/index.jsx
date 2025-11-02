@@ -12,7 +12,7 @@ const Home = () => {
           <h1 className="font-medium tracking-wider uppercase texl-lg md:text-xl lg:leading-none text-stone-600">
             Marini Beniamino
           </h1>
-          <h2 className="max-w-3xl text-3xl font-extrabold leading-tight tracking-tight md:text-5xl text-stone-900">
+          <h2 className="max-w-3xl text-3xl font-extrabold leading-tight font-display md:text-5xl text-stone-900">
             Senior Product Designer specialized in Design system
           </h2>
           <p className="max-w-3xl text-xl italic leading-snug md:text-3xl md:pt-2 text-stone-500">
