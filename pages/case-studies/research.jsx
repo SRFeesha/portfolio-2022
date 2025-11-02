@@ -36,7 +36,7 @@ const Research = () => {
           <dt className="mt-12 font-semibold text-stone-800 lg:mt-16">
             Problem
           </dt>
-          <dd className="text-xl text-zinc-600 lg:text-2xl">
+          <dd className="text-xl text-stone-600 lg:text-2xl">
             Lot of manual work and resources needed to set up the environment
             and tweak the linguistic analysis for new projects
           </dd>
@@ -68,7 +68,7 @@ const Research = () => {
           <dt className="mt-12 font-semibold text-stone-800 lg:mt-16">
             My role in the project
           </dt>
-          <dd className="text-xl text-zinc-600 lg:text-2xl">UX Designer</dd>
+          <dd className="text-xl text-stone-600 lg:text-2xl">UX Designer</dd>
 
           <dt className="mt-12 font-semibold text-stone-800 lg:mt-16">When</dt>
           <dd>Dec 2021 → Apr 2022</dd>
@@ -230,20 +230,20 @@ const Research = () => {
       </section>
 
       <section className="pt-12 mt-64 duration-300 ease-in-out border-t -mb-60">
-        <h2 className="mt-4 mb-8 text-xl font-medium text-center text-zinc-700">
+        <h2 className="mt-4 mb-8 text-xl font-medium text-center text-stone-700">
           Want more case studies?!
         </h2>
         <div className="flex justify-between gap-2 lg:gap-8 ">
           <Link href="/case-studies/design-system">
             <a>
-              <div className="p-6 bg-white border shadow-sm opacity-75 hover:border-zinc-300 border-zinc-200 rounded-xl hover:opacity-100 hover:shadow">
+              <div className="p-6 bg-white border shadow-xs opacity-75 hover:border-stone-300 border-stone-200 rounded-xl hover:opacity-100 hover:shadow-sm">
                 ← Design system
               </div>
             </a>
           </Link>
           <Link href="/case-studies/interaction">
             <a>
-              <div className="p-6 bg-white border shadow-sm opacity-75 hover:border-zinc-300 border-zinc-200 rounded-xl hover:opacity-100 hover:shadow">
+              <div className="p-6 bg-white border shadow-xs opacity-75 hover:border-stone-300 border-stone-200 rounded-xl hover:opacity-100 hover:shadow-sm">
                 Interaction, UI →
               </div>
             </a>

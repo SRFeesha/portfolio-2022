@@ -37,7 +37,7 @@ const DesignSystem = () => {
       <section className="my-12">
         <dl className="mt-8 text-xl text-stone-600 lg:text-xl">
           <dt className="mt-8 font-semibold text-stone-800 lg:mt-12">Goal</dt>
-          <dd className="text-xl text-zinc-600">
+          <dd className="text-xl text-stone-600">
             Initially: Rebrand 2 companies into a single one (Memsource acquired
             Phrase in mid-2022). Later: unify 5+ different products into a
             single platform — pricing strategy shifted from product-access to
@@ -47,7 +47,7 @@ const DesignSystem = () => {
           <dt className="mt-6 font-semibold text-stone-800 lg:mt-12">
             Opportunity
           </dt>
-          <dd className="text-xl text-zinc-600">
+          <dd className="text-xl text-stone-600">
             Serve customers a consistent product language and reduce design and
             tech debt.
           </dd>
@@ -55,7 +55,7 @@ const DesignSystem = () => {
           <dt className="mt-6 font-semibold text-stone-800 lg:mt-12">
             Problem
           </dt>
-          <dd className="text-xl text-zinc-600">
+          <dd className="text-xl text-stone-600">
             Team coming from historically different companies have different
             ways of working and tech stack.
           </dd>
@@ -63,7 +63,7 @@ const DesignSystem = () => {
           <dt className="mt-6 font-semibold text-stone-800 lg:mt-12">
             ChatGPT
           </dt>
-          <dd className="text-xl text-zinc-600">
+          <dd className="text-xl text-stone-600">
             LLM and MT are disrupting the slow-moving, decades-old localization
             industry.
           </dd>
@@ -155,7 +155,7 @@ const DesignSystem = () => {
           design system adoption. To address this, I actively maintain a
           dedicated design system documentation website that collects resources
           such as Figma components, changelog, content guidelines, and demos.
-          <em className="block pt-2 text-zinc-700">
+          <em className="block pt-2 text-stone-700">
             The documentation website is available for internal use only, can't
             share the link, sorry :(
           </em>
@@ -266,20 +266,20 @@ const DesignSystem = () => {
       </section>
 
       <section className="pt-12 mt-64 duration-300 ease-in-out border-t -mb-60">
-        <h2 className="mt-4 mb-8 text-xl font-medium text-center text-zinc-700">
+        <h2 className="mt-4 mb-8 text-xl font-medium text-center text-stone-700">
           Want more case studies?!
         </h2>
         <div className="flex justify-between gap-2 lg:gap-8 ">
           <Link href="/case-studies/interaction">
             <a>
-              <div className="p-6 bg-white border shadow-sm opacity-75 hover:border-zinc-300 border-zinc-200 rounded-xl hover:opacity-100 hover:shadow">
+              <div className="p-6 bg-white border shadow-xs opacity-75 hover:border-stone-300 border-stone-200 rounded-xl hover:opacity-100 hover:shadow-sm">
                 ← Interaction, UI
               </div>
             </a>
           </Link>
           <Link href="/case-studies/research">
             <a>
-              <div className="p-6 bg-white border shadow-sm opacity-75 hover:border-zinc-300 border-zinc-200 rounded-xl hover:opacity-100 hover:shadow">
+              <div className="p-6 bg-white border shadow-xs opacity-75 hover:border-stone-300 border-stone-200 rounded-xl hover:opacity-100 hover:shadow-sm">
                 Research →
               </div>
             </a>

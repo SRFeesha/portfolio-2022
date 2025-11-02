@@ -1,27 +1,68 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
-strong {
-  font-weight: 600;
+@theme {
+  --leading-tight: 1.2;
+
+  --scale-90: 0.9;
+
+  --color-tory-blue: #0f5099;
+  --color-chrome-white: #dcf0cf;
+
+  --animate-border-radius: borderRadius 6s ease-in-out infinite alternate;
+
+  @keyframes borderRadius {
+    0% {
+      border-radius: 58% 48% 55% 44%;
+    }
+    50% {
+      border-radius: 51% 48% 47% 52%;
+    }
+    100% {
+      border-radius: 48% 63% 44% 55%;
+    }
+  }
 }
 
-@layer components {
-  .btn {
-    @apply px-4 py-2 text-lg border-2 rounded-lg w-fit drop-shadow-sm  ease-in-out duration-100 active:drop-shadow-none block;
-  }
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
 
-  .btn-primary {
-    @apply text-white bg-blue-500 border-blue-600 active:bg-blue-600 hover:border-blue-800 hover:drop-shadow-lg;
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
   }
-  .btn-secondary {
-    @apply bg-white text-stone-700 hover:text-stone-900 border-stone-200 hover:border-stone-400 hover:drop-shadow-md active:bg-stone-200;
-  }
-  .btn-flat {
-    @apply drop-shadow-none hover:drop-shadow-none border-none hover:bg-stone-200 active:bg-stone-300 ease-in hover:text-stone-900;
-  }
+}
 
-  .bento-box {
-    @apply rounded-3xl border-4 p-4 md:p-12 border-white/20 overflow-hidden;
+@utility btn {
+  @apply px-4 py-2 text-lg border-2 rounded-lg w-fit drop-shadow-xs  ease-in-out duration-100 active:drop-shadow-none block;
+}
+
+@utility btn-primary {
+  @apply text-white bg-blue-500 border-blue-600 active:bg-blue-600 hover:border-blue-800 hover:drop-shadow-lg;
+}
+
+@utility btn-secondary {
+  @apply bg-white text-stone-700 hover:text-stone-900 border-stone-200 hover:border-stone-400 hover:drop-shadow-md active:bg-stone-200;
+}
+
+@utility btn-flat {
+  @apply drop-shadow-none hover:drop-shadow-none border-none hover:bg-stone-200 active:bg-stone-300 ease-in hover:text-stone-900;
+}
+
+@utility bento-box {
+  @apply rounded-3xl border-4 p-4 md:p-12 border-white/20 overflow-hidden;
+}
+
+@layer utilities {
+  strong {
+    font-weight: 600;
   }
 }

@@ -9,51 +9,51 @@ const Home = () => {
     <main className="sm:px-[3vw]">
       <div className="container flex flex-col items-center gap-12 px-2 py-6 mx-auto lg:gap-20 md:py-11 lg:pt-16 xl:px-24">
         <section className="p-6 space-y-1 text-center md:gap-3">
-          <h1 className="font-medium tracking-wider uppercase texl-lg md:text-xl lg:leading-none text-zinc-600">
+          <h1 className="font-medium tracking-wider uppercase texl-lg md:text-xl lg:leading-none text-stone-600">
             Marini Beniamino
           </h1>
-          <h2 className="max-w-3xl text-3xl font-extrabold leading-tight tracking-tight md:text-5xl text-zinc-900">
+          <h2 className="max-w-3xl text-3xl font-extrabold leading-tight tracking-tight md:text-5xl text-stone-900">
             Senior Product Designer specialized in Design system
           </h2>
-          <p className="max-w-3xl text-xl italic leading-snug md:text-3xl md:pt-2 text-zinc-500">
+          <p className="max-w-3xl text-xl italic leading-snug md:text-3xl md:pt-2 text-stone-500">
             I connect people, systems, and ideas—blending design and code into
             products that ship, scale, and succeed.
           </p>
         </section>
 
         <section className="flex flex-col items-center gap-16 p-4">
-          <span aria-hidden className="-mb-10 text-2xl text-zinc-500">
+          <span aria-hidden className="-mb-10 text-2xl text-stone-500">
             ❖
           </span>
-          <h2 className="max-w-xl px-2 text-lg leading-tight text-center md:text-xl text-zinc-600">
+          <h2 className="max-w-xl px-2 text-lg leading-tight text-center md:text-xl text-stone-600">
             Building design system that drive alignment across teams to move
             faster, craft better, and scale with purpose
           </h2>
 
           <div className="grid grid-cols-1 gap-2 sm:grid-rows-4 sm:grid-cols-5 md:gap-4 min-h-svh">
-            <div className="col-span-3 row-span-2 bento-box bg-zinc-800 text-zinc-300">
+            <div className="row-span-2 sm:col-span-3 bento-box bg-stone-700 text-stone-300">
               <p className="text-sm font-semibold uppercase">
                 Solving complex problem, at
               </p>
               <p className="font-extrabold text-9xl">Scale</p>
             </div>
-            <div className="flex flex-col items-center col-span-2 row-span-1 bento-box bg-amber-400 text-amber-950">
+            <div className="flex flex-col items-center row-span-1 sm:sm:col-span-2 bento-box bg-amber-400 text-amber-950">
               <p className="text-sm font-semibold uppercase">Designing for</p>
               <p className="text-4xl font-black">Accessibility</p>
             </div>
-            <div className="flex flex-col items-center col-span-2 row-span-1 bg-pink-500 bento-box text-pink-50 place-content-center">
+            <div className="flex flex-col items-center row-span-1 text-pink-100 bg-pink-500 sm:sm:col-span-2 bento-box place-content-center">
               <p className="text-sm font-semibold uppercase">
                 Without compromising on
               </p>
               <p className="text-4xl font-black">Craft</p>
             </div>
-            <div className="flex flex-col items-center col-span-2 row-span-2 bg-green-600 text-green-950 bento-box place-content-end">
+            <div className="flex flex-col items-center row-span-2 sm:sm:col-span-2 bg-lime-500 text-lime-900 bento-box place-content-end">
               <p className="text-sm font-semibold uppercase">
                 Experiment and ship,{" "}
               </p>
               <p className="italic font-extrabold text-8xl">Faster</p>
             </div>
-            <div className="col-span-3 row-span-2 bg-indigo-500 bento-box text-indigo-50">
+            <div className="row-span-2 text-indigo-100 bg-indigo-600 sm:col-span-3 bento-box">
               <p className="text-sm font-semibold uppercase">Enabling the</p>
               <p className="font-extrabold text-7xl md:text-8xl">AI Leverage</p>
             </div>

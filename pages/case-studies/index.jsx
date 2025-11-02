@@ -11,7 +11,7 @@ const CaseStudies = () => (
       </p>
       <Link href="/case-studies/syntax">
         <a>
-          <article className="p-16 mt-4 duration-300 ease-in-out bg-white border shadow-sm opacity-75 sm:-mx-10 radius-lg hover:border-stone-300 border-stone-200 rounded-xl hover:opacity-100 hover:shadow-md ">
+          <article className="p-16 mt-4 duration-300 ease-in-out bg-white border shadow-xs opacity-75 sm:-mx-10 radius-lg hover:border-stone-300 border-stone-200 rounded-xl hover:opacity-100 hover:shadow-md ">
             <h2 className="text-2xl font-semibold">Syntax Design System</h2>
             <span className="block mt-3 text-xl text-stone-700">
               Working to unify 5+ products into a single, consistent platform
@@ -21,7 +21,7 @@ const CaseStudies = () => (
       </Link>
       <Link href="/case-studies/design-system">
         <a>
-          <article className="p-16 mt-4 duration-300 ease-in-out bg-white border shadow-sm opacity-75 sm:-mx-10 radius-lg hover:border-stone-300 border-stone-200 rounded-xl hover:opacity-100 hover:shadow-md ">
+          <article className="p-16 mt-4 duration-300 ease-in-out bg-white border shadow-xs opacity-75 sm:-mx-10 radius-lg hover:border-stone-300 border-stone-200 rounded-xl hover:opacity-100 hover:shadow-md ">
             <h2 className="text-2xl font-semibold">Wanda Design System</h2>
             <span className="block mt-3 text-xl text-stone-700">
               Full-featured open source design system

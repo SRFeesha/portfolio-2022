@@ -4,7 +4,7 @@ import BenPolaroid from "@/assets/img/ben-polaroid.png"
 
 const Home = () => {
   return (
-    <main className="sm:px-[3vw] text-zinc-600">
+    <main className="sm:px-[3vw] text-stone-600">
       <div className="container px-2 mx-auto leading-relaxed md:pt-8 xl:px-24 ">
         <section className="py-4 space-y-6 text-xl lg:py-8 ">
           <h1 className="mb-4 text-3xl font-bold md:text-4xl">
@@ -46,8 +46,8 @@ const Home = () => {
           </p>
         </section>
         <section className="py-8 ">
-          <h2 className="mb-3 text-3xl font-bold text-zinc-700">Fun facts</h2>
-          <ul className="max-w-screen-sm space-y-2 text-lg leading-normal list-disc list-outside ms-8 list-disc-zinc-100">
+          <h2 className="mb-3 text-3xl font-bold text-stone-700">Fun facts</h2>
+          <ul className="max-w-(--breakpoint-sm) space-y-2 text-lg leading-normal list-disc list-outside ms-8 list-disc-stone-100">
             <li>
               I was born in a tiny town with more pigs than people. Not a
               metaphor.
