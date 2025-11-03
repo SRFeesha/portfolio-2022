@@ -1,4 +1,5 @@
 import { Button } from "@/components/button"
+import { Skills } from "@/components/skills"
 import { Linkedin, PDF } from "@/components/icons"
 
 const Home = () => {
@@ -30,7 +31,7 @@ const Home = () => {
             faster, craft better, and scale with purpose
           </h2>
 
-          <div className="grid grid-cols-1 gap-2 sm:grid-rows-4 sm:grid-cols-5 md:gap-4 min-h-svh">
+          <div className="grid grid-cols-1 gap-2 sm:grid-rows-4 sm:grid-cols-5 md:gap-4 min-h-[110svh]">
             <div className="row-span-2 sm:col-span-3 bento-box bg-stone-700 text-stone-300">
               <p className="text-sm font-semibold uppercase">
                 Solving complex problem, at
@@ -53,11 +54,18 @@ const Home = () => {
               </p>
               <p className="italic font-extrabold text-8xl">Faster</p>
             </div>
-            <div className="row-span-2 text-indigo-100 bg-indigo-600 sm:col-span-3 bento-box">
+            <div className="row-span-2 text-indigo-100 bg-indigo-600 place-content-center sm:col-span-3 bento-box">
               <p className="text-sm font-semibold uppercase">Enabling the</p>
               <p className="font-extrabold text-7xl md:text-8xl">AI Leverage</p>
             </div>
           </div>
+        </section>
+
+        <section className="my-24 space-y-4 text-center">
+          <h2 className="font-semibold tracking-wider uppercase font-display text-stone-500">
+            Skills
+          </h2>
+          <Skills />
         </section>
 
         <section className="mt-12 text-center lg:mx-20">

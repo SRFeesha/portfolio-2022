@@ -13,18 +13,6 @@
   --color-chrome-white: #dcf0cf;
 
   --animate-border-radius: borderRadius 6s ease-in-out infinite alternate;
-
-  @keyframes borderRadius {
-    0% {
-      border-radius: 58% 48% 55% 44%;
-    }
-    50% {
-      border-radius: 51% 48% 47% 52%;
-    }
-    100% {
-      border-radius: 48% 63% 44% 55%;
-    }
-  }
 }
 
 /*
@@ -41,7 +29,7 @@
   ::before,
   ::backdrop,
   ::file-selector-button {
-    border-color: var(--color-gray-200, currentcolor);
+    border-color: var(--color-stone-200, currentcolor);
   }
 }
 
@@ -65,8 +53,36 @@
   @apply rounded-3xl border-4 p-4 md:p-12 border-white/20 overflow-hidden;
 }
 
+@utility white-h-fade {
+  @apply mask-[linear-gradient(to_right,transparent,black_10%,black_90%,transparent)];
+}
+
 @layer utilities {
   strong {
     font-weight: 600;
+  }
+
+  .animate-ticker {
+    animation: ticker 10s linear infinite;
+  }
+
+  .animate-ticker-paused {
+    animation-play-state: paused;
+  }
+
+  @keyframes ticker {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .animate-ticker {
+      animation: none;
+      transform: translateX(0);
+    }
   }
 }
