@@ -1,6 +1,7 @@
 import { Button } from "@/components/button"
 import { Skills } from "@/components/skills"
 import { Linkedin, PDF } from "@/components/icons"
+import { Resume } from "@/components/resume"
 
 const Home = () => {
   const PDFLink = "/assets/pdf/Beniamino-Marini--Product-Designer-resume.pdf"
@@ -66,6 +67,10 @@ const Home = () => {
             Skills
           </h2>
           <Skills />
+        </section>
+
+        <section className="w-full space-y-8">
+          <Resume />
         </section>
 
         <section className="mt-12 text-center lg:mx-20">
