@@ -4,7 +4,6 @@ import { Linkedin, PDF } from "@/components/icons"
 import { Resume } from "@/components/resume"
 
 const Home = () => {
-  const PDFLink = "/assets/pdf/Beniamino-Marini--Product-Designer-resume.pdf"
   const LinkedinLink = "https://www.linkedin.com/in/youcancallmeben/"
 
   return (
@@ -41,23 +40,25 @@ const Home = () => {
             </div>
             <div className="flex flex-col items-center row-span-1 sm:sm:col-span-2 bento-box bg-amber-400 text-amber-950">
               <p className="text-sm font-semibold uppercase">Designing for</p>
-              <p className="text-4xl font-black">Accessibility</p>
+              <p className="text-3xl md:text-4xl font-black">Accessibility</p>
             </div>
             <div className="flex flex-col items-center row-span-1 text-pink-100 bg-pink-500 sm:sm:col-span-2 bento-box place-content-center">
-              <p className="text-sm font-semibold uppercase">
+              <p className="text-sm font-semibold uppercase text-center">
                 Without compromising on
               </p>
-              <p className="text-4xl font-black">Craft</p>
+              <p className="text-4xl font-extrabold">Quality</p>
             </div>
             <div className="flex flex-col items-center row-span-2 sm:sm:col-span-2 bg-lime-500 text-lime-900 bento-box place-content-end">
               <p className="text-sm font-semibold uppercase">
                 Experiment and ship,{" "}
               </p>
-              <p className="italic font-extrabold text-8xl">Faster</p>
+              <p className="italic font-extrabold text-6xl lg:text-8xl">
+                Faster
+              </p>
             </div>
             <div className="row-span-2 text-indigo-100 bg-indigo-600 place-content-center sm:col-span-3 bento-box">
               <p className="text-sm font-semibold uppercase">Enabling the</p>
-              <p className="font-extrabold text-7xl md:text-8xl">AI Leverage</p>
+              <p className="font-extrabold text-7xl lg:text-8xl">AI Leverage</p>
             </div>
           </div>
         </section>
@@ -76,10 +77,10 @@ const Home = () => {
         <section className="mt-12 text-center lg:mx-20">
           <div className="flex flex-col items-center justify-center gap-4 mt-12 lg:flex-row">
             <Button
-              href={PDFLink}
-              icon={<PDF className="w-4 h-4 bg-white fill-white" />}
+              href={LinkedinLink}
+              icon={<Linkedin className="w-4 h-4 fill-white" />}
             >
-              View my Resume
+              Connect on Linkedin
             </Button>
             <Button
               kind="secondary"
