@@ -1,65 +1,35 @@
 import { Button } from "@/components/button"
+import { Companies } from "@/components/companies"
 import { Skills } from "@/components/skills"
 import { Linkedin, PDF } from "@/components/icons"
 import { Resume } from "@/components/resume"
 
 const Home = () => {
-  const PDFLink = "/assets/pdf/Beniamino-Marini--Product-Designer-resume.pdf"
   const LinkedinLink = "https://www.linkedin.com/in/youcancallmeben/"
 
   return (
     <main className="sm:px-[3vw]">
-      <div className="container flex flex-col items-center gap-12 px-2 py-6 mx-auto lg:gap-20 md:py-11 lg:pt-16 xl:px-24">
-        <section className="p-6 space-y-1 text-center md:gap-3">
-          <h1 className="font-medium tracking-wider uppercase texl-lg md:text-xl lg:leading-none text-stone-600">
-            Marini Beniamino
+      <div className="container flex flex-col max-w-4xl gap-12 px-2 py-6 mx-auto lg:gap-20 md:py-11 lg:pt-16 xl:px-16">
+        <section className="p-6 mx-auto space-y-2 ">
+          <h1 className="text-4xl font-bold md:text-5xl lg:leading-none text-stone-900">
+            Beniamino Marini
           </h1>
-          <h2 className="max-w-3xl text-3xl font-extrabold leading-tight font-display md:text-5xl text-stone-900">
-            Senior Product Designer specialized in Design system
+          <h2 className="text-3xl font-medium font-display md:text-3xl text-stone-600 -mt-0.5">
+            Senior Product Designer focused on Design Systems
           </h2>
-          <p className="max-w-3xl text-xl italic leading-snug md:text-3xl md:pt-2 text-stone-500">
-            I connect people, systems, and ideas—blending design and code into
-            products that ship, scale, and succeed.
+          <p className="text-lg md:text-xl md:pt-2 text-stone-600">
+            I build design systems as product infrastructure, helping teams move
+            faster without sacrificing quality
           </p>
+          <p className="text-lg italic md:text-lg md:pt-2 text-stone-500">
+            Working at the intersection of design, engineering, and AI-assisted
+            workflows
+          </p>
+          <span className="h-64">Linkedin button here</span>
         </section>
 
-        <section className="flex flex-col items-center gap-16 p-4">
-          <span aria-hidden className="-mb-10 text-2xl text-stone-500">
-            ❖
-          </span>
-          <h2 className="max-w-xl px-2 text-lg leading-tight text-center md:text-xl text-stone-600">
-            Building design system that drive alignment across teams to move
-            faster, craft better, and scale with purpose
-          </h2>
-
-          <div className="grid grid-cols-1 gap-2 sm:grid-rows-4 sm:grid-cols-5 md:gap-4 min-h-[110svh]">
-            <div className="row-span-2 sm:col-span-3 bento-box bg-stone-700 text-stone-300">
-              <p className="text-sm font-semibold uppercase">
-                Solving complex problem, at
-              </p>
-              <p className="font-extrabold text-9xl">Scale</p>
-            </div>
-            <div className="flex flex-col items-center row-span-1 sm:sm:col-span-2 bento-box bg-amber-400 text-amber-950">
-              <p className="text-sm font-semibold uppercase">Designing for</p>
-              <p className="text-4xl font-black">Accessibility</p>
-            </div>
-            <div className="flex flex-col items-center row-span-1 text-pink-100 bg-pink-500 sm:sm:col-span-2 bento-box place-content-center">
-              <p className="text-sm font-semibold uppercase">
-                Without compromising on
-              </p>
-              <p className="text-4xl font-black">Craft</p>
-            </div>
-            <div className="flex flex-col items-center row-span-2 sm:sm:col-span-2 bg-lime-500 text-lime-900 bento-box place-content-end">
-              <p className="text-sm font-semibold uppercase">
-                Experiment and ship,{" "}
-              </p>
-              <p className="italic font-extrabold text-8xl">Faster</p>
-            </div>
-            <div className="row-span-2 text-indigo-100 bg-indigo-600 place-content-center sm:col-span-3 bento-box">
-              <p className="text-sm font-semibold uppercase">Enabling the</p>
-              <p className="font-extrabold text-7xl md:text-8xl">AI Leverage</p>
-            </div>
-          </div>
+        <section className="max-w-4xl mx-auto my-24 space-y-4">
+          <Companies />
         </section>
 
         <section className="my-24 space-y-4 text-center">
@@ -76,10 +46,10 @@ const Home = () => {
         <section className="mt-12 text-center lg:mx-20">
           <div className="flex flex-col items-center justify-center gap-4 mt-12 lg:flex-row">
             <Button
-              href={PDFLink}
-              icon={<PDF className="w-4 h-4 bg-white fill-white" />}
+              href={LinkedinLink}
+              icon={<Linkedin className="w-4 h-4 fill-white" />}
             >
-              View my Resume
+              Connect on Linkedin
             </Button>
             <Button
               kind="secondary"
