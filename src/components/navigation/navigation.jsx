@@ -19,7 +19,7 @@ export const Navigation = () => {
         <a
           className={clsx(
             "btn btn-navigation",
-            router.pathname === "/" && "btn-navigation-active"
+            router.pathname === "/" && "btn-navigation-active",
           )}
         >
           <Home size={24} />
@@ -30,14 +30,14 @@ export const Navigation = () => {
         <a
           className={clsx(
             "btn btn-navigation",
-            router.pathname === "/case-studies" && "btn-navigation-active"
+            router.pathname === "/case-studies" && "btn-navigation-active",
           )}
         >
           <Briefcase size={24} />
           <span className="hidden sm:block">Work</span>
         </a>
       </Link>
-      <Link href="/about">
+      {/* <Link href="/about">
         <a
           className={clsx(
             "btn btn-navigation",
@@ -47,7 +47,7 @@ export const Navigation = () => {
           <User size={24} />
           <span className="hidden sm:block">About</span>
         </a>
-      </Link>
+      </Link> */}
       <a
         href="mailto:mail@beniaminomarini.design"
         className=" btn btn-navigation"
