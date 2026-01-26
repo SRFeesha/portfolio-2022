@@ -73,14 +73,14 @@ export const Skills = () => {
     <div
       onMouseEnter={handleEnter}
       onMouseLeave={handleLeave}
-      className="relative w-[98dvw] overflow-hidden white-h-fade"
+      className="relative w-full overflow-hidden white-h-fade"
     >
       <ul
         ref={trackRef}
-        className="flex w-max gap-3 py-2 will-change-transform"
+        className="flex gap-3 py-2 w-max will-change-transform"
       >
         {[...skillList, ...skillList].map((skill, i) => (
-          <li key={i} className="shrink-0 rounded-xl bg-stone-200 px-4 py-2">
+          <li key={i} className="px-4 py-2 shrink-0 rounded-xl bg-stone-200">
             {skill}
           </li>
         ))}

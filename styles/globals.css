@@ -8,11 +8,6 @@
   --leading-tight: 1.2;
 
   --scale-90: 0.9;
-
-  --color-tory-blue: #0f5099;
-  --color-chrome-white: #dcf0cf;
-
-  --animate-border-radius: borderRadius 6s ease-in-out infinite alternate;
 }
 
 /*
@@ -34,11 +29,11 @@
 }
 
 @utility btn {
-  @apply px-4 py-2 text-lg border-2 rounded-lg w-fit drop-shadow-xs  ease-in-out duration-100 drop-shadow-none active:drop-shadow-none active:scale-95 flex gap-1 items-center;
+  @apply px-4 py-2 text-lg border-2 rounded-xl w-fit drop-shadow-xs  ease-in-out duration-100 drop-shadow-none active:drop-shadow-none active:scale-95 flex gap-1 items-center;
 }
 
 @utility btn-primary {
-  @apply text-white bg-blue-500 border-blue-600 active:bg-blue-600 hover:border-blue-800 hover:drop-shadow-lg;
+  @apply text-white bg-stone-800 border-stone-600 active:bg-stone-700 hover:border-stone-900 hover:drop-shadow-lg;
 }
 
 @utility btn-secondary {
@@ -55,10 +50,6 @@
 
 @utility btn-navigation-active {
   @apply inset-shadow-sm border border-stone-800/10 bg-stone-300/70;
-}
-
-@utility bento-box {
-  @apply rounded-3xl border-4 p-4 md:p-12 border-white/20 overflow-hidden;
 }
 
 @utility white-h-fade {
