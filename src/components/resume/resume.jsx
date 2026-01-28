@@ -11,7 +11,7 @@ export const Resume = () => {
         Download my resume
       </h3>
       <div className="mt-32 w-full border-stone-400 border bg-stone-200 max-w-3xl h-32 sm:h-60 rounded-t-4xl inset-shadow-sm flex place-content-center relative ">
-        <div className=" max-w-lg sm:shadow sm:hover:shadow-2xl transition ease-in-out place-content-center justify-items-center hover:-translate-y-8 hover:rotate-1 absolute -bottom-30 cursor-pointer sm:border border-stone-200 duration-200 p-4 sm:p-0">
+        <div className=" max-w-lg shadow-2xlsm:shadow sm:hover:shadow-2xl transition ease-in-out place-content-center justify-items-center hover:-translate-y-8 hover:rotate-1 -translate-y-8 rotate-1 sm:translate-y-0 sm:rotate-0 absolute -bottom-30 cursor-pointer sm:border border-stone-200 duration-200 p-4 sm:p-0">
           <a href={PDFLink} target="_blank" rel="noopener noreferrer">
             <Image
               src={CVMock}

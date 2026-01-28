@@ -28,7 +28,7 @@ const Home = () => {
           <h1 className="text-4xl font-bold md:text-5xl lg:leading-none text-stone-900">
             Beniamino Marini
           </h1>
-          <h2 className="text-2xl font-medium font-display md:text-3xl text-stone-500 -mt-0.5 sm:leading-normal tracking-wide">
+          <h2 className="text-2xl font-medium font-display md:text-3xl text-stone-500 -mt-0.5 md:leading-normal tracking-wide text-pretty">
             Senior Product Designer focused on Design Systems
           </h2>
           <p className="text-lg md:text-xl md:pt-2 text-stone-600 text-pretty">
@@ -47,7 +47,10 @@ const Home = () => {
             >
               Connect on Linkedin
             </Button>
-            <button className="btn btn-secondary" onClick={handleCopy}>
+            <button
+              className="btn btn-secondary cursor-pointer"
+              onClick={handleCopy}
+            >
               {copied ? "Copied!" : "Copy email"}
             </button>
           </div>

@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react"
 
 export const Skills = () => {
   const skillList = [
-    "Procuct vision ",
+    "Product vision ",
     "Rapid prototyping ",
     "Fast iteration ",
     "Design system ",
