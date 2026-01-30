@@ -23,7 +23,7 @@ const DesignSystem = () => {
   const DocLink = "https://wanda.wonderflow.ai/"
   return (
     <main className="container px-4 pb-20 mx-auto max-w-[800px]">
-      <heading>
+      <header>
         <h1 className="mt-20 mb-6 text-5xl font-bold sm:text-6xl md:mt-32 text-stone-800">
           Syntax Design System
         </h1>
@@ -32,7 +32,7 @@ const DesignSystem = () => {
           Syntax Design System, a private and specialized system for the
           <strong> localization industry</strong>.
         </p>
-      </heading>
+      </header>
 
       <section className="my-12">
         <dl className="mt-8 text-xl text-stone-600 lg:text-xl">

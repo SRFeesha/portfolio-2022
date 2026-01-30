@@ -1,22 +1,21 @@
-import { useEffect, useRef } from "react"
+import { useEffect, useRef, useState } from "react"
 
 export const Skills = () => {
   const skillList = [
-    "Product vision ",
-    "Rapid prototyping ",
-    "Fast iteration ",
-    "Design system ",
+    "Product vision",
+    "Rapid prototyping",
+    "Fast iteration",
+    "Design system",
     "CSS",
-    "Storybook ",
-    "Design tokens ",
-    "Documentation ",
-    "Accessibility ",
+    "Storybook",
+    "Design tokens",
+    "Documentation",
+    "Accessibility (A11y)",
     "System thinking",
-    "Accessibility (A11y",
     "Stakeholder management",
     "Vibe coding",
     "User research",
-    "Facilitating Workshop ",
+    "Facilitating Workshop",
     "Design QA",
     "Data informed decision",
     "HTML",
@@ -30,18 +29,32 @@ export const Skills = () => {
   const posRef = useRef(0)
   const lastTimeRef = useRef(0)
   const halfWidthRef = useRef(0)
+  const [prefersReducedMotion, setPrefersReducedMotion] = useState(false)
 
   const slowSpeed = 15 // hover speed
 
   useEffect(() => {
+    // Check for reduced motion preference
+    const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)")
+    setPrefersReducedMotion(mediaQuery.matches)
+
+    const handleChange = (e) => setPrefersReducedMotion(e.matches)
+    mediaQuery.addEventListener("change", handleChange)
+
+    return () => mediaQuery.removeEventListener("change", handleChange)
+  }, [])
+
+  useEffect(() => {
     const el = trackRef.current
-    if (!el) return
+    if (!el || prefersReducedMotion) return
 
     const measureWidth = () => {
       halfWidthRef.current = el.scrollWidth / 2
     }
     measureWidth()
     window.addEventListener("resize", measureWidth)
+
+    let animationId
 
     const tick = (ts) => {
       if (!lastTimeRef.current) lastTimeRef.current = ts
@@ -53,13 +66,16 @@ export const Skills = () => {
       if (posRef.current <= -half) posRef.current += half
 
       el.style.transform = `translateX(${posRef.current}px)`
-      requestAnimationFrame(tick)
+      animationId = requestAnimationFrame(tick)
     }
 
-    requestAnimationFrame(tick)
+    animationId = requestAnimationFrame(tick)
 
-    return () => window.removeEventListener("resize", measureWidth)
-  }, [])
+    return () => {
+      window.removeEventListener("resize", measureWidth)
+      if (animationId) cancelAnimationFrame(animationId)
+    }
+  }, [prefersReducedMotion])
 
   const handleEnter = () => {
     speedRef.current = slowSpeed
@@ -80,7 +96,10 @@ export const Skills = () => {
         className="flex gap-3 py-2 w-max will-change-transform"
       >
         {[...skillList, ...skillList].map((skill, i) => (
-          <li key={i} className="px-4 py-2 shrink-0 rounded-xl bg-stone-200">
+          <li
+            key={`${skill}-${i}`}
+            className="px-4 py-2 shrink-0 rounded-xl bg-stone-200"
+          >
             {skill}
           </li>
         ))}

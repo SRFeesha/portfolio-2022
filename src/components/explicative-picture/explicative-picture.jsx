@@ -4,6 +4,9 @@ import Zoom from "react-medium-image-zoom"
 import "react-medium-image-zoom/dist/styles.css"
 
 export const ExplicativePicture = ({ src, caption, className, alt }) => {
+  // Use alt prop if provided, otherwise fall back to caption for accessibility
+  const imageAlt = alt || caption || "Case study image"
+
   return (
     <figure className="mt-10 -mx-3 mb-14">
       <div
@@ -13,7 +16,7 @@ export const ExplicativePicture = ({ src, caption, className, alt }) => {
         )}
       >
         <Zoom>
-          <Image src={src} style={{ borderRadius: "4px" }} alt={alt} />
+          <Image src={src} style={{ borderRadius: "4px" }} alt={imageAlt} />
         </Zoom>
         <figcaption className="mx-4 mt-2 italic leading-snug md:ml-1 text-stone-500">
           {caption}
