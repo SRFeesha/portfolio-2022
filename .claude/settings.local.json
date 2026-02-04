@@ -6,7 +6,8 @@
       "Bash(gh auth status:*)",
       "Bash(printf:*)",
       "Bash(git credential-osxkeychain:*)",
-      "Bash(git fetch:*)"
+      "Bash(git fetch:*)",
+      "Bash(npm run build:*)"
     ]
   }
 }

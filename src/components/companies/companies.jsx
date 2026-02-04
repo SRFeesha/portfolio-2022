@@ -12,7 +12,7 @@ export const Companies = () => {
         <a
           href="https://www.linkedin.com/company/phraseplatform/"
           className="hover:underline hover:text-teal-700 decoration-teal-400 decoration-2 underline-offset-2"
-          about="_blank"
+          target="_blank"
           rel="noopener noreferrer"
         >
           Phrase
@@ -24,27 +24,27 @@ export const Companies = () => {
         mt-6 grid place-items-center gap-x-2 gap-y-6 grid-cols-12 md:grid-cols-5 md:gap-y-0 text-stone-400 
       "
       >
-        <li class="w-full max-h-16 max-w-40 col-span-4 md:col-span-1 ">
+        <li className="w-full max-h-16 max-w-40 col-span-4 md:col-span-1 ">
           <div className="flex items-center justify-center">
             <Shopify className="max-h-full max-w-full object-contain " />
           </div>
         </li>
-        <li class="w-full max-h-16 max-w-40 col-span-4 md:col-span-1">
+        <li className="w-full max-h-16 max-w-40 col-span-4 md:col-span-1">
           <div className=" flex items-center justify-center">
             <Uber className="max-h-full max-w-full object-contain" />
           </div>
         </li>
-        <li class="w-full max-h-16 max-w-40 col-span-4 md:col-span-1">
+        <li className="w-full max-h-16 max-w-40 col-span-4 md:col-span-1">
           <div className="flex items-center justify-center">
             <Ikea className="max-h-full max-w-full object-contain" />
           </div>
         </li>
-        <li class="w-full col-start-3 col-span-4 md:col-span-1">
+        <li className="w-full col-start-3 col-span-4 md:col-span-1">
           <div className="flex items-center justify-center">
             <Zendesk className="max-h-full max-w-full object-contain" />
           </div>
         </li>
-        <li class="w-full col-start-7 col-span-4 md:col-span-1">
+        <li className="w-full col-start-7 col-span-4 md:col-span-1">
           <div className=" flex items-center justify-center">
             <AWS className="max-h-full max-w-full object-contain" />
           </div>

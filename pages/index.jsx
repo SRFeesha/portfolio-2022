@@ -1,7 +1,7 @@
 import { Button } from "@/components/button"
 import { Companies } from "@/components/companies"
 import { Skills } from "@/components/skills"
-import { Linkedin, PDF } from "@/components/icons"
+import { Linkedin } from "@/components/icons"
 import { Resume } from "@/components/resume"
 import { useState } from "react"
 
@@ -47,12 +47,9 @@ const Home = () => {
             >
               Connect on Linkedin
             </Button>
-            <button
-              className="btn btn-secondary cursor-pointer"
-              onClick={handleCopy}
-            >
+            <Button kind="secondary" onClick={handleCopy}>
               {copied ? "Copied!" : "Copy email"}
-            </button>
+            </Button>
           </div>
         </section>
 
