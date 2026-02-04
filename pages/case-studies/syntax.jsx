@@ -2,6 +2,10 @@ import Link from "next/link"
 import { ExplicativePicture } from "@/components/explicative-picture"
 
 import components from "@/assets/img/case-studies/syntax-design-system/iso-comps.png"
+import survey from "@/assets/img/case-studies/syntax-design-system/survey-results.png"
+import Storybook from "@/assets/img/case-studies/table/storybook.png"
+import TMSAdoption from "@/assets/img/case-studies/syntax-design-system/tms-adoption-march-2025.png"
+
 import team from "@/assets/img/case-studies/syntax-design-system/syntax-team.jpg"
 
 // NEW IMAGES - You'll need to add these
@@ -82,13 +86,13 @@ export default function SyntaxDesignSystem() {
           </ul>
         </div>
 
-        {/* PLACEHOLDER FOR PRODUCT DIAGRAM */}
+        {/* PLACEHOLDER FOR PRODUCT DIAGRAM
         <div className="p-8 my-8 border-2 border-dashed rounded-lg bg-stone-50 border-stone-300">
           <p className="text-center text-stone-500">
             📸 Image placeholder: Product/tech stack diagram showing 6 products
             with their different stacks
           </p>
-        </div>
+        </div> */}
       </section>
 
       <section className="mt-20 mb-32 space-y-4">
@@ -164,7 +168,8 @@ export default function SyntaxDesignSystem() {
 
         <p className="pt-4 text-xl font-semibold">We chose option 3.</p>
 
-        {/* STORYBOOK COMPARISON IMAGE */}
+        <ExplicativePicture src={survey} className="rotate-4" />
+        {/* STORYBOOK COMPARISON IMAGE
         <div className="p-8 my-8 border-2 border-dashed rounded-lg bg-stone-50 border-stone-300">
           <p className="text-center text-stone-500">
             📸 Image placeholder: Side-by-side of Vue Storybook vs CSS toolkit
@@ -173,7 +178,7 @@ export default function SyntaxDesignSystem() {
           <p className="mt-2 text-sm text-center text-stone-400">
             Caption: "Same visual language, different architecture"
           </p>
-        </div>
+        </div> */}
 
         <div className="pt-4">
           <p className="mb-2 text-xl font-semibold text-stone-800">
@@ -198,12 +203,16 @@ export default function SyntaxDesignSystem() {
         </div>
 
         {/* COMPONENT COMPARISON IMAGE */}
-        <div className="p-8 my-8 border-2 border-dashed rounded-lg bg-stone-50 border-stone-300">
+        {/* <div className="p-8 my-8 border-2 border-dashed rounded-lg bg-stone-50 border-stone-300">
           <p className="text-center text-stone-500">
             📸 Image placeholder: Simple component (button ✓) vs complex
             component (table ✗)
           </p>
-        </div>
+        </div> */}
+        <ExplicativePicture
+          src={TMSAdoption}
+          caption={"TMS adoptio until March 2025"}
+        />
 
         <p className="text-xl">
           Three years later: The tech debt is <em>compounding. </em>
@@ -257,13 +266,14 @@ export default function SyntaxDesignSystem() {
           </span>
         </p>
 
-        {/* ADOPTION STATUS IMAGE */}
+        {/* ADOPTION STATUS IMAGE
         <div className="p-8 my-8 border-2 border-dashed rounded-lg bg-stone-50 border-stone-300">
           <p className="text-center text-stone-500">
             📸 Image placeholder: Adoption status diagram showing 4/6 adopted,
             TMS migrating
           </p>
-        </div>
+        </div> */}
+        <ExplicativePicture src={Storybook} />
 
         <div className="pt-8">
           <h3 className="mb-4 text-2xl font-semibold text-stone-800">
