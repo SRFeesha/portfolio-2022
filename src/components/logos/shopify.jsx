@@ -10,7 +10,7 @@ export const Shopify = ({ className }) => {
       xmlns="http://www.w3.org/2000/svg"
       className={className}
       role="img"
-      aria-label="Shopify"
+      aria-label="Shopify logo"
     >
       <path
         fillRule="evenodd"

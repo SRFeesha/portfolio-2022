@@ -29,15 +29,13 @@ const Home = () => {
             Beniamino Marini
           </h1>
           <h2 className="text-2xl font-medium font-display md:text-3xl text-stone-500 -mt-0.5 md:leading-normal tracking-wide text-pretty">
-            Senior Product Designer focused on Design Systems
+            Senior product designer with a builder’s mindset
           </h2>
           <p className="text-lg md:text-xl md:pt-2 text-stone-600 text-pretty">
-            I build design systems as product infrastructure, helping teams move
-            faster without sacrificing quality
-          </p>
-          <p className="text-md italic md:text-lg py-1 text-stone-500">
-            Working at the intersection of design, engineering, and AI-assisted
-            workflows
+            I design and ship the systems AI product teams rely on —
+            components, patterns, and prototypes that close the gap between
+            design and engineering. I work end-to-end, from shaping the problem
+            to shipping the detail.
           </p>
 
           <div className="flex gap-2 my-4 flex-wrap flex-row">
@@ -67,10 +65,11 @@ const Home = () => {
               implementation and focus on real product decisions.
             </p>
             <p className="text-lg sm:text-xl text-stone-600 leading-normal">
-              Components, tokens, patterns, and documentation are the output.
-              Alignment, speed, and consistency at scale are the result. My work
-              supports dozens of designers and engineers working across multiple
-              product teams.
+              Components, tokens, patterns, and documentation are the
+              foundation. Prototypes, production-ready code, and tight
+              collaboration with engineering are how it actually ships. My work
+              supports dozens of designers and engineers across multiple
+              product teams building AI-native features.
             </p>
           </div>
           <div className="space-y-4">
@@ -79,13 +78,14 @@ const Home = () => {
             </h2>
             <p className="text-xl sm:text-2xl text-stone-700 leading-normal">
               I work systemically and pragmatically, combining product thinking,
-              system governance, and strong technical fluency.
+              system governance, and hands-on technical fluency.
             </p>
             <p className="text-lg sm:text-xl text-stone-600 leading-normal">
-              My focus is on interaction design, motion, and token-based systems
-              that scale across products and platforms. With a background in web
-              development, I collaborate closely with engineers to build systems
-              that are resilient and accessible under real-world constraints.
+              I prototype in code, contribute to the codebase when it helps,
+              and work side by side with engineers to make sure systems hold up
+              under real-world constraints. My focus spans interaction design,
+              motion, token-based architecture, and the patterns AI features
+              increasingly depend on.
             </p>
           </div>
 
@@ -94,14 +94,15 @@ const Home = () => {
               Where this matters
             </h2>
             <p className="text-xl sm:text-2xl text-stone-700 leading-normal">
-              I have 6+ years of product design experience, including 3 years
-              leading a design system team in complex B2B products and last mile
-              delivery.
+              I have 6+ years of product design experience, including 3+ years
+              leading a design system team in complex B2B products and
+              last-mile delivery.
             </p>
             <p className="text-lg sm:text-xl text-stone-600 leading-normal">
               These environments are messy, fast-moving, and unforgiving. Design
-              systems here aren’t optional. They’re infrastructure teams rely on
-              every day.
+              systems here aren’t optional — they’re the infrastructure teams
+              rely on every day, and increasingly the foundation AI features
+              are built on.
             </p>
           </div>
         </section>

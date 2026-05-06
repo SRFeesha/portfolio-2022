@@ -13,7 +13,7 @@ export const Skills = () => {
     "Accessibility (A11y)",
     "System thinking",
     "Stakeholder management",
-    "Vibe coding",
+    "Prototyping in code",
     "User research",
     "Facilitating Workshop",
     "Design QA",
