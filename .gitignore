@@ -36,3 +36,6 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
+
+# claude code local harness state
+.claude/settings.local.json
