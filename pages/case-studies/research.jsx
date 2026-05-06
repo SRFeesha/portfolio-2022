@@ -24,7 +24,6 @@ const Research = () => {
       <h1 className="mt-20 mb-10 text-5xl font-bold sm:text-6xl md:mt-32 text-stone-800">
         Product strategy, research
       </h1>
-
       <section className="my-12">
         <dl className="mt-8 text-xl text-stone-600 lg:text-2xl">
           <dt className="mt-12 font-semibold text-stone-800 lg:mt-16">Goal</dt>
@@ -74,7 +73,6 @@ const Research = () => {
           <dd>Dec 2021 → Apr 2022</dd>
         </dl>
       </section>
-
       <section className="py-8 my-32 italic text-center border-dashed text-md border-y text-stone-500 border-stone-300">
         <p>
           This case study is an ongoing project. I’ve decided to release even
@@ -83,7 +81,6 @@ const Research = () => {
         </p>
         <p className="mt-4 font-mono text-sm">Last update: October 11, 2022 </p>
       </section>
-
       <section className="my-32">
         <h2 className="pb-5 text-3xl font-semibold text-stone-800">Process</h2>
 
@@ -140,7 +137,6 @@ const Research = () => {
           />
         </div>
       </section>
-
       <section className="my-32">
         <h2 className="pb-5 text-3xl font-semibold text-stone-800">
           Techniques and design deliverables
@@ -172,7 +168,6 @@ const Research = () => {
           />
         </div>
       </section>
-
       <section className="my-32">
         <h2 className="pb-5 text-3xl font-semibold text-stone-800">
           Results and outcomes{" "}
@@ -184,10 +179,12 @@ const Research = () => {
           <li>Reduced 3x worker-days for setup </li>
           <li>
             Envisioned the self service experience (
-            <Link href="/case-studies/research">
-              <a className="border-b-2 text-tory-blue hover:border-tory-blue/50">
+            <Link
+              href="/case-studies/research"
+              className="border-b-2 text-tory-blue hover:border-tory-blue/50">
+              
                 interaction/UI case study
-              </a>
+              
             </Link>
             — which has enabled to deliver 2x more frequently)
           </li>
@@ -209,7 +206,6 @@ const Research = () => {
           />
         </div>
       </section>
-
       <section className="my-32">
         <h2 className="pb-5 text-3xl font-semibold text-stone-800">
           What I learned
@@ -228,30 +224,29 @@ const Research = () => {
           <ExplicativePicture caption="Loom over loom over loom" src={loom} />
         </div>
       </section>
-
       <section className="pt-12 mt-64 duration-300 ease-in-out border-t -mb-60">
         <h2 className="mt-4 mb-8 text-xl font-medium text-center text-stone-700">
           Want more case studies?!
         </h2>
         <div className="flex justify-between gap-2 lg:gap-8 ">
           <Link href="/case-studies/design-system">
-            <a>
-              <div className="p-6 bg-white border shadow-xs opacity-75 hover:border-stone-300 border-stone-200 rounded-xl hover:opacity-100 hover:shadow-sm">
-                ← Design system
-              </div>
-            </a>
+
+            <div className="p-6 bg-white border shadow-xs opacity-75 hover:border-stone-300 border-stone-200 rounded-xl hover:opacity-100 hover:shadow-sm">
+              ← Design system
+            </div>
+
           </Link>
           <Link href="/case-studies/interaction">
-            <a>
-              <div className="p-6 bg-white border shadow-xs opacity-75 hover:border-stone-300 border-stone-200 rounded-xl hover:opacity-100 hover:shadow-sm">
-                Interaction, UI →
-              </div>
-            </a>
+
+            <div className="p-6 bg-white border shadow-xs opacity-75 hover:border-stone-300 border-stone-200 rounded-xl hover:opacity-100 hover:shadow-sm">
+              Interaction, UI →
+            </div>
+
           </Link>
         </div>
       </section>
     </main>
-  )
+  );
 }
 
 export default Research

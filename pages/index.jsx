@@ -8,19 +8,21 @@ import { ArrowRight } from "lucide-react"
 import { useState } from "react"
 
 const CaseStudyLink = ({ href, label, title }) => (
-  <Link href={href}>
-    <a className="group inline-flex items-baseline gap-1 pt-2 text-stone-700 hover:text-stone-900">
-      <span className="text-xs uppercase tracking-[0.18em] text-stone-500">
-        {label} · 
-      </span>
-      <span className="text-sm font-medium underline decoration-stone-300 underline-offset-4 group-hover:decoration-stone-500">
-        {title}
-      </span>
-      <ArrowRight
-        aria-hidden="true"
-        className="w-3.5 h-3.5 self-center transition-transform duration-200 ease-out group-hover:translate-x-1"
-      />
-    </a>
+  <Link
+    href={href}
+    className="group inline-flex items-baseline gap-1 pt-2 text-stone-700 hover:text-stone-900">
+
+    <span className="text-xs uppercase tracking-[0.18em] text-stone-500">
+      {label} · 
+    </span>
+    <span className="text-sm font-medium underline decoration-stone-300 underline-offset-4 group-hover:decoration-stone-500">
+      {title}
+    </span>
+    <ArrowRight
+      aria-hidden="true"
+      className="w-3.5 h-3.5 self-center transition-transform duration-200 ease-out group-hover:translate-x-1"
+    />
+
   </Link>
 )
 

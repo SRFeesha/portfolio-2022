@@ -24,7 +24,6 @@ const Interaction = () => {
       <h1 className="mt-20 mb-10 text-5xl font-bold sm:text-6xl md:mt-32 text-stone-800">
         Interaction design, UI design
       </h1>
-
       <section className="my-12">
         <dl className="mt-8 text-xl text-stone-600 lg:text-2xl">
           <dt className="mt-12 font-semibold text-stone-800 lg:mt-16">Goal</dt>
@@ -78,15 +77,16 @@ const Interaction = () => {
           This case study is the second part of a bigger project — to check
           research material which drove our decision making process, have a look
           at my{" "}
-          <Link href="/case-studies/research">
-            <a className="border-b-2 text-tory-blue hover:border-tory-blue/50">
+          <Link
+            href="/case-studies/research"
+            className="border-b-2 text-tory-blue hover:border-tory-blue/50">
+            
               research case study
-            </a>
+            
           </Link>
           .
         </p>
       </section>
-
       <section className="py-8 my-32 italic text-center border-dashed text-md border-y text-stone-500 border-stone-300">
         <p>
           This case study is an ongoing project. I’ve decided to release even
@@ -95,7 +95,6 @@ const Interaction = () => {
         </p>
         <p className="mt-4 font-mono text-sm">Last update: October 12, 2022 </p>
       </section>
-
       <section className="my-32">
         <h2 className="pb-5 text-3xl font-semibold text-stone-800">Process</h2>
 
@@ -152,7 +151,6 @@ const Interaction = () => {
           />
         </div>
       </section>
-
       <section className="my-32">
         <h2 className="pb-5 text-3xl font-semibold text-stone-800">
           Techniques used
@@ -176,7 +174,6 @@ const Interaction = () => {
           />
         </div>
       </section>
-
       <section className="my-32">
         <h2 className="pb-5 text-3xl font-semibold text-stone-800">
           Results and outcomes
@@ -205,7 +202,6 @@ const Interaction = () => {
           />
         </div>
       </section>
-
       <section className="my-32">
         <h2 className="pb-5 text-3xl font-semibold text-stone-800">
           What I learned
@@ -233,30 +229,29 @@ const Interaction = () => {
           />
         </div>
       </section>
-
       <section className="pt-12 mt-64 duration-300 ease-in-out border-t -mb-60">
         <h2 className="mt-4 mb-8 text-xl font-medium text-center text-stone-700">
           Want more case studies?!
         </h2>
         <div className="flex justify-between gap-2 lg:gap-8 ">
           <Link href="/case-studies/research">
-            <a>
-              <div className="p-6 bg-white border shadow-xs opacity-75 hover:border-stone-300 border-stone-200 rounded-xl hover:opacity-100 hover:shadow-sm">
-                ← Research
-              </div>
-            </a>
+
+            <div className="p-6 bg-white border shadow-xs opacity-75 hover:border-stone-300 border-stone-200 rounded-xl hover:opacity-100 hover:shadow-sm">
+              ← Research
+            </div>
+
           </Link>
           <Link href="/case-studies/design-system">
-            <a>
-              <div className="p-6 bg-white border shadow-xs opacity-75 hover:border-stone-300 border-stone-200 rounded-xl hover:opacity-100 hover:shadow-sm">
-                Design system →
-              </div>
-            </a>
+
+            <div className="p-6 bg-white border shadow-xs opacity-75 hover:border-stone-300 border-stone-200 rounded-xl hover:opacity-100 hover:shadow-sm">
+              Design system →
+            </div>
+
           </Link>
         </div>
       </section>
     </main>
-  )
+  );
 }
 
 export default Interaction

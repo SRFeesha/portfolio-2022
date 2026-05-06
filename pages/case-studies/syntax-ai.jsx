@@ -30,7 +30,6 @@ export default function SyntaxAI() {
           <span className="text-sm text-stone-400">Hero visual</span>
         </figure>
       </header>
-
       {/* AT A GLANCE */}
       <section className="my-24">
         <h2 className="mb-10 text-sm tracking-widest uppercase text-stone-500">
@@ -72,7 +71,6 @@ export default function SyntaxAI() {
           </div>
         </div>
       </section>
-
       {/* THE SETUP */}
       <section className="my-24">
         <h2 className="mb-6 text-3xl font-bold text-stone-800">The setup</h2>
@@ -90,7 +88,6 @@ export default function SyntaxAI() {
         </p>
         <p className="text-xl">I went the other way.</p>
       </section>
-
       {/* THE REFRAME */}
       <section className="my-24">
         <h2 className="mb-6 text-3xl font-bold text-stone-800">The reframe</h2>
@@ -116,7 +113,6 @@ export default function SyntaxAI() {
           </p>
         </blockquote>
       </section>
-
       {/* THE CONTRARIAN CALL */}
       <section className="my-24">
         <h2 className="mb-8 text-3xl font-bold text-stone-800">
@@ -233,7 +229,6 @@ export default function SyntaxAI() {
           project.
         </p>
       </section>
-
       {/* WHAT IT PRODUCES */}
       <section className="my-24">
         <h2 className="mb-6 text-3xl font-bold text-stone-800">
@@ -298,7 +293,6 @@ export default function SyntaxAI() {
           already, today?
         </p>
       </section>
-
       {/* THE HARDER TRUTH */}
       <section className="my-24">
         <h2 className="mb-6 text-3xl font-bold text-stone-800">
@@ -341,7 +335,6 @@ export default function SyntaxAI() {
           The work that turns the result into a system hasn't started yet.
         </p>
       </section>
-
       {/* THE CLOSING ARGUMENT */}
       <section className="my-24">
         <h2 className="mb-6 text-3xl font-bold text-stone-800">
@@ -375,7 +368,6 @@ export default function SyntaxAI() {
           </span>
         </p>
       </section>
-
       {/* SIGNATURE */}
       <section className="pt-10 my-20 border-t border-stone-200">
         <p className="italic text-stone-500">
@@ -385,7 +377,6 @@ export default function SyntaxAI() {
           Full case study, ADRs, and evaluation data available on request.
         </p>
       </section>
-
       {/* NAVIGATION FOOTER */}
       <section className="pt-12 mt-32 duration-300 ease-in-out border-t">
         <h2 className="mt-4 mb-8 text-xl font-medium text-center text-stone-700">
@@ -393,21 +384,21 @@ export default function SyntaxAI() {
         </h2>
         <div className="flex justify-between gap-2 lg:gap-8">
           <Link href="/case-studies/syntax">
-            <a>
-              <div className="p-6 bg-white border shadow-xs opacity-75 hover:border-stone-300 border-stone-200 rounded-xl hover:opacity-100 hover:shadow-sm">
-                ← Syntax Design System
-              </div>
-            </a>
+
+            <div className="p-6 bg-white border shadow-xs opacity-75 hover:border-stone-300 border-stone-200 rounded-xl hover:opacity-100 hover:shadow-sm">
+              ← Syntax Design System
+            </div>
+
           </Link>
           <Link href="/case-studies/table">
-            <a>
-              <div className="p-6 bg-white border shadow-xs opacity-75 hover:border-stone-300 border-stone-200 rounded-xl hover:opacity-100 hover:shadow-sm">
-                Table Component →
-              </div>
-            </a>
+
+            <div className="p-6 bg-white border shadow-xs opacity-75 hover:border-stone-300 border-stone-200 rounded-xl hover:opacity-100 hover:shadow-sm">
+              Table Component →
+            </div>
+
           </Link>
         </div>
       </section>
     </main>
-  )
+  );
 }

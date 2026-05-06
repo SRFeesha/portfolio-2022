@@ -34,7 +34,6 @@ export default function SyntaxDesignSystem() {
           to actually use it.
         </span>
       </p>
-
       <section className="mt-10 mb-16 space-y-4">
         <h2 className="text-2xl font-semibold text-stone-800">The Stakes</h2>
         <p className="text-xl">
@@ -50,12 +49,10 @@ export default function SyntaxDesignSystem() {
           Compounding tech debt.
         </p>
       </section>
-
       <ExplicativePicture
         caption="An isometric view of some of the Syntax components"
         src={components}
       />
-
       <section className="mt-20 mb-32 space-y-4">
         <h2 className="text-3xl font-bold text-stone-800">The Problem</h2>
         <p className="text-xl">
@@ -94,7 +91,6 @@ export default function SyntaxDesignSystem() {
           </p>
         </div> */}
       </section>
-
       <section className="mt-20 mb-32 space-y-4">
         <h2 className="text-3xl font-bold text-stone-800">
           My Approach: Pragmatic Incrementalism
@@ -145,7 +141,6 @@ export default function SyntaxDesignSystem() {
           </div>
         </dl>
       </section>
-
       <section className="mt-20 mb-32 space-y-4">
         <h2 className="text-3xl font-bold text-stone-800">
           The CSS Toolkit: An Uncomfortable Compromise
@@ -240,7 +235,6 @@ export default function SyntaxDesignSystem() {
           </span>
         </p>
       </section>
-
       <section className="mt-20 mb-32 space-y-4">
         <h2 className="text-3xl font-bold text-stone-800">Where We Are Now</h2>
 
@@ -334,7 +328,6 @@ export default function SyntaxDesignSystem() {
           src={team}
         />
       </section>
-
       {/* NAVIGATION FOOTER */}
       <section className="pt-12 mt-32 duration-300 ease-in-out border-t">
         <h2 className="mt-4 mb-8 text-xl font-medium text-center text-stone-700">
@@ -342,21 +335,21 @@ export default function SyntaxDesignSystem() {
         </h2>
         <div className="flex justify-between gap-2 lg:gap-8">
           <Link href="/case-studies/table">
-            <a>
-              <div className="p-6 bg-white border shadow-xs opacity-75 hover:border-stone-300 border-stone-200 rounded-xl hover:opacity-100 hover:shadow-sm">
-                ← Table Component
-              </div>
-            </a>
+
+            <div className="p-6 bg-white border shadow-xs opacity-75 hover:border-stone-300 border-stone-200 rounded-xl hover:opacity-100 hover:shadow-sm">
+              ← Table Component
+            </div>
+
           </Link>
           <Link href="/case-studies/research">
-            <a>
-              <div className="p-6 bg-white border shadow-xs opacity-75 hover:border-stone-300 border-stone-200 rounded-xl hover:opacity-100 hover:shadow-sm">
-                Research →
-              </div>
-            </a>
+
+            <div className="p-6 bg-white border shadow-xs opacity-75 hover:border-stone-300 border-stone-200 rounded-xl hover:opacity-100 hover:shadow-sm">
+              Research →
+            </div>
+
           </Link>
         </div>
       </section>
     </main>
-  )
+  );
 }
