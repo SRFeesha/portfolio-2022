@@ -3,7 +3,26 @@ import { Companies } from "@/components/companies"
 import { Skills } from "@/components/skills"
 import { Linkedin } from "@/components/icons"
 import { Resume } from "@/components/resume"
+import Link from "next/link"
+import { ArrowRight } from "lucide-react"
 import { useState } from "react"
+
+const CaseStudyLink = ({ href, label, title }) => (
+  <Link href={href}>
+    <a className="group inline-flex items-baseline gap-1 pt-2 text-stone-700 hover:text-stone-900">
+      <span className="text-xs uppercase tracking-[0.18em] text-stone-500">
+        {label} · 
+      </span>
+      <span className="text-sm font-medium underline decoration-stone-300 underline-offset-4 group-hover:decoration-stone-500">
+        {title}
+      </span>
+      <ArrowRight
+        aria-hidden="true"
+        className="w-3.5 h-3.5 self-center transition-transform duration-200 ease-out group-hover:translate-x-1"
+      />
+    </a>
+  </Link>
+)
 
 const Home = () => {
   const LinkedinLink = "https://www.linkedin.com/in/youcancallmeben/"
@@ -71,6 +90,11 @@ const Home = () => {
               supports dozens of designers and engineers across multiple
               product teams building AI-native features.
             </p>
+            <CaseStudyLink
+              href="/case-studies/table"
+              label="Related case study"
+              title="Scaling a data-table pattern across products"
+            />
           </div>
           <div className="space-y-4">
             <h2 className="font-bold text-3xl leading-none text-stone-800">
@@ -87,6 +111,11 @@ const Home = () => {
               motion, token-based architecture, and the patterns AI features
               increasingly depend on.
             </p>
+            <CaseStudyLink
+              href="/case-studies/syntax"
+              label="Related case study"
+              title="Driving adoption when reality fights back"
+            />
           </div>
 
           <div className="space-y-4">
@@ -104,6 +133,11 @@ const Home = () => {
               rely on every day, and increasingly the foundation AI features
               are built on.
             </p>
+            <CaseStudyLink
+              href="/case-studies/design-system"
+              label="Related case study"
+              title="Wanda Design System"
+            />
           </div>
         </section>
 
