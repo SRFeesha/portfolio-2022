@@ -7,20 +7,20 @@ import { Ikea } from "../logos"
 export const Companies = () => {
   return (
     <div className="space-y-4">
-      <h2 className="text-base font-medium text-stone-600 px-2">
+      <h2 className="text-lg font-semi text-stone-600 px-2 text-balance">
         6 years designing complex products, from startups to scale-ups. Now
         leading design systems at{" "}
         <a
           href="https://www.linkedin.com/company/phraseplatform/"
-          className="inline-flex items-center gap-1 align-middle hover:underline text-teal-700 decoration-teal-400 decoration-2 underline-offset-2 px-px"
+          className="inline-flex items-center gap-1 align-middle hover:underline hover:text-teal-700 decoration-teal-400 decoration-2 underline-offset-2 px-px -translate-y-px"
           target="_blank"
           rel="noopener noreferrer"
         >
           <img
-            src="/assets/favicon-phrase.svg"
+            src="/assets/favicon-phrase-black.svg"
             alt=""
             aria-hidden="true"
-            className="w-6 h-6"
+            className="w-6 h-6 rounded-2 overflow-hidden"
           />
           Phrase
         </a>{" "}
