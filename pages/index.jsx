@@ -6,42 +6,41 @@ import { Resume } from "@/components/resume"
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 import { useState } from "react"
-import InspectableElement from '@/components/inspectable-element'
+import InspectableElement from "@/components/inspectable-element"
 
 const H1_TOKENS = [
-  { name: '--font-family-display',  value: 'Inter Tight' },
-  { name: '--font-size-heading-1',  value: '3rem / 48px' },
-  { name: '--font-weight-bold',     value: '700' },
-  { name: '--color-text-primary',   value: '#1c1917' },
+  { name: "--font-family-display", value: "Inter Tight" },
+  { name: "--font-size-heading-1", value: "3rem / 48px" },
+  { name: "--font-weight-bold", value: "700" },
+  { name: "--color-text-primary", value: "#1c1917" },
 ]
 
 const H2_TOKENS = [
-  { name: '--font-family-display',  value: 'Inter Tight' },
-  { name: '--font-size-heading-2',  value: '1.875rem / 30px' },
-  { name: '--font-weight-medium',   value: '500' },
-  { name: '--color-text-tertiary',  value: '#78716c' },
+  { name: "--font-family-display", value: "Inter Tight" },
+  { name: "--font-size-heading-2", value: "1.875rem / 30px" },
+  { name: "--font-weight-medium", value: "500" },
+  { name: "--color-text-tertiary", value: "#78716c" },
 ]
 
-
 const BTN_PRIMARY_TOKENS = [
-  { name: '--color-surface-strong', value: '#292524' },
-  { name: '--color-border-strong',  value: '#44403c' },
-  { name: '--radius-lg',            value: '0.75rem' },
+  { name: "--color-surface-strong", value: "#292524" },
+  { name: "--color-border-strong", value: "#44403c" },
+  { name: "--radius-lg", value: "0.75rem" },
 ]
 
 const BTN_SECONDARY_TOKENS = [
-  { name: '--color-surface-default', value: '#ffffff' },
-  { name: '--color-border-subtle',   value: '#e7e5e4' },
-  { name: '--radius-lg',             value: '0.75rem' },
+  { name: "--color-surface-default", value: "#ffffff" },
+  { name: "--color-border-subtle", value: "#e7e5e4" },
+  { name: "--radius-lg", value: "0.75rem" },
 ]
 
 const CaseStudyLink = ({ href, label, title }) => (
   <Link
     href={href}
-    className="group inline-flex items-baseline gap-1 pt-2 text-stone-700 hover:text-stone-900">
-
+    className="group inline-flex items-baseline gap-1 pt-2 text-stone-700 hover:text-stone-900"
+  >
     <span className="text-xs uppercase tracking-[0.18em] text-stone-500">
-      {label} · 
+      {label} ·
     </span>
     <span className="text-sm font-medium underline decoration-stone-300 underline-offset-4 group-hover:decoration-stone-500">
       {title}
@@ -50,7 +49,6 @@ const CaseStudyLink = ({ href, label, title }) => (
       aria-hidden="true"
       className="w-3.5 h-3.5 self-center transition-transform duration-200 ease-out group-hover:translate-x-1"
     />
-
   </Link>
 )
 
@@ -85,9 +83,11 @@ const Home = () => {
           <InspectableElement
             as="h2"
             tokens={H2_TOKENS}
-            className="text-2xl font-medium font-display md:text-3xl text-stone-500 -mt-0.5 md:leading-normal tracking-wide text-pretty"
+            className="text-2xl font-medium font-display md:text-3xl text-stone-500 -mt-0.5 md:leading-relaxed tracking-wide text-pretty py-1"
           >
-            Senior designer. Builder. I close the gap between design and production. Components, tokens, prototypes — the shared language for designers and engineers who ship together.
+            Senior product designer. I'm deep in the craft — visual design,
+            interaction, UI, and design systems — and technical enough to build
+            with AI and ship to production.
           </InspectableElement>
 
           <div className="flex gap-2 my-4 flex-wrap flex-row">
@@ -125,8 +125,8 @@ const Home = () => {
               Components, tokens, patterns, and documentation are the
               foundation. Prototypes, production-ready code, and tight
               collaboration with engineering are how it actually ships. My work
-              supports dozens of designers and engineers across multiple
-              product teams building AI-native features.
+              supports dozens of designers and engineers across multiple product
+              teams building AI-native features.
             </p>
             <CaseStudyLink
               href="/case-studies/table"
@@ -143,8 +143,8 @@ const Home = () => {
               system governance, and hands-on technical fluency.
             </p>
             <p className="text-lg sm:text-xl text-stone-600 leading-normal">
-              I prototype in code, contribute to the codebase when it helps,
-              and work side by side with engineers to make sure systems hold up
+              I prototype in code, contribute to the codebase when it helps, and
+              work side by side with engineers to make sure systems hold up
               under real-world constraints. My focus spans interaction design,
               motion, token-based architecture, and the patterns AI features
               increasingly depend on.
@@ -162,14 +162,14 @@ const Home = () => {
             </h2>
             <p className="text-xl sm:text-2xl text-stone-700 leading-normal">
               I have 6+ years of product design experience, including 3+ years
-              leading a design system team in complex B2B products and
-              last-mile delivery.
+              leading a design system team in complex B2B products and last-mile
+              delivery.
             </p>
             <p className="text-lg sm:text-xl text-stone-600 leading-normal">
               These environments are messy, fast-moving, and unforgiving. Design
               systems here aren’t optional — they’re the infrastructure teams
-              rely on every day, and increasingly the foundation AI features
-              are built on.
+              rely on every day, and increasingly the foundation AI features are
+              built on.
             </p>
             <CaseStudyLink
               href="/case-studies/design-system"
