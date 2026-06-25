@@ -6,6 +6,41 @@ import { Resume } from "@/components/resume"
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 import { useState } from "react"
+import InspectableElement from '@/components/inspectable-element'
+
+const H1_TOKENS = [
+  { name: 'font-display',   value: 'Inter Tight' },
+  { name: 'text-5xl',       value: '3rem · 48px' },
+  { name: 'font-bold',      value: '700' },
+  { name: 'text-stone-900', value: '#1c1917' },
+]
+
+const H2_TOKENS = [
+  { name: 'font-display',   value: 'Inter Tight' },
+  { name: 'text-3xl',       value: '1.875rem · 30px' },
+  { name: 'font-medium',    value: '500' },
+  { name: 'text-stone-500', value: '#78716c' },
+]
+
+const BODY_TOKENS = [
+  { name: 'font-sans',      value: 'Inter' },
+  { name: 'text-xl',        value: '1.25rem · 20px' },
+  { name: 'text-stone-600', value: '#57534e' },
+]
+
+const BTN_PRIMARY_TOKENS = [
+  { name: 'btn',            value: 'base button utility' },
+  { name: 'btn-primary',    value: 'filled variant' },
+  { name: 'bg-stone-800',   value: '#292524' },
+  { name: 'rounded-xl',     value: '0.75rem' },
+]
+
+const BTN_SECONDARY_TOKENS = [
+  { name: 'btn',              value: 'base button utility' },
+  { name: 'btn-secondary',    value: 'outlined variant' },
+  { name: 'bg-white',         value: '#ffffff' },
+  { name: 'border-stone-200', value: '#e7e5e4' },
+]
 
 const CaseStudyLink = ({ href, label, title }) => (
   <Link
@@ -45,30 +80,49 @@ const Home = () => {
   return (
     <main className="sm:px-[3vw]">
       <div className="container flex flex-col max-w-4xl mx-auto py-12 gap-12 p-4">
-        <section className="mx-auto space-y-2  md:py-16">
-          <h1 className="text-4xl font-bold md:text-5xl lg:leading-none text-stone-900">
+        <section className="mx-auto space-y-2 md:py-16">
+          <InspectableElement
+            as="h1"
+            tokens={H1_TOKENS}
+            className="text-4xl font-bold md:text-5xl lg:leading-none text-stone-900"
+          >
             Beniamino Marini
-          </h1>
-          <h2 className="text-2xl font-medium font-display md:text-3xl text-stone-500 -mt-0.5 md:leading-normal tracking-wide text-pretty">
-            Senior product designer with a builder’s mindset
-          </h2>
-          <p className="text-lg md:text-xl md:pt-2 text-stone-600 text-pretty">
+          </InspectableElement>
+
+          <InspectableElement
+            as="h2"
+            tokens={H2_TOKENS}
+            className="text-2xl font-medium font-display md:text-3xl text-stone-500 -mt-0.5 md:leading-normal tracking-wide text-pretty"
+          >
+            Product designer who ships the systems AI teams build on
+          </InspectableElement>
+
+          <InspectableElement
+            as="p"
+            tokens={BODY_TOKENS}
+            className="text-lg md:text-xl md:pt-2 text-stone-600 text-pretty"
+          >
             I design and ship the systems AI product teams rely on —
             components, patterns, and prototypes that close the gap between
             design and engineering. I work end-to-end, from shaping the problem
             to shipping the detail.
-          </p>
+          </InspectableElement>
 
           <div className="flex gap-2 my-4 flex-wrap flex-row">
-            <Button
-              href={LinkedinLink}
-              icon={<Linkedin className="w-4 h-4 fill-white" />}
-            >
-              Connect on Linkedin
-            </Button>
-            <Button kind="secondary" onClick={handleCopy}>
-              {copied ? "Copied!" : "Copy email"}
-            </Button>
+            <InspectableElement tokens={BTN_PRIMARY_TOKENS}>
+              <Button
+                href={LinkedinLink}
+                icon={<Linkedin className="w-4 h-4 fill-white" />}
+              >
+                Connect on Linkedin
+              </Button>
+            </InspectableElement>
+
+            <InspectableElement tokens={BTN_SECONDARY_TOKENS}>
+              <Button kind="secondary" onClick={handleCopy}>
+                {copied ? "Copied!" : "Copy email"}
+              </Button>
+            </InspectableElement>
           </div>
         </section>
 
