@@ -71,11 +71,11 @@ const Home = () => {
   return (
     <main className="sm:px-[3vw]">
       <div className="container flex flex-col max-w-4xl mx-auto py-12 gap-12 p-4">
-        <section className="mx-auto space-y-2 md:py-16">
+        <section className="mx-auto space-y-2 md:py-8">
           <InspectableElement
             as="h1"
             tokens={H1_TOKENS}
-            className="text-4xl font-bold md:text-5xl lg:leading-none text-stone-900"
+            className="text-5xl md:text-8xl lg:leading-none text-stone-900 font-funnel font-semibold"
           >
             Beniamino Marini
           </InspectableElement>
@@ -83,10 +83,10 @@ const Home = () => {
           <InspectableElement
             as="h2"
             tokens={H2_TOKENS}
-            className="text-2xl font-medium font-display md:text-3xl text-stone-500 -mt-0.5 md:leading-relaxed tracking-wide text-pretty py-1"
+            className="text-3xl font-medium font-condensed md:text-4xl text-stone-600 leading-snug text-pretty pt-1 pb-4"
           >
-            Senior product designer. Deep in the craft — design systems, UI,
-            prototypes. Building with AI and shipping to production.
+            Senior product designer, ex-dev. Design systems, UI, prototypes.
+            Building with AI, shipping to production.
           </InspectableElement>
 
           <div className="flex gap-2 my-4 flex-wrap flex-row">

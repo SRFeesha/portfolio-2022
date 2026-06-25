@@ -1,10 +1,20 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @import "tailwindcss";
+
+@font-face {
+  font-family: "DejaVu Sans Condensed";
+  src: url("/assets/fonts/DejaVuSansCondensed.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 
 @theme {
   --font-display: "Inter Tight", sans-serif;
   --font-sans: "Inter", sans-serif;
   --font-serif: "Noticia Text", serif;
+  --font-condensed: "DejaVu Sans Condensed", sans-serif;
+  --font-funnel: "Funnel Display", sans-serif;
 
   --leading-tight: 1.2;
 
