@@ -8,7 +8,8 @@ export const Companies = () => {
   return (
     <div className="space-y-4">
       <h2 className="text-base font-medium text-stone-600 px-2">
-        Designing at{" "}
+        6 years designing complex products, from startups to scale-ups. Now
+        leading design systems at{" "}
         <a
           href="https://www.linkedin.com/company/phraseplatform/"
           className="inline-flex items-center gap-1 align-middle hover:underline text-teal-700 decoration-teal-400 decoration-2 underline-offset-2 px-px"
@@ -19,11 +20,11 @@ export const Companies = () => {
             src="/assets/favicon-phrase.svg"
             alt=""
             aria-hidden="true"
-            className="w-6 h-6 "
+            className="w-6 h-6"
           />
           Phrase
-        </a>
-        , impacting teams at
+        </a>{" "}
+        and impacting teams at
       </h2>
       <ul
         className=" 

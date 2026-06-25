@@ -133,6 +133,11 @@ const Home = () => {
               label="Related case study"
               title="Scaling a data-table pattern across products"
             />
+            <CaseStudyLink
+              href="/case-studies/design-system"
+              label="Related case study"
+              title="Wanda Design System"
+            />
           </div>
           <div className="space-y-4">
             <h2 className="font-bold text-3xl leading-none text-stone-800">
@@ -156,27 +161,6 @@ const Home = () => {
             />
           </div>
 
-          <div className="space-y-4">
-            <h2 className="font-bold text-3xl leading-none text-stone-800">
-              Where this matters
-            </h2>
-            <p className="text-xl sm:text-2xl text-stone-700 leading-normal">
-              I have 6+ years of product design experience, including 3+ years
-              leading a design system team in complex B2B products and last-mile
-              delivery.
-            </p>
-            <p className="text-lg sm:text-xl text-stone-600 leading-normal">
-              These environments are messy, fast-moving, and unforgiving. Design
-              systems here aren’t optional — they’re the infrastructure teams
-              rely on every day, and increasingly the foundation AI features are
-              built on.
-            </p>
-            <CaseStudyLink
-              href="/case-studies/design-system"
-              label="Related case study"
-              title="Wanda Design System"
-            />
-          </div>
         </section>
 
         <section className="w-full space-y-8">
