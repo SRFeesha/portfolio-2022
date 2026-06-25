@@ -8,13 +8,19 @@ export const Companies = () => {
   return (
     <div className="space-y-4">
       <h2 className="text-base font-medium text-stone-600 px-2">
-        Through my work at{" "}
+        Designing at{" "}
         <a
           href="https://www.linkedin.com/company/phraseplatform/"
-          className="hover:underline hover:text-teal-700 decoration-teal-400 decoration-2 underline-offset-2"
+          className="inline-flex items-center gap-1 align-middle hover:underline text-teal-700 decoration-teal-400 decoration-2 underline-offset-2 px-px"
           target="_blank"
           rel="noopener noreferrer"
         >
+          <img
+            src="/assets/favicon-phrase.svg"
+            alt=""
+            aria-hidden="true"
+            className="w-6 h-6 "
+          />
           Phrase
         </a>
         , impacting teams at
