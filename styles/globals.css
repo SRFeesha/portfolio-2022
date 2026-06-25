@@ -9,11 +9,20 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "DejaVu Serif Condensed";
+  src: url("/assets/fonts/DejaVuSerifCondensed.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme {
   --font-display: "Inter Tight", sans-serif;
   --font-sans: "Inter", sans-serif;
   --font-serif: "Noticia Text", serif;
   --font-condensed: "DejaVu Sans Condensed", sans-serif;
+  --font-serif-condensed: "DejaVu Serif Condensed", serif;
   --font-funnel: "Funnel Display", sans-serif;
 
   --leading-tight: 1.2;

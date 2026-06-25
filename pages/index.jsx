@@ -83,9 +83,10 @@ const Home = () => {
           <InspectableElement
             as="h2"
             tokens={H2_TOKENS}
-            className="text-3xl font-medium font-condensed md:text-4xl text-stone-600 leading-snug text-pretty pt-1 pb-4"
+            className="text-3xl font-medium font-serif-condensed md:text-4xl text-stone-600 leading-snug pt-1 pb-4"
           >
-            Senior product designer, ex-dev. Design systems, UI, prototypes.
+            Senior product designer, ex-dev.
+            <br className="max-md:hidden" /> Design systems, UI, prototypes.
             Building with AI, shipping to production.
           </InspectableElement>
 
