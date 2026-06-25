@@ -92,7 +92,7 @@ const Home = () => {
             tokens={H2_TOKENS}
             className="text-2xl font-medium font-display md:text-3xl text-stone-500 -mt-0.5 md:leading-normal tracking-wide text-pretty"
           >
-            Product designer who ships the systems AI teams build on
+            Senior designer. Builder. I close the gap between design and production.
           </InspectableElement>
 
           <InspectableElement
@@ -100,10 +100,7 @@ const Home = () => {
             tokens={BODY_TOKENS}
             className="text-lg md:text-xl md:pt-2 text-stone-600 text-pretty"
           >
-            I design and ship the systems AI product teams rely on —
-            components, patterns, and prototypes that close the gap between
-            design and engineering. I work end-to-end, from shaping the problem
-            to shipping the detail.
+            Components, tokens, prototypes — the shared language for designers and engineers who ship together.
           </InspectableElement>
 
           <div className="flex gap-2 my-4 flex-wrap flex-row">
