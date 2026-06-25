@@ -85,9 +85,8 @@ const Home = () => {
             tokens={H2_TOKENS}
             className="text-2xl font-medium font-display md:text-3xl text-stone-500 -mt-0.5 md:leading-relaxed tracking-wide text-pretty py-1"
           >
-            Senior product designer. I'm deep in the craft — visual design,
-            interaction, UI, and design systems — and technical enough to build
-            with AI and ship to production.
+            Senior product designer. Deep in the craft — design systems, UI,
+            prototypes. Building with AI and shipping to production.
           </InspectableElement>
 
           <div className="flex gap-2 my-4 flex-wrap flex-row">
