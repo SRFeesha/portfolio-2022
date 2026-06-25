@@ -3,7 +3,7 @@ import { AnimatePresence } from 'motion/react'
 import { cn } from '@/lib/utils'
 import TokenTooltip from './token-tooltip'
 
-const TOOLTIP_WIDTH = 240
+const TOOLTIP_WIDTH = 320
 const VIEWPORT_MARGIN = 8
 const CURSOR_OFFSET = 16
 

@@ -21,8 +21,8 @@ export default function TokenTooltip({ tokens, top, left, width }) {
         <tbody>
           {tokens.map(({ name, value }) => (
             <tr key={name}>
-              <td className="text-stone-400 pr-3 whitespace-nowrap">{name}</td>
-              <td className="text-white whitespace-nowrap">{value}</td>
+              <td className="text-white pr-3 whitespace-nowrap">{name}</td>
+              <td className="text-stone-400 whitespace-nowrap">{value}</td>
             </tr>
           ))}
         </tbody>
