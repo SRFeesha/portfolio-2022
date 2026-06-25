@@ -1,6 +1,6 @@
 import { motion } from 'motion/react'
 
-export default function TokenTooltip({ tokens, top, left }) {
+export default function TokenTooltip({ tokens, top, left, width }) {
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.95 }}
@@ -11,7 +11,7 @@ export default function TokenTooltip({ tokens, top, left }) {
         position: 'fixed',
         top,
         left,
-        width: 240,
+        width,
         zIndex: 9999,
         pointerEvents: 'none',
       }}

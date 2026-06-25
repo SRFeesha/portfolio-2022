@@ -64,6 +64,7 @@ export default function InspectableElement({
             tokens={tokens}
             top={position.top}
             left={position.left}
+            width={TOOLTIP_WIDTH}
           />
         )}
       </AnimatePresence>
