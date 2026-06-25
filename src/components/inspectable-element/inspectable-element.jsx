@@ -1,12 +1,11 @@
-import { useState, useRef, useCallback } from 'react'
+import { useState, useCallback } from 'react'
 import { AnimatePresence } from 'motion/react'
 import { cn } from '@/lib/utils'
 import TokenTooltip from './token-tooltip'
 
 const TOOLTIP_WIDTH = 240
 const VIEWPORT_MARGIN = 8
-const ELEMENT_GAP = 8
-const FLIP_THRESHOLD = 80
+const CURSOR_OFFSET = 16
 
 export default function InspectableElement({
   as: Tag = 'span',
@@ -17,31 +16,19 @@ export default function InspectableElement({
 }) {
   const [visible, setVisible] = useState(false)
   const [position, setPosition] = useState({ top: 0, left: 0 })
-  const ref = useRef(null)
 
-  const handleMouseEnter = useCallback(() => {
-    if (!ref.current) return
-    const rect = ref.current.getBoundingClientRect()
-
+  const updatePosition = useCallback((e) => {
     const estimatedHeight = tokens.length * 24 + 24
-    const placement = rect.top < FLIP_THRESHOLD + estimatedHeight ? 'below' : 'above'
-
-    const top =
-      placement === 'above'
-        ? rect.top - estimatedHeight - ELEMENT_GAP
-        : rect.bottom + ELEMENT_GAP
-
-    const left = Math.max(
-      VIEWPORT_MARGIN,
-      Math.min(
-        rect.left + rect.width / 2 - TOOLTIP_WIDTH / 2,
-        window.innerWidth - TOOLTIP_WIDTH - VIEWPORT_MARGIN
-      )
-    )
-
-    setPosition({ top, left })
-    setVisible(true)
+    setPosition({
+      left: Math.max(VIEWPORT_MARGIN, Math.min(e.clientX + CURSOR_OFFSET, window.innerWidth - TOOLTIP_WIDTH - VIEWPORT_MARGIN)),
+      top: Math.max(VIEWPORT_MARGIN, e.clientY - estimatedHeight - CURSOR_OFFSET),
+    })
   }, [tokens])
+
+  const handleMouseEnter = useCallback((e) => {
+    updatePosition(e)
+    setVisible(true)
+  }, [updatePosition])
 
   const handleMouseLeave = useCallback(() => {
     setVisible(false)
@@ -50,9 +37,9 @@ export default function InspectableElement({
   return (
     <>
       <Tag
-        ref={ref}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
+        onMouseMove={updatePosition}
         className={cn('cursor-crosshair', className)}
         {...props}
       >

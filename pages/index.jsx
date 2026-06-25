@@ -9,37 +9,35 @@ import { useState } from "react"
 import InspectableElement from '@/components/inspectable-element'
 
 const H1_TOKENS = [
-  { name: 'font-display',   value: 'Inter Tight' },
-  { name: 'text-5xl',       value: '3rem · 48px' },
-  { name: 'font-bold',      value: '700' },
-  { name: 'text-stone-900', value: '#1c1917' },
+  { name: '--font-family-display',  value: 'Inter Tight' },
+  { name: '--font-size-heading-1',  value: '3rem / 48px' },
+  { name: '--font-weight-bold',     value: '700' },
+  { name: '--color-text-primary',   value: '#1c1917' },
 ]
 
 const H2_TOKENS = [
-  { name: 'font-display',   value: 'Inter Tight' },
-  { name: 'text-3xl',       value: '1.875rem · 30px' },
-  { name: 'font-medium',    value: '500' },
-  { name: 'text-stone-500', value: '#78716c' },
+  { name: '--font-family-display',  value: 'Inter Tight' },
+  { name: '--font-size-heading-2',  value: '1.875rem / 30px' },
+  { name: '--font-weight-medium',   value: '500' },
+  { name: '--color-text-tertiary',  value: '#78716c' },
 ]
 
 const BODY_TOKENS = [
-  { name: 'font-sans',      value: 'Inter' },
-  { name: 'text-xl',        value: '1.25rem · 20px' },
-  { name: 'text-stone-600', value: '#57534e' },
+  { name: '--font-family-body',     value: 'Inter' },
+  { name: '--font-size-body-lg',    value: '1.25rem / 20px' },
+  { name: '--color-text-secondary', value: '#57534e' },
 ]
 
 const BTN_PRIMARY_TOKENS = [
-  { name: 'btn',            value: 'base button utility' },
-  { name: 'btn-primary',    value: 'filled variant' },
-  { name: 'bg-stone-800',   value: '#292524' },
-  { name: 'rounded-xl',     value: '0.75rem' },
+  { name: '--color-surface-strong', value: '#292524' },
+  { name: '--color-border-strong',  value: '#44403c' },
+  { name: '--radius-lg',            value: '0.75rem' },
 ]
 
 const BTN_SECONDARY_TOKENS = [
-  { name: 'btn',              value: 'base button utility' },
-  { name: 'btn-secondary',    value: 'outlined variant' },
-  { name: 'bg-white',         value: '#ffffff' },
-  { name: 'border-stone-200', value: '#e7e5e4' },
+  { name: '--color-surface-default', value: '#ffffff' },
+  { name: '--color-border-subtle',   value: '#e7e5e4' },
+  { name: '--radius-lg',             value: '0.75rem' },
 ]
 
 const CaseStudyLink = ({ href, label, title }) => (
